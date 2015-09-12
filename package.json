@@ -1,0 +1,40 @@
+{
+  "name": "travels",
+  "version": "1.0.0",
+  "description": "A record of my travels",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && geojsonhint destinations/*.geojson && jsonlint -q *.json",
+    "build-geojson": "node bin/build.js",
+    "build": "marked -i index.md -o index.html --smartypants"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxyc/travels.git"
+  },
+  "author": {
+    "name": "Oskar Schöldström",
+    "email": "public@oxy.fi",
+    "url": "http://whatareyoudoinghere.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxyc/travels/issues"
+  },
+  "homepage": "https://github.com/oxyc/travels#readme",
+  "devDependencies": {
+    "geojsonhint": "^1.1.0",
+    "jsonlint": "^1.6.2",
+    "xo": "^0.8.0"
+  },
+  "xo": {
+    "space": true,
+    "globals": ["jQuery", "L", "_"]
+  },
+  "dependencies": {
+    "file-exists": "^0.1.1",
+    "geojson-merge": "^0.1.0",
+    "marked": "^0.3.5",
+    "mkdirp": "^0.5.1"
+  }
+}

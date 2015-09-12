@@ -1,0 +1,109 @@
+{
+  "destinations": [
+    { "name": "Italy" },
+    { "name": "Argentina" },
+    { "name": "Chile" },
+    { "name": "Bolivia" },
+    { "name": "Peru" },
+    { "name": "Ecuador", "path": "destinations/ecuador.geojson" },
+    { "name": "Colombia", "path": "destinations/colombia.geojson" },
+    { "name": "USA" },
+    { "name": "Cuba" }
+  ],
+  "trips": [
+    {
+      "name": "Americas",
+      "date": { "start": "2015-01-10", "end": null },
+      "destinations": [
+        {
+          "name": "Italy",
+          "dates": [
+            { "start": "2015-01-10", "end": "2015-01-11" }
+          ],
+          "expenditures": [
+            { "name": "travels", "amount": null, "currency": "USD" }
+          ]
+        },
+        {
+          "name": "Argentina",
+          "dates": [
+            { "start": "2015-01-11", "end": "2015-01-15" },
+            { "start": "2015-01-22", "end": "2015-01-25" },
+            { "start": "2015-02-11", "end": "2015-02-25" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Chile",
+          "dates": [
+            { "start": "2015-01-15", "end": "2015-01-22" },
+            { "start": "2015-01-25", "end": "2015-02-11" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Bolivia",
+          "dates": [
+            { "start": "2015-02-25", "end": "2015-03-14" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Peru",
+          "dates": [
+            { "start": "2015-03-14", "end": "2015-04-14" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Ecuador",
+          "dates": [
+            { "start": "2015-04-14", "end": "2015-05-03" },
+            { "start": "2015-06-29", "end": null }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Colombia",
+          "dates": [
+            { "start": "2015-05-03", "end": "2015-05-08" },
+            { "start": "2015-05-10", "end": "2015-05-23" },
+            { "start": "2015-06-28", "end": "2015-06-29" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "USA",
+          "dates": [
+            { "start": "2015-05-08", "end": "2015-05-10" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Cuba",
+          "dates": [
+            { "start": "2015-05-23", "end": "2015-06-09" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "Finland",
+          "dates": [
+            { "start": "2015-06-09", "end": "2015-06-18" }
+          ],
+          "expenditures": []
+        },
+        {
+          "name": "USA",
+          "dates": [
+            { "start": "2015-06-18", "end": "2015-06-28" }
+          ],
+          "expenditures": [
+            { "name": "flights", "amount": "0", "currency": "USD" },
+            { "name": "visas", "amount": "0", "currency": "USD" }
+          ]
+        }
+      ]
+    }
+  ]
+}

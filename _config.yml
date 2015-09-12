@@ -1,0 +1,15 @@
+permalink: pretty
+exclude: ["CNAME", "README.md", "package.json", "node_modules"]
+
+base_path: "travels.oxy.fi"
+
+title: "Travels"
+author:
+  name: Oskar Schöldström
+  email: public@oxy.fi
+  googleplus: https://plus.google.com/114201888556629445485
+  twitter: scholdstrom
+  github: oxyc
+
+google_analytics: UA-6980403-3
+description: A Personal travel log of Oskar Schöldström

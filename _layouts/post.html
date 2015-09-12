@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+  <h1>{{ page.title }}</h1>
+
+  <h6 class="category-title">Trips: </h6>
+  <ul class="categories">
+  {% assign categorylist = page.categories %}
+  {% include categorylist %}
+  </ul>
+
+  {{ content }}
+
+  <h4>Categories</h4>
+
+  <ul class="tags">
+  {% assign taglist = page.tags %}
+  {% include taglist %}
+  </ul>
+</div>

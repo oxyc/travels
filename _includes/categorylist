@@ -1,0 +1,7 @@
+{% for category in categorylist %}
+  {% if category[0] == null %}
+    <li><a href="/trips/#{{ category }}">{{ category }}</a></li>
+  {% else %}
+    <li><a href="/trips/#{{ category | first }}">{{ category | first | capitalize }}</a></li>
+  {% endif %}
+{% endfor %}
