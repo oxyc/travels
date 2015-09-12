@@ -1,0 +1,7 @@
+{% for trip in triplist %}
+  {% if trip[0] == null %}
+    <li><a href="/trips.html#{{ trip }}">{{ trip }}</a></li>
+  {% else %}
+    <li><a href="/trips.html#{{ trip | first }}">{{ trip | first | capitalize }}</a></li>
+  {% endif %}
+{% endfor %}

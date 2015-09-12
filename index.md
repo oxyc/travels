@@ -17,9 +17,9 @@ A personal travel log of Oskar Schöldström.
 ### Trips
 
 {% unless site.categories == empty %}
-  <ul class="categories">
-  {% assign categorylist = site.categories %}
-  {% include categorylist %}
+  <ul class="trips">
+  {% assign triplist = site.categories %}
+  {% include triplist %}
   </ul>
 {% endunless %}
 

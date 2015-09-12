@@ -3,6 +3,8 @@ exclude: ["CNAME", "README.md", "package.json", "node_modules"]
 
 base_path: "travels.oxy.fi"
 
+permalink: "/:title/"
+
 title: "Travels"
 author:
   name: Oskar Schöldström

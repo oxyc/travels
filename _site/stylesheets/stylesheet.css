@@ -231,28 +231,28 @@ a {
 .post h1 {
   margin-bottom: 0;
 }
-.post .category-title,
-.post .categories {
+.post .trip-title,
+.post .trips {
   display: inline-block;
   margin-bottom: 0;
   margin-top: 0;
   font-size: 14px;
 }
-.post .category-title {
+.post .trip-title {
   margin-right: 0.2em;
 }
-.post .categories {
+.post .trips {
   padding: 0;
   list-style-type: none;
 }
-.post .categories li {
+.post .trips li {
   display: inline-block;
 
 }
-.post .categories li:after {
+.post .trips li:after {
   content: ', ';
   margin-right: 0.2em;
 }
-.post .categories li:last-child:after {
+.post .trips li:last-child:after {
   content: '';
 }

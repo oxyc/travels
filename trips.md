@@ -5,15 +5,15 @@ title: Trips
 {{ page.title }}
 ================
 
-<ul class="categories">
-{% assign categorylist = site.categories %}
-{% include categorylist %}
+<ul class="trips">
+{% assign triplist = site.categories %}
+{% include triplist %}
 </ul>
 
-{% for category in site.categories %}
-  <h2 id="{{ category | first }}">{{ category | first | capitalize }}</h2>
+{% for trip in site.categories %}
+  <h2 id="{{ trip | first }}">{{ trip | first | capitalize }}</h2>
   <ul class="posts">
-  {% assign pagelist = category[1] %}
+  {% assign pagelist = trip[1] %}
   {% include pagelist %}
   </ul>
 {% endfor %}

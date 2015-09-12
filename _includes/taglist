@@ -1,7 +1,7 @@
 {% for tag in taglist %}
   {% if tag[0] == null %}
-    <li><a href="/categories/#{{ tag }}">{{ tag | capitalize }}</a></li>
+    <li><a href="/categories.html#{{ tag }}">{{ tag | capitalize }}</a></li>
   {% else %}
-    <li><a href="/categories/#{{ tag | first }}">{{ tag | first | capitalize }}</a></li>
+    <li><a href="/categories.html#{{ tag | first }}">{{ tag | first | capitalize }}</a></li>
   {% endif %}
 {% endfor %}
