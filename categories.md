@@ -5,15 +5,10 @@ title: Categories
 {{ page.title }}
 ================
 
-<ul class="tags">
-{% assign taglist = site.tags %}
-{% include taglist %}
-</ul>
+{% include categorylist.html categories=site.tags %}
 
-{% for tag in site.tags %}
-  <h2 id="{{ tag | first }}">{{ tag | first | capitalize }}</h2>
-  <ul class="posts">
-  {% assign pagelist = tag[1] %}
-  {% include pagelist %}
-  </ul>
+{% for category in site.tags %}
+  <h2 id="{{ category | first }}">{{ category | first | split: '-' | join: ' ' | capitalize }}</h2>
+  {% assign country_list = category[1] %}
+  {% include countrylist.html countries=country_list %}
 {% endfor %}

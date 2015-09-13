@@ -1,5 +1,5 @@
 ---
 title: Singapore
 layout: post
-categories: ['South East Asia']
+categories: ['south-east-asia']
 ---

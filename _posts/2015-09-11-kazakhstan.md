@@ -1,5 +1,5 @@
 ---
 title: Kazakhstan
 layout: post
-categories: ['Central Asia']
+categories: ['central-asia']
 ---

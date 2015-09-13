@@ -1,0 +1,16 @@
+{% if include.trips %}
+<ul class="trips">
+{% for trip in include.trips reversed %}
+  {% if trip[0] == null %}
+    {% assign trip_id = trip %}
+  {% else %}
+    {% assign trip_id = trip | first %}
+  {% endif %}
+  {% unless include.simple %}
+    {% assign date = site.data.trips | where:'id',trip_id | map: 'date' | first %}
+    {% capture date_str %}<span class="visit-list">{% include visit-date.html date=date %}</span>{% endcapture %}
+  {% endunless %}
+  <li><a href="/trips/{{ trip_id }}/">{{ site.data.trips | where:'id',trip_id | map: 'name' }} {{ date_str }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}

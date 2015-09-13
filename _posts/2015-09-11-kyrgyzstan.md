@@ -1,5 +1,5 @@
 ---
 title: Kyrgyzstan
 layout: post
-categories: ['Central Asia']
+categories: ['central-asia']
 ---

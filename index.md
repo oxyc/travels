@@ -9,25 +9,12 @@ A personal travel log of Oskar Schöldström.
 
 ### Countries visited
 
-<ul class="posts">
-{% assign pagelist = site.posts %}
-{% include pagelist %}
-</ul>
+{% include countrylist.html countries=site.posts %}
 
 ### Trips
 
-{% unless site.categories == empty %}
-  <ul class="trips">
-  {% assign triplist = site.categories %}
-  {% include triplist %}
-  </ul>
-{% endunless %}
+{% include triplist.html trips=site.categories %}
 
 ### Tags
 
-{% unless site.tags == empty %}
-  <ul class="tags">
-  {% assign taglist = site.tags %}
-  {% include taglist %}
-  </ul>
-{% endunless %}
+{% include categorylist.html categories=site.tags %}

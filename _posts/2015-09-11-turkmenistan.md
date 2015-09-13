@@ -1,5 +1,5 @@
 ---
 title: Turkmenistan
 layout: post
-categories: ['Middle East']
+categories: ['middle-east']
 ---

@@ -5,15 +5,17 @@ title: Trips
 {{ page.title }}
 ================
 
-<ul class="trips">
-{% assign triplist = site.categories %}
-{% include triplist %}
-</ul>
+{% include triplist.html trips=site.categories %}
 
 {% for trip in site.categories %}
-  <h2 id="{{ trip | first }}">{{ trip | first | capitalize }}</h2>
-  <ul class="posts">
-  {% assign pagelist = trip[1] %}
-  {% include pagelist %}
+  {% assign trip_id = trip | first %}
+  {% assign trip_data = site.data.trips | where:'id',trip_id %}
+  <h2 id="{{ trip_id }}">{{ trip_data | map: 'name' }}</h2>
+
+  {{ trip_data | map: 'description' }}
+
+  <ul class="countries">
+  {% assign country_list = trip[1] %}
+  {% include countrylist.html countries=country_list %}
   </ul>
 {% endfor %}

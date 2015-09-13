@@ -1,5 +1,5 @@
 ---
 title: Azerbaijan
 layout: post
-categories: ['Central Asia']
+categories: ['central-asia']
 ---

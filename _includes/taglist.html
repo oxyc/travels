@@ -1,4 +1,4 @@
-{% for tag in taglist %}
+{% for tag in include.tags %}
   {% if tag[0] == null %}
     <li><a href="/categories.html#{{ tag }}">{{ tag | capitalize }}</a></li>
   {% else %}

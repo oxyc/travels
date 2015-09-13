@@ -1,0 +1,12 @@
+{% if include.categories %}
+<ul class="categories">
+{% for category in include.categories %}
+  {% if category[0] == null %}
+    {% assign category_id = category %}
+  {% else %}
+    {% assign category_id = category | first %}
+  {% endif %}
+  <li><a href="/categories/#{{ category_id }}">{{ category_id | split: '-' | join: ' ' | capitalize }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}

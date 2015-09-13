@@ -1,5 +1,5 @@
 ---
 title: Australia
 layout: post
-categories: ['Vacations']
+categories: ['other']
 ---

@@ -1,0 +1,9 @@
+{% if include.date %}
+  {% if date.start and date.end %}
+    {% assign start_date = date.start | date: '%y-%m-%d' %}
+    {% assign start_date_unix = start_date | date: '%s' %}
+    {% assign end_date = date.end | date: '%y-%m-%d' %}
+    {% assign end_date_unix = end_date | date: '%s' %}
+    <span class="visit">{{ start_date | date_to_string }} - {{ end_date | date_to_string }}</span>
+  {% endif %}
+{% endif %}

@@ -1,6 +1,6 @@
 ---
 title: Argentina
 layout: post
-categories: ['South America #1']
+categories: ['south-america-1']
 tags: [hitchhiking]
 ---

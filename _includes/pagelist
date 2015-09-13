@@ -1,5 +1,0 @@
-{% for node in pagelist %}
-  {% if node.title != null %}
-    <li><a href="{{ node.url }}">{{ node.title }}</a></li>
-  {% endif %}
-{% endfor %}
