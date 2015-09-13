@@ -6,7 +6,9 @@
   "scripts": {
     "test": "xo && geojsonhint destinations/*.geojson && jsonlint -q *.json",
     "build-geojson": "node bin/build.js",
-    "build": "marked -i index.md -o index.html --smartypants"
+    "build": "marked -i index.md -o index.html --smartypants",
+    "geojson-trips": "for filename in trips/*.md; do trip=$(basename $filename | cut -d '.' -f1); files=\"$(grep \"^categories:.*$trip\" _posts/*.md | uniq | tr '.' '-' | cut -d '-' -f4 | sed 's/\\(.*\\)/destinations\\/\\1.geojson/')\"; args=''; while read -r file; do [[ -r \"$file\" ]] && args=\"$args $file\"; done <<< \"$files\"; if [ ! -z \"$args\" ]; then geojson-merge $args >| trips/$trip.geojson; fi; done",
+    "geojson-all": "geojson-merge trips/*.geojson >| trips/world.geojson"
   },
   "repository": {
     "type": "git",
