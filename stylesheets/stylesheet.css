@@ -1,3 +1,5 @@
+---
+---
 * {
   box-sizing: border-box; }
 
@@ -10,7 +12,7 @@ body {
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color: #666;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -160,13 +162,12 @@ a {
   .main-content blockquote > :last-child {
     margin-bottom: 0; }
 .main-content table {
-  display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all; }
   .main-content table th {
-    font-weight: bold; }
+    font-weight: bold; text-align: left; }
   .main-content table th, .main-content table td {
     padding: 0.5rem 1rem;
     border: 1px solid #e9ebec; }
@@ -228,31 +229,78 @@ a {
   .site-footer {
     font-size: 0.9rem; } }
 
-.post h1 {
-  margin-bottom: 0;
-}
-.post .trip-title,
-.post .trips {
-  display: inline-block;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 14px;
-}
-.post .trip-title {
-  margin-right: 0.2em;
-}
-.post .trips {
-  padding: 0;
-  list-style-type: none;
-}
-.post .trips li {
-  display: inline-block;
 
+{% capture scss %}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.post .trips li:after {
-  content: ', ';
-  margin-right: 0.2em;
+
+.post {
+
+  .content, .sidebar {
+    float: left;
+  }
+
+  .content {
+    width: 70%;
+    padding-right: 1rem;
+  }
+  .sidebar {
+    width: 30%;
+    table {
+      font-size: 12px;
+      &, tbody { width: 100%; }
+    }
+    > div { margin-bottom: 1rem; }
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .trips {
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    h6, ul, li {
+      float: left;
+      font-size: 14px;
+      margin: 0;
+    }
+    h6 { margin-right: 0.2em; }
+
+    li {
+      &:after {
+        content: ', ';
+        margin-right: 0.2em;
+      }
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
 }
-.post .trips li:last-child:after {
-  content: '';
+
+.instagram-media-rendered {
+  width: 100%;
+  margin-bottom: 1rem;
 }
+
+.visit-list {
+  ul & {
+    font-size: 60%;
+    color: #aaa;
+    font-style: italic;
+    .visit {
+      color: #999;
+      font-style: normal;
+    }
+  }
+}
+
+{% endcapture %}
+{{ scss | scssify }}

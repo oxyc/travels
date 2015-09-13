@@ -1,22 +1,92 @@
 ---
 layout: default
-permalink: "/country/:title/"
 ---
+{% assign expenditures_total = 0 %}
+{% assign days_total = 0 %}
 <div class="post">
   <h1>{{ page.title }}</h1>
 
-  <h6 class="trip-title">Trips: </h6>
-  <ul class="trips">
-  {% assign triplist = page.categories %}
-  {% include triplist %}
-  </ul>
+  <div class="trips group">
+    <h6>Trips:</h6>
+    {% include triplist.html trips=page.categories simple=true %}
+  </div>
 
-  {{ content }}
+  <div class="content">
+    {{ content }}
+  </div>
 
-  <h4>Categories</h4>
+  <aside class="sidebar">
+    {% if page.dates %}
+    <div class="visits">
+      <h4>Visits</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Arrival</th>
+            <th>Departure</th>
+            <th>Days spent</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for date in page.dates %}
+            {% assign start_date = date.start | date: '%y-%m-%d' %}
+            {% assign start_date_unix = start_date | date: '%s' %}
+            {% assign end_date = date.end | date: '%y-%m-%d' %}
+            {% assign end_date_unix = end_date | date: '%s' %}
+          <tr>
+            <td>{{ start_date | date_to_string }}</td>
+            <td>{% if date.end %}{{ end_date | date_to_string }}{% endif %}</td>
+            <td>{% if date.end %}
+              {% assign days = end_date_unix | minus: start_date_unix | divided_by: 86400 %}
+              {{ days }} days
+              {% assign days_total = days_total | plus: days %}
+            {% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
 
-  <ul class="tags">
-  {% assign taglist = page.tags %}
-  {% include taglist %}
-  </ul>
+    {% if page.expenditures %}
+    <div class="expenditures">
+      <h4>Expenditures</h4>
+      <table>
+        {% for expenditure in page.expenditures %}
+        {% assign expenditures_total = expenditures_total | plus: expenditure[1] %}
+        <tr>
+          <th>{{ expenditure[0] }}</th>
+          <td>${{ expenditure[1] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <th>Total</th>
+          <td>${{ expenditures_total }}</td>
+        </tr>
+        {% if days_total %}
+        <tr>
+          <th>Cost per day</th>
+          <td>${{ expenditures_total | divided_by: days_total }}/day</td>
+        </tr>
+        {% endif %}
+      </table>
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="categories">
+      <h4>Categories</h4>
+      {% include categorylist.html categories=page.tags %}
+    </div>
+    {% endif %}
+  </aside>
+
 </div>
+<script>
+  var gsettings = gsettings || {};
+  gsettings.type = "post";
+
+  {% if page.albumid %}gsettings.albumid = "{{ page.albumid }}";{% endif %}
+  {% if page.categories %}gsettings.trips = {{ page.categories | jsonify }};{% endif %}
+  {% if page.tags %}gsettings.categories = {{ page.tags | jsonify }};{% endif %}
+</script>
