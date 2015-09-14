@@ -1,0 +1,8 @@
+{
+  "name": "jquery-whenall",
+  "version": "0.3.0",
+  "main": ["./jquery-whenall.js"],
+  "dependencies": {
+    "jquery": ">=1.7.2"
+  }
+}

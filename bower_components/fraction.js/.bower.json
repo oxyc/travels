@@ -1,0 +1,41 @@
+{
+  "name": "fraction.js",
+  "main": "fraction.js",
+  "version": "3.0.0",
+  "homepage": "http://www.xarg.org/2014/03/precise-calculations-in-javascript/",
+  "description": "A rational number library",
+  "keywords": [
+    "math",
+    "fraction",
+    "rational",
+    "number",
+    "parser",
+    "rational numbers"
+  ],
+  "authors": [
+    "Robert Eisele <robert@xarg.org> (http://www.xarg.org/)"
+  ],
+  "license": [
+    "MIT",
+    "GPL"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/infusion/Fraction.js.git"
+  },
+  "ignore": [
+    "tests",
+    ".travis.yml",
+    "package.json"
+  ],
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.0",
+    "commit": "0cecaf768ccfdc6f233d1e1ff18c449ee4e07a70"
+  },
+  "_source": "git://github.com/infusion/Fraction.js.git",
+  "_target": "~3.0.0",
+  "_originalSource": "fraction.js",
+  "_direct": true
+}
