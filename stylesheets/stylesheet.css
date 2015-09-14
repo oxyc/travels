@@ -1,7 +1,6 @@
----
----
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   padding: 0;
@@ -228,79 +227,3 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
-
-
-{% capture scss %}
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.post {
-
-  .content, .sidebar {
-    float: left;
-  }
-
-  .content {
-    width: 70%;
-    padding-right: 1rem;
-  }
-  .sidebar {
-    width: 30%;
-    table {
-      font-size: 12px;
-      &, tbody { width: 100%; }
-    }
-    > div { margin-bottom: 1rem; }
-  }
-
-  h1 {
-    margin-bottom: 0;
-  }
-
-  .trips {
-    ul {
-      padding: 0;
-      list-style-type: none;
-    }
-    h6, ul, li {
-      float: left;
-      font-size: 14px;
-      margin: 0;
-    }
-    h6 { margin-right: 0.2em; }
-
-    li {
-      &:after {
-        content: ', ';
-        margin-right: 0.2em;
-      }
-      &:last-child:after {
-        content: '';
-      }
-    }
-  }
-}
-
-.instagram-media-rendered {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.visit-list {
-  ul & {
-    font-size: 60%;
-    color: #aaa;
-    font-style: italic;
-    .visit {
-      color: #999;
-      font-style: normal;
-    }
-  }
-}
-
-{% endcapture %}
-{{ scss | scssify }}
