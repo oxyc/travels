@@ -3,6 +3,9 @@
   <a href="#" class="open">View photo album</a>
   <div class="slideshow-wrapper hidden">
     <a href="#" class="close">&times;</a>
+    <div class="slideshow-overlay overlay">
+      <div class="tag-filters"></div>
+    </div>
     <div class="slideshow" data-userid="{{ include.userid }}" data-albumid="{{ include.albumid }}" data-albumtags="{{ include.albumtag | join: ' ' }}"></div>
     <div class="slideshow-nav"></div>
   </div>
