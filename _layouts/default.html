@@ -1,6 +1,19 @@
 {% include head.html %}
-{% include world-map %}
-<section role="main" class="main-content">
-  {{ content }}
+
+<section class="page-header">
+  {% if page.type == 'trip' %}
+    <div id="world-map" class="map-trip" data-country data-trips="{{ page.id }}"></div>
+  {% elsif page.type == 'post' %}
+    <div id="world-map" class="map-post"  data-trips data-country="{{ page.title | slugify }}"></div>
+  {% else %}
+  <div id="world-map" class="map-post" data-country data-trips="{{ site.data.trips | map: 'id' | join: ' ' }}"></div>
+  {% endif %}
 </section>
+
+<section role="main" class="main-content">
+  <div class="{{ page.type }}">
+    {{ content }}
+  </div>
+</section>
+
 {% include footer.html %}

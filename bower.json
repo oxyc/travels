@@ -1,0 +1,32 @@
+{
+  "name": "travels",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oxyc/travels",
+  "authors": [
+    {
+      "name": "Oskar Schöldström",
+      "email": "public@oxy.fi",
+      "url": "http://whatareyoudoinghere.net"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxyc/travels.git"
+  },
+  "description": "A record of my travels",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "slick-carousel": "~1.5.8",
+    "fraction.js": "~3.0.0",
+    "Leaflet.MakiMarkers": "~1.0.1"
+  }
+}
