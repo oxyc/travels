@@ -4,8 +4,24 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
+        "name": "Kabul",
+        "country": "afghanistan",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7227783203125,
+          0.8019757647536726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Bogotá",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -20,8 +36,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "San Gil",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -36,8 +52,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Bucaramanga",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -53,6 +69,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cali",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -68,6 +85,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ipiales",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -83,6 +101,7 @@
       "type": "Feature",
       "properties": {
         "name": "Medellín",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -98,6 +117,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cartagena",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -113,6 +133,7 @@
       "type": "Feature",
       "properties": {
         "name": "Santa Marta",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -128,6 +149,7 @@
       "type": "Feature",
       "properties": {
         "name": "Parque Nacional Natural Tayrona",
+        "country": "colombia",
         "type": "National Park",
         "visited": true
       },
@@ -143,6 +165,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tulcan",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -158,6 +181,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quito",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -173,6 +197,7 @@
       "type": "Feature",
       "properties": {
         "name": "Baños",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -188,6 +213,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quilotoa Loop",
+        "country": "ecuador",
         "type": "Trek",
         "visited": true
       },
@@ -202,8 +228,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Chimborazo",
+        "country": "ecuador",
         "type": "Trek",
         "visited": false
       },
@@ -219,6 +245,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cuenca",
+        "country": "ecuador",
         "type": "City",
         "visited": true,
         "homebase": true
@@ -235,6 +262,7 @@
       "type": "Feature",
       "properties": {
         "name": "Huaquillas",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -249,8 +277,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Parque Nactional Galápagos",
+        "country": "ecuador",
         "type": "National Park",
         "visited": false
       },
@@ -265,8 +293,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Otavalo",
+        "country": "ecuador",
         "type": "City",
         "visited": false
       },

@@ -4,8 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Bogotá",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -20,8 +20,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "San Gil",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -36,8 +36,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Bucaramanga",
+        "country": "colombia",
         "type": "City",
         "visited": false
       },
@@ -53,6 +53,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cali",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -68,6 +69,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ipiales",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -83,6 +85,7 @@
       "type": "Feature",
       "properties": {
         "name": "Medellín",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -98,6 +101,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cartagena",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -113,6 +117,7 @@
       "type": "Feature",
       "properties": {
         "name": "Santa Marta",
+        "country": "colombia",
         "type": "City",
         "visited": true
       },
@@ -128,6 +133,7 @@
       "type": "Feature",
       "properties": {
         "name": "Parque Nacional Natural Tayrona",
+        "country": "colombia",
         "type": "National Park",
         "visited": true
       },

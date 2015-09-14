@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tulcan",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -20,6 +21,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quito",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -35,6 +37,7 @@
       "type": "Feature",
       "properties": {
         "name": "Baños",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -50,6 +53,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quilotoa Loop",
+        "country": "ecuador",
         "type": "Trek",
         "visited": true
       },
@@ -64,8 +68,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Chimborazo",
+        "country": "ecuador",
         "type": "Trek",
         "visited": false
       },
@@ -81,6 +85,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cuenca",
+        "country": "ecuador",
         "type": "City",
         "visited": true,
         "homebase": true
@@ -97,6 +102,7 @@
       "type": "Feature",
       "properties": {
         "name": "Huaquillas",
+        "country": "ecuador",
         "type": "City",
         "visited": true
       },
@@ -111,8 +117,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Parque Nactional Galápagos",
+        "country": "ecuador",
         "type": "National Park",
         "visited": false
       },
@@ -127,8 +133,8 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
         "name": "Otavalo",
+        "country": "ecuador",
         "type": "City",
         "visited": false
       },
