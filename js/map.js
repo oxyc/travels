@@ -49,20 +49,20 @@
         marker = markers.park;
         break;
       default:
-        marker = markers.visited
+        marker = markers.visited;
         break;
     }
     if (!feature.properties.visited) {
-      marker = _.clone(marker)
+      marker = _.clone(marker);
       marker.color = '#999';
     }
     return L.marker(latlng, {icon: L.MakiMarkers.icon(marker)});
   }
 
-  function fitBounds(map, event) {
+  function fitBounds(map) {
     var points = [];
-    map.eachLayer(function(layer) {
-      if (typeof layer.getLatLng == 'function') {
+    map.eachLayer(function (layer) {
+      if (typeof layer.getLatLng === 'function') {
         points.push(layer.getLatLng());
       }
     });
@@ -72,10 +72,10 @@
       map.setZoom(10);
     } else if (points.length >= 2) {
       var bounds = L.latLngBounds(points.shift(), points.shift());
-      _.forEach(points, function(point) {
+      _.forEach(points, function (point) {
         bounds.extend(point);
       });
-      map.fitBounds(bounds, {padding: [50,50]});
+      map.fitBounds(bounds, {padding: [50, 50]});
     }
   }
 
@@ -114,11 +114,11 @@
     var countries = _.chain(preSelectedCountries)
       // Populate a structure similar to that of trips so that they can
       // reuse the same logic
-      .map(function(countryId) {
+      .map(function (countryId) {
         var country = {};
         country.id = countryId;
         country.name = _.chain(data.destinations)
-          .find({'id': countryId})
+          .find({id: countryId})
           .get('name')
           .value();
 
@@ -164,17 +164,17 @@
 
       // Create the structure which will be passed to Leaflet for building
       // overlays.
-      var layers = _.mapValues(layerData, function(layer) {
+      var layers = _.mapValues(layerData, function (layer) {
         return layer.layer;
       });
 
       // Figure out which layers shoud be pre-selected on initialization.
       var preSelectedLayers = _.chain(layerData)
         .filter(function (layer) {
-          return preSelectedTrips.indexOf(layer.id) !== -1
-            || preSelectedCountries.indexOf(layer.id) !== -1;
+          return preSelectedTrips.indexOf(layer.id) !== -1 ||
+            preSelectedCountries.indexOf(layer.id) !== -1;
         })
-        .map(function(layer) {
+        .map(function (layer) {
           return layer.layer;
         })
         .value();
