@@ -3,11 +3,50 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-{{ content }}
+<div class="content">
+  {{ content }}
 
-<script>
-  var gsettings = gsettings || {};
-  gsettings.type = "trip";
+  <h3>Countries visited during the trip</h3>
 
-  {% if page.albumid %}gsettings.albumid = "{{ page.albumid }}";{% endif %}
-</script>
+  <ul class="countries">
+  {% for country in site.posts reversed %}
+    {% if country.categories contains page.id %}
+      {% include country.html country=country %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+
+<aside class="sidebar">
+  {% include picasa-slideshow.html userid=site.author.picasa albumid=page.albumid albumtag=page.albumtag %}
+
+  {% if page.date %}
+  <div class="visits">
+    <h4>Trip duration</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Arrival</th>
+          <th>Departure</th>
+          <th>Days spent</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% assign start_date = page.date.start | date: '%y-%m-%d' %}
+        {% assign start_date_unix = start_date | date: '%s' %}
+        {% assign end_date = page.date.end | date: '%y-%m-%d' %}
+        {% assign end_date_unix = end_date | date: '%s' %}
+        <tr>
+          <td>{{ start_date | date_to_string }}</td>
+          <td>{% if page.date.end %}{{ end_date | date_to_string }}{% endif %}</td>
+          <td>{% if page.date.end %}
+            {% assign days = end_date_unix | minus: start_date_unix | divided_by: 86400 %}
+            {{ days }} days
+            {% assign days_total = days_total | plus: days %}
+          {% endif %}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</aside>

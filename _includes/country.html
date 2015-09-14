@@ -1,0 +1,11 @@
+{% if include.country.title != null %}
+  {% capture date_str %}
+  <span class="visit-list">
+    {% for date in include.country.dates %}
+      | {% include visit-date.html date=date %}
+    {% endfor %}
+  </span>
+  {% endcapture %}
+  <li><a href="{{ include.country.url }}">{{ include.country.title }} {{ date_str | remove_first: '|' | split: '|' | array_to_sentence_string }}</a></li>
+{% endif %}
+
