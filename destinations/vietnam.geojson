@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanoi",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true,
+        "homebase": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.84503173828125,
+          21.025546284581797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halong Bay",
+        "country": "vietnam",
+        "type": "UNESCO Heritage Site",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0789337158203,
+          20.942843534637223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ninh Binh",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.97137451171874,
+          20.250601914558345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tam Coc",
+        "description": "Halong Bay on land",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9353256225586,
+          20.21581109239457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hue",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.57743835449217,
+          16.47691323665894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Da Nang",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.21258544921875,
+          16.0649494741364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ho Chi Minh City",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70471191406249,
+          10.75911190881616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Duong Dong",
+        "country": "vietnam",
+        "description": "Stayed at Eden Resort",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.95744323730469,
+          10.219314738850382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "An Thoi",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.01786804199219,
+          10.018553285663215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hoi An",
+        "country": "vietnam",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.33343505859374,
+          15.866241564066629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dien Bien Phu",
+        "description": "Laos - Vietnam",
+        "country": "vietnam",
+        "type": "Border Crossing",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.02154541015625,
+          21.37635972888924
+        ]
+      }
+    }
+  ]
+}
