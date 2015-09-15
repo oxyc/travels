@@ -118,6 +118,22 @@
           53.08247717874112
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turkestan",
+        "type": "City",
+        "country": "kazakhstan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.79570007324219,
+          41.177975654664785
+        ]
+      }
     }
   ]
 }
