@@ -480,6 +480,22 @@
           22.51255695405145
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Banbasa",
+        "country": "india",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.06561279296875,
+          28.99612953724707
+        ]
+      }
     }
   ]
 }
