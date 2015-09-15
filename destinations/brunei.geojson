@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bandar Seri Begawan",
+        "country": "brunei",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.93827819824217,
+          4.892572323061795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bangar",
+        "country": "brunei",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.07320404052733,
+          4.706801881124671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laby Taman",
+        "country": "brunei",
+        "type": "Trek",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.17594337463379,
+          4.757098304643499
+        ]
+      }
+    }
+  ]
+}
