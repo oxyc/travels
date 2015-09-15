@@ -4,9 +4,26 @@
   // Short timeout as some geojson files might not exist yet.
   var AJAX_TIMEOUT = 1000;
 
-  var $map = $('#world-map');
+  var exports = {};
+
+  exports.lMap = null;
+  exports.controls = {};
+
+  var $map = exports.$map = $('#world-map');
+  var markers = exports.markers = {
+    trek: {icon: 'campsite', color: '#159957'},
+    city: {icon: 'circle', color: '#659CD6'},
+    park: {icon: 'park', color: '#159957'},
+    homebase: {icon: 'building', color: '#D85E5E'},
+    photo: {icon: 'camera', color: '#659CD6', size: 's'},
+    visited: {color: '#659CD6'}
+  };
+
   var preSelectedTrips = $map.data('trips').split(' ') || [];
   var preSelectedCountries = $map.data('country').split(' ') || [];
+
+  preSelectedTrips = _.reject(preSelectedTrips, _.isEmpty);
+  preSelectedCountries = _.reject(preSelectedCountries, _.isEmpty);
 
   $.getJSON('/trips.json').done(init);
 
@@ -21,19 +38,12 @@
     '<em><% if (visited) { %>visited<% } else { %>planning to visit<% } %></em>'
   );
 
-  var markers = {
-    trek: {icon: 'campsite', color: '#159957'},
-    city: {icon: 'circle', color: '#659CD6'},
-    park: {icon: 'park', color: '#159957'},
-    homebase: {icon: 'building', color: '#D85E5E'},
-    visited: {color: '#659CD6'}
-  };
-
-  function bindPopup(feature, layer) {
+  var bindPopup = exports.bindPopup = function bindPopup(feature, layer) {
     var content = templatePopup(feature.properties);
     layer.bindPopup(content);
-  }
-  function setMarker(feature, latlng) {
+  };
+
+  var setMarker = exports.setMarker = function setMarker(feature, latlng) {
     var marker;
     switch (feature.properties.type) {
       case 'Trek':
@@ -57,9 +67,9 @@
       marker.color = '#999';
     }
     return L.marker(latlng, {icon: L.MakiMarkers.icon(marker)});
-  }
+  };
 
-  function fitBounds(map) {
+  var fitBounds = exports.fitBounds = function fitBounds(map) {
     var points = [];
     map.eachLayer(function (layer) {
       if (typeof layer.getLatLng === 'function') {
@@ -77,7 +87,7 @@
       });
       map.fitBounds(bounds, {padding: [50, 50]});
     }
-  }
+  };
 
   function createMap(selector, layers) {
     var map = L.map(selector, {
@@ -110,36 +120,10 @@
       return trip;
     });
 
-    // Issue XHR requests for all countries pre-selected.
-    var countries = _.chain(preSelectedCountries)
-      // Populate a structure similar to that of trips so that they can
-      // reuse the same logic
-      .map(function (countryId) {
-        var country = {};
-        country.id = countryId;
-        country.name = _.chain(data.destinations)
-          .find({id: countryId})
-          .get('name')
-          .value();
-
-        country.promise = $.ajax({
-          dataType: 'json',
-          url: '/destinations/' + country.id + '.geojson',
-          timeout: AJAX_TIMEOUT
-        });
-        return country;
-      })
-      .value();
-
-    var promises = _.union(
-      _.pluck(trips, 'promise'),
-      _.pluck(countries, 'promise')
-    );
-
     // Wait for all requests to finish
-    $.whenAll.apply(null, promises).always(function () {
+    $.whenAll.apply(null, _.pluck(trips, 'promise')).always(function () {
       // Build the complete layer structure including Leaflet layers.
-      var layerData = _.chain(_.union(trips, countries))
+      var layerData = _.chain(trips)
         // Remove trips which dont have geojson files yet.
         .filter(function (layer) {
           switch (layer.promise.statusCode().status) {
@@ -162,14 +146,38 @@
         })
         .value();
 
+      var countryData = _.chain(layerData)
+        .filter(function (layer) {
+          if (!preSelectedTrips.length) {
+            return true;
+          }
+          return preSelectedTrips.indexOf(layer.id) !== -1;
+        })
+        .pluck('features')
+        .flatten()
+        .groupBy(function (feature) {
+          return feature.properties.country;
+        })
+        .mapValues(function (feature) {
+          var obj = {};
+          obj.id = feature[0].properties.country;
+          obj.feature = feature;
+          obj.layer = L.geoJson(feature, {onEachFeature: bindPopup, pointToLayer: setMarker});
+          return obj;
+        })
+        .value();
+
       // Create the structure which will be passed to Leaflet for building
       // overlays.
-      var layers = _.mapValues(layerData, function (layer) {
+      var tripLayers = _.mapValues(layerData, function (layer) {
+        return layer.layer;
+      });
+      var countryLayers = _.mapValues(countryData, function (layer) {
         return layer.layer;
       });
 
       // Figure out which layers shoud be pre-selected on initialization.
-      var preSelectedLayers = _.chain(layerData)
+      var preSelectedLayers = _.chain(_.merge(layerData, countryData))
         .filter(function (layer) {
           return preSelectedTrips.indexOf(layer.id) !== -1 ||
             preSelectedCountries.indexOf(layer.id) !== -1;
@@ -180,9 +188,19 @@
         .value();
 
       // Create the map
-      var map = createMap('world-map', preSelectedLayers);
+      exports.lMap = createMap('world-map', preSelectedLayers);
       // Add the overlays.
-      L.control.layers(null, layers, {collapsed: false}).addTo(map);
+      exports.controls.trip = L.control.layers(null, tripLayers, {collapsed: true}).addTo(exports.lMap);
+      exports.controls.countries = L.control.layers(null, countryLayers, {collapsed: true}).addTo(exports.lMap);
+      exports.controls.other = L.control.layers(null, null, {collapsed: false}).addTo(exports.lMap);
+      // Add custom classes to the controls
+      _.forEach(exports.controls, function (control, key) {
+        var container = control.getContainer();
+        L.DomUtil.addClass(container, 'control-custom');
+        L.DomUtil.addClass(container, 'control-' + key);
+      });
     });
   }
-})(jQuery, this._, this.L);
+
+  this.tMap = exports;
+}).call(this, jQuery, this._, this.L);
