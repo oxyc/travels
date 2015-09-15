@@ -48,6 +48,23 @@
           4.757098304643499
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuala Belait",
+        "country": "brunei",
+        "type": "Border Crossing",
+        "description": "Brunei - Malaysia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.21558380126953,
+          4.5819005656199225
+        ]
+      }
     }
   ]
 }
