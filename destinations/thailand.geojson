@@ -100,6 +100,39 @@
           12.554647307009198
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khon Kaen",
+        "country": "thailand",
+        "type": "City",
+        "visited": true,
+        "homebase": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.843017578125,
+          16.425547506916736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sisaket",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.32891845703125,
+          15.1065980189395
+        ]
+      }
     }
   ]
 }
