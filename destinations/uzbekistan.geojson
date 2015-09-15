@@ -1,0 +1,156 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Termiz",
+        "type": "Border Crossing",
+        "country": "uzbekistan",
+        "description": "Afghanistan - Uzbekistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.29949951171875,
+          37.234701971668144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samarkand",
+        "type": "City",
+        "country": "uzbekistan",
+        "description": "",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.98089599609375,
+          39.64588248091883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tashkent",
+        "type": "City",
+        "country": "uzbekistan",
+        "description": "Met Markus",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2852783203125,
+          41.29844430929419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shahrisabz",
+        "type": "City",
+        "country": "uzbekistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.8309497833252,
+          39.05918329890463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bukhara",
+        "type": "City",
+        "country": "uzbekistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.423828125,
+          39.77265852521458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nukus",
+        "type": "City",
+        "country": "uzbekistan",
+        "description": "Met Marco",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.60632324218749,
+          42.459940352216556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moynaq",
+        "type": "City",
+        "country": "uzbekistan",
+        "description": "Ship graveyard by what used to be the Aral Sea.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.03778076171874,
+          43.769110452366185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khiva",
+        "type": "City",
+        "country": "uzbekistan",
+        "description": "Marco got me interested in photography",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.36163330078124,
+          41.37474755643594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ayaz Kala Yurt Camp",
+        "type": "Nomadic Village",
+        "country": "uzbekistan",
+        "description": "Stayed at a touristic Yurt Camp with Marco. Hitchhiked with a tour bus to Bukhara the following day.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.0254693031311,
+          42.0187561427037
+        ]
+      }
+    }
+  ]
+}
