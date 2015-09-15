@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ashgabat",
+        "type": "City",
+        "country": "turkmenistan",
+        "description": "Arrived by air for a tour. Driver was late, and you weren't allowed to smoke at the airport.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.41156005859375,
+          37.931200459333716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Darvaza Gas Crater",
+        "type": "Sight",
+        "country": "turkmenistan",
+        "description": "Door to Hell",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.43956232070922,
+          40.25240325092834
+        ]
+      }
+    }
+  ]
+}
