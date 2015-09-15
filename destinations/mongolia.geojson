@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulaanbaatar",
+        "country": "mongolia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.89697265625,
+          47.916342040161155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mörön",
+        "country": "mongolia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.162353515625,
+          49.61782831211117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Toom",
+        "country": "mongolia",
+        "type": "Nomadic Village",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.48841094970703,
+          50.23446948367872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tsagaannuur",
+        "country": "mongolia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.34730529785156,
+          51.35720401156475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Taiga",
+        "description": "Visiting the Reindeer People (Dukha)",
+        "country": "mongolia",
+        "type": "Nomadic Village",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.47845458984375,
+          51.62483746174322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zamiin-Uud",
+        "country": "mongolia",
+        "description": "Mongolia - China",
+        "type": "Border Crossing",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.86004638671875,
+          43.74530493763506
+        ]
+      }
+    }
+  ]
+}
