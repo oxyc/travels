@@ -485,8 +485,9 @@
       "type": "Feature",
       "properties": {
         "name": "Banbasa",
+        "description": "India - Nepal",
         "country": "india",
-        "type": "City",
+        "type": "Border Crossing",
         "visited": true
       },
       "geometry": {
@@ -494,6 +495,23 @@
         "coordinates": [
           80.06561279296875,
           28.99612953724707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunauli",
+        "description": "Nepal - India: Crossing with a visa extension",
+        "country": "india",
+        "type": "Border Crossing",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.47000122070312,
+          27.473780467143236
         ]
       }
     }
