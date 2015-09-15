@@ -133,6 +133,23 @@
           15.1065980189395
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nong Khai",
+        "description": "Sala Kaew Ku: Statue Park",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.74688720703125,
+          17.877797669667913
+        ]
+      }
     }
   ]
 }
