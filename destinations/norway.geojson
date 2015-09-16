@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oslo",
+        "type": "City",
+        "country": "norway",
+        "description": "Worked in a restaurant for a summer to save money for my trans-siberian trip.",
+        "homebase": true,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.78857421875,
+          59.91648345450877
+        ]
+      }
+    }
+  ]
+}
