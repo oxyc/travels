@@ -1372,7 +1372,10 @@
             }
         }
 
-        loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
+        // @see https://github.com/kenwheeler/slick/issues/1224
+        // loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
+        loadRange = _.$slider.find('.slick-slide.slick-active');
+        console.log(loadRange);
         loadImages(loadRange);
 
         if (_.slideCount <= _.options.slidesToShow) {
