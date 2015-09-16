@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tallinn",
+        "type": "City",
+        "country": "estonia",
+        "description": "Visited with my dad when I was too young to remember",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.76318359375,
+          59.44786751120397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pärnu",
+        "type": "City",
+        "description": "Visited with my dad when I was too young to remember",
+        "country": "estonia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.524230957031246,
+          58.37579834033745
+        ]
+      }
+    }
+  ]
+}
