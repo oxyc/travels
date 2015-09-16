@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beirut",
+        "type": "City",
+        "country": "lebanon",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.49957275390625,
+          33.88637747072754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tyre",
+        "type": "City",
+        "country": "lebanon",
+        "description": "Sur in Arabic",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19744873046875,
+          33.261656767328006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tripoli",
+        "type": "City",
+        "country": "lebanon",
+        "description": "Heard there was a pro-ISIS walk in Tripoli the same day I was tehre.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.82916259765625,
+          34.43636318093373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Byblos",
+        "type": "City",
+        "country": "lebanon",
+        "description": "Jbail in Arabic",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.647029876708984,
+          34.1207402649564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bsharri",
+        "type": "City",
+        "country": "lebanon",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.01215362548828,
+          34.248986921660546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baalbeck",
+        "type": "City",
+        "country": "lebanon",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2109375,
+          34.00884266850514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qadisha Valley Trek",
+        "type": "Trek",
+        "country": "lebanon",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.946407318115234,
+          34.28307921254804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sidon",
+        "type": "City",
+        "country": "lebanon",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.371856689453125,
+          33.56428403679499
+        ]
+      }
+    }
+  ]
+}
