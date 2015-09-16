@@ -1,0 +1,167 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cochabamba",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.170654296875,
+          -17.403062993328923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sucre",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.23681640625,
+          -19.03096327846469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Potosi",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.731201171875,
+          -19.559790136497398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uyuni",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.873779296875,
+          -20.437307950568957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torotoro",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.76210021972656,
+          -18.12953860004488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torotoro National Park Trek",
+        "type": "National Park",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.78484535217285,
+          -18.104821247891948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Paz",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.13720703125,
+          -16.491398546292604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coroico",
+        "type": "City",
+        "description": "Bicycled the Death Road independetly and finished in Coroico",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.73071289062499,
+          -16.188299533590644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copacabana",
+        "type": "City",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.0875244140625,
+          -16.16983489756279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Challapampa",
+        "type": "City",
+        "description": "Took the boat to the southern end of Isla del Sol and walked here where we spent the night",
+        "country": "bolivia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.184513092041,
+          -15.998130377422845
+        ]
+      }
+    }
+  ]
+}
