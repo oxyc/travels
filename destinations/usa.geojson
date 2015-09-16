@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miami",
+        "type": "City",
+        "description": "Visited with my family as well as alone, but I was too young to have seen anything of interest",
+        "state": "FL",
+        "country": "usa",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.233154296875,
+          25.799891182088334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boynton Beach",
+        "state": "FL",
+        "type": "City",
+        "country": "usa",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0669002532959,
+          26.524573580808514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ocean Ridge",
+        "state": "FL",
+        "type": "City",
+        "country": "usa",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.04853248596191,
+          26.526877449686918
+        ]
+      }
+    }
+  ]
+}
