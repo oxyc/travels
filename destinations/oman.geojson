@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Muscat",
+        "type": "City",
+        "country": "oman",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.56811523437499,
+          23.594194326203834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ibra",
+        "type": "City",
+        "country": "oman",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.53790283203124,
+          22.689418753538202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sur",
+        "type": "City",
+        "country": "oman",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.508819580078125,
+          22.568365847961545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Al Kamil",
+        "type": "City",
+        "country": "oman",
+        "description": "Slept outside a museum-castle and got a fever preventing me from traveling",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.20257568359375,
+          22.22078062380304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Shab",
+        "type": "Trek",
+        "country": "oman",
+        "description": "Left my bag in an abandoned shak, put my camera in a plastic food bag and went neck deep through the river into the Wadi.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.240942001342766,
+          22.83579892717546
+        ]
+      }
+    }
+  ]
+}
