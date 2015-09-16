@@ -1,0 +1,201 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sadakhlo",
+        "type": "Border Crossing",
+        "description": "Armenia - Georgia",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79898452758789,
+          41.241029142571136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tbilisi",
+        "type": "City",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79881286621094,
+          41.72136183160041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sighnaghi",
+        "type": "City",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.92293739318848,
+          41.619613152977074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zugdidi",
+        "type": "City",
+        "country": "georgia",
+        "description": "Arrived by night train on the way to Svaneti",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.875762939453125,
+          42.50652766705062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mestia",
+        "type": "City",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.737503051757805,
+          43.04480541304369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koruldi Lake Trek",
+        "type": "Trek",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.70493030548096,
+          43.08761718411296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chalaadi Glacier Trek",
+        "type": "Trek",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.72415637969971,
+          43.11854343538305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kazbegi",
+        "type": "City",
+        "description": "Stepantsminda",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6455192565918,
+          42.65826490519642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gergeti Trinity Church",
+        "type": "Sight",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.62022066116333,
+          42.662383388450124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kazbegi Trek",
+        "type": "Trek",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.60552215576172,
+          42.665176227608306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sagarejo",
+        "type": "City",
+        "description": "Passing through while hitchhiking",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.33456802368164,
+          41.731354910056446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "David Gareja Monastery Complex",
+        "type": "Sight",
+        "country": "georgia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.375165939331055,
+          41.44640974981677
+        ]
+      }
+    }
+  ]
+}
