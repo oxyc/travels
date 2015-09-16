@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eilat",
+        "type": "Border Crossing",
+        "country": "israel",
+        "description": "Egypt - Israel - Jordan as well as Jordan - Israel. Mostly passed through and waited for a ride all day",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.94888305664062,
+          29.556435671105096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ein Gedi",
+        "type": "City",
+        "country": "israel",
+        "description": "Stopped to cook shakshuka on the way to Jerusalem",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38476347923278,
+          31.45232531170938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jerusalem",
+        "type": "City",
+        "country": "israel",
+        "description": "Met Ira, Mona, Szymon.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.22182464599609,
+          31.79034526520981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tel Aviv",
+        "type": "City",
+        "country": "israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78546142578125,
+          32.091882620021806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jaffa",
+        "type": "City",
+        "country": "israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.75044250488281,
+          32.04184065020709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haifa",
+        "type": "City",
+        "country": "israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.013427734375,
+          32.79304687845155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Acre",
+        "type": "City",
+        "country": "israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.07591247558594,
+          32.92628384068991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nazareth",
+        "type": "City",
+        "country": "israel",
+        "description": "First and only time I paid for accommodation in Israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3045654296875,
+          32.70064431918795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tiberias",
+        "type": "City",
+        "country": "israel",
+        "description": "Had a quick look at the city, and started walking north to find a spot where I could camp.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.52978515624999,
+          32.79016074953333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yehudia",
+        "type": "Trek",
+        "country": "israel",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.70070087909698,
+          32.94176288849623
+        ]
+      }
+    }
+  ]
+}
