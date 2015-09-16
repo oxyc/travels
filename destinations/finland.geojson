@@ -242,6 +242,22 @@
           68.90695875072929
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mariehamn",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.92919921875,
+          60.111407903546265
+        ]
+      }
     }
   ]
 }
