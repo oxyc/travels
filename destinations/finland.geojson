@@ -1,0 +1,247 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Porvoo",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.653076171875,
+          60.39486176765776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helsinki",
+        "type": "City",
+        "country": "finland",
+        "homebase": true,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9444580078125,
+          60.16884161373975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vantaa",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0323486328125,
+          60.30790645342296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Espoo",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6807861328125,
+          60.22617509945598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanko",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.97515869140625,
+          59.833775202184206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Raseborg",
+        "type": "City",
+        "country": "finland",
+        "homebase": true,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5272216796875,
+          60.02506916062371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kimito",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.738952636718746,
+          60.16884161373975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dalsbruk",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.49176025390625,
+          60.02369688198335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turku",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.269287109374996,
+          60.45180028073331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Naantali",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.03582763671875,
+          60.470757636963015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pargas",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.30499267578125,
+          60.30246404560092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampere",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7139892578125,
+          61.501734289732326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaasa",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.588134765625,
+          63.1196053006856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ivalo",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.53997802734375,
+          68.66205232628384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Inari",
+        "type": "City",
+        "country": "finland",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.016582489013672,
+          68.90695875072929
+        ]
+      }
+    }
+  ]
+}
