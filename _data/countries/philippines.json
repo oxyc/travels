@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Philippines"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puerto Princesa",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.76220703125001,
+          9.709057068618222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Nido",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.42138671875,
+          11.189179572173774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manila",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.99243164062501,
+          14.588899572738569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coron",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.19592285156249,
+          11.999024987663574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calapan",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.17782592773436,
+          13.405650601795035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sabang",
+        "country": "philippines",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.97535133361818,
+          13.520007441393487
+        ]
+      }
+    }
+  ]
+}

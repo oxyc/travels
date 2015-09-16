@@ -1,0 +1,207 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Jordan"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aqaba",
+        "type": "City",
+        "country": "jordan",
+        "description": "Slept on the beach after having chased a thief who stole someones phone. I found him but realized I was too alone (weak) to do antyhing.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.001068115234375,
+          29.52148801976878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Rum",
+        "type": "Trek",
+        "country": "jordan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.39640426635742,
+          29.50908915642447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petra",
+        "type": "UNESCO Heritage Site",
+        "country": "jordan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.432796478271484,
+          30.332731474685886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Musa",
+        "type": "City",
+        "country": "jordan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.47107696533203,
+          30.322211395736023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amman",
+        "type": "City",
+        "country": "jordan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.92529296875,
+          31.94750122367064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jerash",
+        "type": "City",
+        "country": "jordan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.901947021484375,
+          32.27958610949316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karak",
+        "type": "City",
+        "country": "jordan",
+        "description": "Visited the fort en route south",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.706939697265625,
+          31.179909598664146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aqaba",
+        "type": "City",
+        "country": "jordan",
+        "description": "Passed through on the way to the Dead Sea. Bought beer.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.793800354003906,
+          31.716777896817636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qasr Amra",
+        "type": "Sight",
+        "country": "jordan",
+        "description": "Our second desert castle",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.58734798431396,
+          31.801748261341928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qasr Azraq",
+        "type": "Sight",
+        "country": "jordan",
+        "description": "First of the desert castles. We took a bus here and hitchhiked back.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.82722330093383,
+          31.88010860348218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Nebo",
+        "type": "Sight",
+        "country": "jordan",
+        "description": "The final stop before our ride return back. He basically drove us across the country.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.72581171989441,
+          31.767690119400374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dead Sea",
+        "type": "Sight",
+        "country": "jordan",
+        "description": "Slept by the Dead Sea",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.566864013671875,
+          31.453853766380295
+        ]
+      }
+    }
+  ]
+}

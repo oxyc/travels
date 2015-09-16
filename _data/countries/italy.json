@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Italy"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rome",
+        "type": "City",
+        "country": "italy",
+        "description": "Spent a day transiting on my way to South America",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.493515014648438,
+          41.89052158009611
+        ]
+      }
+    }
+  ]
+}

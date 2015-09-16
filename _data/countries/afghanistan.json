@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Afghanistan"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kabul",
+        "type": "City",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.14794921875,
+          34.511083202999714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamiyan",
+        "type": "City",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.83782958984375,
+          34.820567967282706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Band-e-Amir",
+        "type": "National Park",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.20508575439453,
+          34.83240476844884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mazar-i-Sharif",
+        "type": "City",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.1209716796875,
+          36.70806354647625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herat",
+        "type": "City",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.22656249999999,
+          34.35704160076073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hairitan",
+        "type": "Border Crossing",
+        "description": "Afghanistan - Uzbekistan",
+        "country": "afghanistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.42927551269531,
+          37.22158045838649
+        ]
+      }
+    }
+  ]
+}

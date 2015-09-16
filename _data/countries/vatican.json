@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Vatican City"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vatican City",
+        "type": "City",
+        "country": "vatican",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.456049919128416,
+          41.90253257042991
+        ]
+      }
+    }
+  ]
+}

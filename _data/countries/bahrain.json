@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Bahrain"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manama",
+        "type": "City",
+        "country": "bahrain",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.58071136474609,
+          26.22259902389133
+        ]
+      }
+    }
+  ]
+}

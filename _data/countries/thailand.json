@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Thailand"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krabi",
+        "country": "thailand",
+        "description": "My first-ever backpacking stop",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.91883850097656,
+          8.053790678898539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ao Nang",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.8227081298828,
+          8.027954677595163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamala",
+        "country": "thailand",
+        "description": "Vacationing at Ayara Kamala Resport & Spa",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.28300476074219,
+          7.956557199152302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bangkok",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54412841796875,
+          13.747388924343094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pattaya",
+        "country": "thailand",
+        "description": "Visting a former colleague from Oslo: Kung Snikvard Qvarsebo",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.90393066406249,
+          12.91890657418042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ko Samet",
+        "country": "thailand",
+        "description": "Not sure where I stayed... Escaped here after seeing Pattaya and waiting for my flight back to Finland.",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.45170211791992,
+          12.554647307009198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khon Kaen",
+        "country": "thailand",
+        "type": "City",
+        "visited": true,
+        "homebase": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.843017578125,
+          16.425547506916736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sisaket",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.32891845703125,
+          15.1065980189395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nong Khai",
+        "description": "Sala Kaew Ku: Statue Park",
+        "country": "thailand",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.74688720703125,
+          17.877797669667913
+        ]
+      }
+    }
+  ]
+}

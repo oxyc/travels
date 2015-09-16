@@ -1,0 +1,222 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Iran"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mashhad",
+        "type": "City",
+        "country": "iran",
+        "description": "Snuck into the Imam Reza Complex pretending I was a muslim. Suddently the guards started asking questions. Met Lucile.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.64477539062499,
+          36.30627216957992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bajgiran",
+        "type": "Border Crossing",
+        "country": "iran",
+        "description": "Turkmenistan - Iran. Shared a taxi with a weird turkish guy.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.41979980468749,
+          37.61640705577992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mirjaveh",
+        "type": "Border Crossing",
+        "country": "iran",
+        "description": "Iran - Pakistan. Stayed here overnight, not allowed to go to the nearby market by myself. Security reasons.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.45339965820312,
+          29.014145252385035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zahedan",
+        "type": "City",
+        "country": "iran",
+        "description": "Mostly passed through on the way to Mirjaveh",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.85601806640625,
+          29.48144767095625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bam",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.34426879882813,
+          29.09997696628295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kerman",
+        "type": "City",
+        "country": "iran",
+        "description": "Did a quick tour of the cities sights before continuing towards Bam. Met the Pakistani without a passport here.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.04925537109375,
+          30.282788098216884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yazd",
+        "type": "City",
+        "country": "iran",
+        "description": "Met Germain and Rosie.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.34112548828125,
+          31.868227816180674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shiraz",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.53387451171875,
+          29.611670115197406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Persepolis",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.8867244720459,
+          29.93403570785921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Esfahan",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.668701171875,
+          32.667124733120325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qom",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.855712890625,
+          34.642247047768535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tehran",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.448974609375,
+          35.7019167328534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kashan",
+        "type": "City",
+        "country": "iran",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.42425537109375,
+          33.986071790199205
+        ]
+      }
+    }
+  ]
+}

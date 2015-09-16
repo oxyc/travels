@@ -1,0 +1,153 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Ecuador"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tulcan",
+        "country": "ecuador",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7227783203125,
+          0.8019757647536726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quito",
+        "country": "ecuador",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.475341796875,
+          -0.1867672473697048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baños",
+        "country": "ecuador",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.41766357421875,
+          -1.3896342476555246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quilotoa Loop",
+        "country": "ecuador",
+        "type": "Trek",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.90372276306152,
+          -0.8589613530356142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chimborazo",
+        "country": "ecuador",
+        "type": "Trek",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.80973815917969,
+          -1.467887492920394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuenca",
+        "country": "ecuador",
+        "type": "City",
+        "visited": true,
+        "homebase": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.01092529296875,
+          -2.8994955817892616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huaquillas",
+        "country": "ecuador",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.22628784179688,
+          -3.481208809323797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parque Nactional Galápagos",
+        "country": "ecuador",
+        "type": "National Park",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.31585693359375,
+          -0.7497954927187406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Otavalo",
+        "country": "ecuador",
+        "type": "City",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.26248168945312,
+          0.22933898720413795
+        ]
+      }
+    }
+  ]
+}

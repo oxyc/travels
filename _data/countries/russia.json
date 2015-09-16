@@ -1,0 +1,184 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Russia"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Petersburg",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.322265625000004,
+          59.933000423746336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moscow",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6171875,
+          55.71473455012692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nizhny Novgorod",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.9892578125,
+          56.31653672211301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kazan",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.130859375,
+          55.751849391735284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yekaterinburg",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.6005859375,
+          56.8729956637964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omsk",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3447265625,
+          54.95238569063361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Novosibirsk",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.880859375,
+          55.05320258537112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krasnoyarsk",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8564453125,
+          55.99838095535963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Irkutsk",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.2822265625,
+          52.24125614966341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulan Ude",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.57812499999999,
+          51.83577752045248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Listvyanka",
+        "country": "russia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.86312866210938,
+          51.851897666096065
+        ]
+      }
+    }
+  ]
+}
