@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Central Asia",
+    "countries": ["Kazakhstan", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Uzbekistan", "Azerbaijan", "Georgia"]
+  },
+  "features": []
+}

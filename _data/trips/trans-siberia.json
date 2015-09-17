@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Trans Siberian Railway to Hong Kong",
+    "countries": [
+      "Russia",
+      "Mongolia",
+      "China",
+      "Thailand"
+    ]
+  },
+  "features": []
+}

@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Middle East, Caucasus and a bit of East Asia",
+    "countries": [
+      "Thailand",
+      "Laos",
+      "Vietnam",
+      "Philippines",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Qatar",
+      "Bahrain",
+      "Oman",
+      "Yemen",
+      "Egypt",
+      "Jordan",
+      "Israel",
+      "Palestine",
+      "Turkey",
+      "Iraq",
+      "Kuwait",
+      "Lebanon",
+      "Armenia",
+      "Nagorno Karabakh",
+      "Georgia",
+      "Turkmenistan",
+      "Iran",
+      "Pakistan"
+    ]
+  },
+  "features": []
+}

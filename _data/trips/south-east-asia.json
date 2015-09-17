@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "South East Asia while in Vietnam",
+    "countries": [
+      "Vietnam",
+      "Cambodia",
+      "Malaysia",
+      "Singapore",
+      "Brunei"
+    ]
+  },
+  "features": []
+}

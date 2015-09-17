@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Vacations etc",
+    "countries": [
+      "Finland",
+      "Denmark",
+      "Germany",
+      "Sweden",
+      "Estonia",
+      "Norway",
+      "Spain",
+      "Australia",
+      "Egypt",
+      "United States"
+    ]
+  },
+  "features": []
+}
