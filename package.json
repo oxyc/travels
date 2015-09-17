@@ -30,9 +30,18 @@
   },
   "xo": {
     "space": true,
-    "globals": ["jQuery", "L", "_", "Fraction"],
-    "ignores": ["_site/**"],
-    "envs": ["browser"]
+    "globals": [
+      "jQuery",
+      "L",
+      "_",
+      "Fraction"
+    ],
+    "ignores": [
+      "_site/**"
+    ],
+    "envs": [
+      "browser"
+    ]
   },
   "dependencies": {
     "file-exists": "^0.1.1",

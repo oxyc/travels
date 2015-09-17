@@ -261,7 +261,16 @@ img.slick-loading {
     }
   }
   &.control-trip:before { content: 'Trips'; }
-  &.control-countries:before { content: 'Countries'; }
+  &.control-country:before { content: 'Countries'; }
+  &.control-country {
+    .leaflet-control-layers-overlays {
+      max-width: 404px;
+    }
+    form label {
+      display: inline-block !important;
+      width: 100px;
+    }
+  }
 }
 
 .leaflet-popup.popup-photo {
@@ -281,6 +290,7 @@ img.slick-loading {
   }
   a.photo-popup, a.photo-popup img {
     display: block;
+    width: 100%;
   }
 }
 {% endcapture %}

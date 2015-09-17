@@ -69,14 +69,23 @@
     '<a href="#" class="photo-popup" data-id="<%- id %>"><img src="<%- thumbnail %>"></a>'
   );
 
-  var params = {};
-  _.forEach(window.location.hash.split('&'), function (param) {
-    if (!param) {
-      return;
-    }
-    param = param.split('=') || [param, ''];
-    params[_.trim(param[0], '#')] = param[1];
-  });
+  // Global list of all photo tags found
+  var tags = {};
+  // Global list of all photo locations found.
+  var locations = {};
+
+  // Parse the parameters set in the url hash.
+  var params = (function () {
+    var obj = {};
+    _.forEach(window.location.hash.split('&'), function (param) {
+      if (!param) {
+        return;
+      }
+      param = param.split('=') || [param, ''];
+      obj[_.trim(param[0], '#')] = param[1];
+    });
+    return obj;
+  })();
 
   function updateHash(key, value) {
     if (!_.isNull(value)) {
@@ -98,6 +107,12 @@
   }
 
   function showSlideshow($slideshow) {
+    // As the slideshow was constructed while hidden, all DOM size values need
+    // to be recalculated.
+    if (!$slideshow.resized) {
+      $(window).trigger('resize');
+      $slideshow.resized = true;
+    }
     $slideshow.parent().removeClass('hidden');
   }
 
@@ -113,53 +128,175 @@
     $slideshow.slick('slickGoTo', slideIndex);
   }
 
+  function createPhotoMarker(properties) {
+    var popup = L.popup({className: 'popup-photo'})
+      .setContent(templatePhotoPopup(properties));
+
+    return L.marker(
+      properties.latlng,
+      {icon: L.MakiMarkers.icon(tMap.markers.photo)}
+    ).bindPopup(popup);
+  }
+
+  function createPhotoObject(entry) {
+    var photoTags = !_.isEmpty(entry.media$group.media$keywords) ?
+      entry.media$group.media$keywords.$t.split(', ') : [];
+    // Fetch the exif data flattened so it can be merged without a wrapper
+    // object.
+    var exif = _.mapValues(entry.exif$tags, function (tag) {
+      return tag.$t ? tag.$t : false;
+    });
+    // Figure out the camera so we can lookup the crop factor.
+    var camera = (exif.exif$make && exif.exif$model) ? exif.exif$make + ' ' + exif.exif$model : 'unknown';
+    // Fetch the LatLng value if it exists.
+    var latlng = entry.georss$where &&
+      entry.georss$where.gml$Point &&
+      entry.georss$where.gml$Point.gml$pos &&
+      entry.georss$where.gml$Point.gml$pos.$t &&
+      entry.georss$where.gml$Point.gml$pos.$t.split(' ');
+
+    return _.assign({
+      id: entry.gphoto$id.$t,
+      original: entry.media$group.media$content[0].url,
+      large: entry.media$group.media$thumbnail[0].url,
+      thumbnail: entry.media$group.media$thumbnail[1].url,
+      tags: photoTags,
+      size: entry.gphoto$size.$t,
+      width: entry.gphoto$width.$t,
+      height: entry.gphoto$height.$t,
+      description: entry.media$group.media$description.$t,
+      latlng: latlng,
+      exif$make: false,
+      exif$model: false,
+      exif$fstop: false,
+      exif$exposure: false,
+      exif$focallength: false,
+      exif$iso: false,
+      exif$time: false,
+      exif$flash: false,
+      CROP_FACTOR: CROP_FACTOR.hasOwnProperty(camera) ? CROP_FACTOR[camera] : 1
+    }, exif);
+  }
+
+  // @see https://github.com/Leaflet/Leaflet.markercluster/issues/13
+  function addMarkersToMap(locations) {
+    // Real layer is attached to MarkerClusterGroup
+    var layer = L.layerGroup(_.values(locations));
+    // Dummy layer is attached to Map
+    var dummyLayer = L.layerGroup();
+    if (!tMap.controls.other) {
+      tMap.controls.other = L.control.layers(null, null, {collapsed: false}).addTo(tMap.lMap);
+    }
+    // So that we can identify the layer later.
+    layer.type = 'photo';
+    dummyLayer.type = 'photo';
+    // Add the checkbox to the leaflet control.
+    tMap.controls.other.addOverlay(dummyLayer, 'Photos');
+    // Don't display the photos by default
+    // dummyLayer.addTo(tMap.lMap);
+    // tMap.cluster.addLayer(layer);
+
+    // When the dummy layer is toggled, add/remove the real layer from the
+    // MarkerClusterGroup.
+    tMap.lMap.on('overlayadd overlayremove', function (overlay) {
+      if (overlay.layer.type !== 'photo') {
+        return;
+      }
+      if (overlay.type === 'overlayadd') {
+        tMap.cluster.addLayer(layer);
+      } else {
+        tMap.cluster.removeLayer(layer);
+      }
+    });
+  }
+
+  function attachSlideshowListeners($album) {
+    var $slideshow = $album.find('.slideshow');
+    var $overlay = $album.find('.slideshow-overlay');
+    var $filters = $overlay.find('.tag-filters');
+    var $closeLink = $album.find('.close');
+    var $openLink = $album.find('.open');
+
+    // Attach event listeners
+    $openLink.on('click', showSlideshow.bind(null, $slideshow));
+    $closeLink.on('click', hideSlideshow.bind(null, $slideshow));
+    $album.on('click', '.view-exif', toggleExifData);
+    $album.on('click', '.filter-tags', toggleFilterList.bind(null, $filters, tags));
+
+    // Update the URL hash as tags are added.
+    $album.on('change', 'select.filter', function (event) {
+      var selected = $(event.target).val();
+      updateHash('tags', _.isArray(selected) ? selected.join(',') : selected);
+      filterSlideshow($slideshow, {tags: selected});
+    });
+    // Update the URL hash as slides are displayed.
+    $slideshow.on('afterChange', function () {
+      var currentSlide = $slideshow.slick('slickCurrentSlide');
+      updateHash('slide', currentSlide);
+    });
+    // Display the photo on the map whe the link is clicked.
+    $album.on('click', '.view-on-map', function (event) {
+      event.preventDefault();
+      hideSlideshow($slideshow);
+      var id = $(this).data('id');
+      var marker = locations[id];
+      marker.openPopup();
+      tMap.lMap.panTo(marker.getLatLng());
+    });
+    // Display the slide in when the leaflet popup is clicked.
+    $(document).on('click', '.leaflet-popup a.photo-popup', function (event) {
+      event.preventDefault();
+      var id = $(this).data('id');
+      showSlideshow($slideshow);
+      gotoSlide($slideshow, id);
+    });
+  }
+
   function filterSlideshow($slideshow, filters) {
     var navSelector = $slideshow.slick('slickGetOption', 'asNavFor');
     var $nav = $(navSelector);
 
+    // Reset the filters
+    $slideshow.slick('slickUnfilter');
+    $nav.slick('slickUnfilter');
+
     if (filters.tags && !_.isEmpty(filters.tags)) {
-      $slideshow.slick('slickUnfilter');
-      $nav.slick('slickUnfilter');
       var slidesFiltered = [];
+      // Remove slides missing at least one of the specified tags from the main
+      // slideshow.
       $slideshow.slick('slickFilter', function (idx, element) {
         var slickIndex = element.dataset && element.dataset.slickIndex;
         // Something's wrong
         if (!slickIndex) {
           return true;
         }
+        // Remove slides entirely without tags.
         var slideTags = element.dataset.tags.split(',');
         if (slideTags.length === 0) {
           return false;
         }
-        var iterationList;
-        var lookupList;
-        if (slideTags.length > filters.tags.length) {
-          iterationList = filters.tags;
-          lookupList = slideTags;
-        } else {
-          iterationList = slideTags;
-          lookupList = filters.tags;
-        }
-        for (var i = 0, l = iterationList.length; i < l; i++) {
-          if (lookupList.indexOf(iterationList[i]) === -1) {
+        // If one of the tags are missing, remove the slide.
+        for (var i = 0, l = filters.tags.length; i < l; i++) {
+          if (slideTags.indexOf(filters.tags[i]) === -1) {
             return false;
           }
         }
+        // Keep a reference to the slide that is displayed so we can reuse it
+        // for the navigation as well.
         slidesFiltered.push(slickIndex);
         return true;
       });
 
+      // Remove the slides from the navigation slideshow as well.
       $nav.slick('slickFilter', function (idx, element) {
         var slickIndex = element.dataset && element.dataset.slickIndex;
         // Something's wrong
         if (!slickIndex) {
           return true;
         }
+        // Did we keep it during the filtering in the main slideshow?
         return slidesFiltered.indexOf(slickIndex) !== -1;
       });
-    } else {
-      $slideshow.slick('slickUnfilter');
-      $nav.slick('slickUnfilter');
     }
   }
 
@@ -193,13 +330,7 @@
   function createSlideshow($album, data, options) {
     var $slideshow = $album.find('.slideshow');
     var $nav = $album.find('.slideshow-nav');
-    var $openLink = $album.find('.open');
-    var $closeLink = $album.find('.close');
-    var $overlay = $album.find('.slideshow-overlay');
-    var $filters = $overlay.find('.tag-filters');
     var photos = data.feed.entry;
-    var tags = {};
-    var locations = {};
 
     // Filter out photos not belonging to any of the specifeid albums.
     // Picasa Data API has a bug preventing us to query for the tags directly.
@@ -213,107 +344,36 @@
       });
     }
 
+    // Remove the slideshow display link if there aren't any photos to show.
     if (!photos.length) {
-      $openLink.hide();
+      $album.find('.open').hide();
       return null;
     }
 
     // Restructure the photo objects.
-    photos = _.map(photos, function (entry) {
-      var original = entry.media$group.media$content[0];
-      var large = entry.media$group.media$thumbnail[0];
-      var thumbnail = entry.media$group.media$thumbnail[1];
-      var photoTags = !_.isEmpty(entry.media$group.media$keywords) ?
-        entry.media$group.media$keywords.$t.split(', ') : [];
-      var exif = _.mapValues(entry.exif$tags, function (tag) {
-        return tag.$t ? tag.$t : false;
-      });
-      var camera = (exif.exif$make && exif.exif$model) ? exif.exif$make + ' ' + exif.exif$model : 'unknown';
-      var latlng = entry.georss$where &&
-        entry.georss$where.gml$Point &&
-        entry.georss$where.gml$Point.gml$pos &&
-        entry.georss$where.gml$Point.gml$pos.$t &&
-        entry.georss$where.gml$Point.gml$pos.$t.split(' ');
-
-      _.forEach(photoTags, function (tag) {
-        tags[tag] = 0;
-      });
-
-      var properties = _.assign({
-        id: entry.gphoto$id.$t,
-        original: original.url,
-        large: large.url,
-        thumbnail: thumbnail.url,
-        tags: photoTags,
-        size: entry.gphoto$size.$t,
-        width: entry.gphoto$width.$t,
-        height: entry.gphoto$height.$t,
-        description: entry.media$group.media$description.$t,
-        latlng: latlng,
-        exif$make: false,
-        exif$model: false,
-        exif$fstop: false,
-        exif$exposure: false,
-        exif$focallength: false,
-        exif$iso: false,
-        exif$time: false,
-        exif$flash: false,
-        CROP_FACTOR: CROP_FACTOR.hasOwnProperty(camera) ? CROP_FACTOR[camera] : 1
-      }, exif);
-
-      if (latlng) {
-        var popup = L.popup({className: 'popup-photo'})
-          .setContent(templatePhotoPopup(properties));
-
-        var marker = L.marker(
-          latlng,
-          {icon: L.MakiMarkers.icon(tMap.markers.photo)}
-        ).bindPopup(popup);
-
-        locations[properties.id] = marker;
-      }
-
-      return properties;
-    });
+    photos = _.chain(photos)
+      .map(createPhotoObject)
+      .forEach(function (photo) {
+        // Add the tags to the global tag filter so they become available.
+        _.forEach(photo.tags, function (tag) {
+          tags[tag] = 0;
+        });
+        // If there photo had a geo positioning, create its marker.
+        if (photo.latlng) {
+          locations[photo.id] = createPhotoMarker(photo);
+        }
+      })
+      .value();
 
     // Build slideshow HTML
     $slideshow.append(_.reduce(photos, buildSlides, ''));
     $nav.append(_.reduce(photos, buildThumbnails, ''));
 
-    // Attach event listeners
-    $openLink.on('click', showSlideshow.bind(null, $slideshow));
-    $closeLink.on('click', hideSlideshow.bind(null, $slideshow));
-    $album.on('click', '.view-exif', toggleExifData);
-    $album.on('click', '.filter-tags', toggleFilterList.bind(null, $filters, tags));
-    $album.on('change', 'select.filter', function (event) {
-      var selected = $(event.target).val();
-      updateHash('tags', _.isArray(selected) ? selected.join(',') : selected);
-      filterSlideshow($slideshow, {tags: selected});
-    });
-    $(document).on('click', '.leaflet-popup a.photo-popup', function (event) {
-      event.preventDefault();
-      var id = $(this).data('id');
-      showSlideshow($slideshow);
-      gotoSlide($slideshow, id);
-    });
-    $album.on('click', '.view-on-map', function (event) {
-      event.preventDefault();
-      hideSlideshow($slideshow);
-      var id = $(this).data('id');
-      var marker = locations[id];
-      marker.openPopup();
-      tMap.lMap.panTo(marker.getLatLng());
-    });
+    attachSlideshowListeners($album, {tags: tags, locations: locations});
 
-    $slideshow.on('afterChange', function () {
-      var currentSlide = $slideshow.slick('slickCurrentSlide');
-      updateHash('slide', currentSlide);
-    });
-
+    // Add the locations to the map.
     if (!_.isEmpty(locations) && tMap.lMap) {
-      var layer = L.layerGroup(_.values(locations));
-      tMap.controls.other.addOverlay(layer, 'Photos');
-      layer.addTo(tMap.lMap);
+      addMarkersToMap(locations);
     }
 
     // Initialize slideshows
@@ -338,6 +398,7 @@
     return $slideshow;
   }
 
+  // Initialize slideshows
   $('.picasa-album').each(function () {
     var $album = $(this);
     var $slideshow = $album.find('.slideshow');
@@ -365,10 +426,5 @@
           $('.picasa-album .open').trigger('click');
         }
       });
-  });
-
-  $('.picasa-album').one('click', '.open', function (event) {
-    event.preventDefault();
-    $(window).trigger('resize');
   });
 })(this.jQuery, this._, this.L, this.tMap);

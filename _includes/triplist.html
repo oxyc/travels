@@ -7,10 +7,11 @@
     {% assign trip_id = trip | first %}
   {% endif %}
   {% unless include.simple %}
+    {% assign trip_data = site.data.trips[trip_id] %}
     {% assign date = site.data.trips | where:'id',trip_id | map: 'date' | first %}
     {% capture date_str %}<span class="visit-list">{% include visit-date.html date=date %}</span>{% endcapture %}
   {% endunless %}
-  <li><a href="/trips/{{ trip_id }}/">{{ site.data.trips | where:'id',trip_id | map: 'name' }} {{ date_str }}</a></li>
+  <li><a href="/trips/{{ trip_id }}/">{{ trip_data.properties.name }} {{ date_str }}</a></li>
 {% endfor %}
 </ul>
 {% endif %}
