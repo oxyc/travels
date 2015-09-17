@@ -4,10 +4,7 @@
   "description": "A record of my travels",
   "main": "index.js",
   "scripts": {
-    "test": "xo && geojsonhint destinations/*.geojson && jsonlint -q *.json",
-    "build": "npm run-script geojson-trips; npm run-script geojson-all",
-    "geojson-trips": "for filename in trips/*.md; do trip=$(basename $filename | cut -d '.' -f1); files=\"$(grep \"^categories:.*$trip\" _posts/*.md | uniq | tr '.' '-' | cut -d '-' -f4 | sed 's/\\(.*\\)/destinations\\/\\1.geojson/')\"; args=''; while read -r file; do [[ -r \"$file\" ]] && args=\"$args $file\"; done <<< \"$files\"; if [ ! -z \"$args\" ]; then geojson-merge $args >| dist/$trip.geojson; fi; done",
-    "geojson-all": "geojson-merge destinations/*.geojson >| dist/world.geojson"
+    "test": "xo && node scripts/lint-country.js _data/countries/*.json && geojsonhint _data/*/*.json && jsonlint -q *.json _data/*/*.json"
   },
   "repository": {
     "type": "git",
