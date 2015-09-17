@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "India & Nepal",
+    "countries": ["India", "Nepal"]
+  },
+  "features": []
+}

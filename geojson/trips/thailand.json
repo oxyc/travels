@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Thailand - The first journey",
+    "countries": [
+      "Thailand"
+    ]
+  },
+  "features": []
+}
