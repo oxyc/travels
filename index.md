@@ -27,6 +27,10 @@ record of my travels and collect as much as possible in one place.
   but unfortunately I haven't found a way to pull them in automatically. At
   some point I will probably start pulling in more of them manually.
 
+### Cost per day per country
+
+<div class="expenditure-chart front" data-title="" data-chart="perCountryCPD"></div>
+
 ### Countries visited
 
 {% include countrylist.html countries=site.posts %}

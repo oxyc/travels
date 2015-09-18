@@ -1,0 +1,35 @@
+---
+---
+{
+  "expenditures": [
+  {% for trip in site.data.expenditures %}
+    {% assign trip_id = trip | first %}
+    {
+      "trip": "{{ trip_id }}",
+      "countries": [
+      {% assign first_row = true %}
+      {% assign countries = trip[1] | group_by: 'country' %}
+      {% for country in countries %}
+        {% for trip_country in site.data.trips[trip_id].properties.countries %}
+          {% if trip_country.name == country.name %}
+            {% unless first_row %},{% endunless %} {
+              "name": "{{ country.name }}",
+              "dates": {{ trip_country.dates | jsonify }}
+            }{% assign first_row = false %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      ],
+      "data": [
+      {% for row in trip[1] %}
+        {
+          "country": "{{ row.country }}",
+          "tags": "{{ row.tags }}",
+          "amount": "{{ row.main_amount }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+}
