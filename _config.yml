@@ -3,7 +3,9 @@ exclude: ["CNAME", "README.md", "package.json", "node_modules"]
 
 base_path: "travels.oxy.fi"
 
-title: "Travels"
+title: "Travel log of Oskar Schöldström"
+description: A Personal travel log of Oskar Schöldström
+
 author:
   name: Oskar Schöldström
   email: public@oxy.fi
@@ -14,6 +16,5 @@ author:
   instagram: "@oskar.scholdstrom"
 
 google_analytics: UA-6980403-3
-description: A Personal travel log of Oskar Schöldström
 
 # https://picasaweb.google.com/data/feed/base/user/114201888556629445485/albumid/

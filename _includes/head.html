@@ -2,15 +2,32 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <meta name="og:title" content="{{ page.title }} - {{ site.title }}">
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta name="og:description" content="{{ page.description }}">
+  {% if page.title %}
+    {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
   {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta name="og:description" content="{{ site.description }}">
+    {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
+
+  {% capture site_description %}{{ site.description }}. Visited {{ site.data.countries | size }} countries of the world so far.{% endcapture %}
+  {% if page.description %}
+    {% assign description = page.description %}
+  {% elsif page.type == "trip" %}
+    {% assign trip_id = page.id %}
+    {% assign trip_data = site.data.trips[trip_id] %}
+    {% if trip_data.properties.description %}
+      {% assign description = trip_data.properties.description %}
+    {% else %}
+      {% assign description = site_description %}
+    {% endif %}
+  {% elsif page.excerpt %}
+    {% assign description = page.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines %}
+  {% else %}
+    {% assign description = site_description %}
+  {% endif %}
+    <title>{{ title }}</title>
+    <meta name="og:title" content="{{ title }}">
+    <meta name="description" content="{{ description }}">
+    <meta name="og:description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="{{ site.author.googleplus }}">
     <link rel="stylesheet" href="/stylesheets/normalize.css" media="screen">
