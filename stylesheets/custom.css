@@ -2,6 +2,42 @@
 ---
 {% capture scss %}
 
+.page-header {
+  position: relative;
+  h2 {
+    margin: 0;
+    position: absolute;
+    right: .5em;
+    bottom: 1em;
+    a { color: #fff; }
+  }
+}
+
+.site-footer > div, .main-content {
+  padding: 2rem 6rem;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+
+.site-footer {
+  background-color: #333;
+  padding-top: 0;
+  font-size: 12px;
+  &, a, a:hover { color: #fff; }
+  ul, ol { padding-left: 1.5em; }
+}
+
+#world-map { height: 500px; }
+
+.group {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column {
+  flex: 1;
+}
+
 .group:after {
   content: "";
   display: table;
@@ -9,15 +45,18 @@
 }
 
 .content {
-  width: 70%;
+  flex: 3;
   padding-right: 1rem;
+
+  p a { text-decoration: underline; }
 }
 .sidebar {
-  width: 30%;
+  font-size: 12px;
+  flex: 1;
   table {
-    font-size: 12px;
     &, tbody { width: 100%; }
   }
+  h4 { font-size: 1.3rem; }
   > div { margin-bottom: 1rem; }
 }
 
@@ -30,6 +69,7 @@ h1 {
 
 .post {
   .trips {
+    margin-bottom: 1rem;
     ul {
       padding: 0;
       list-style-type: none;
@@ -42,6 +82,7 @@ h1 {
     h6 { margin-right: 0.2em; }
 
     li {
+      a, &:after { float: left; }
       &:after {
         content: ', ';
         margin-right: 0.2em;
@@ -69,6 +110,15 @@ h1 {
     }
   }
 }
+.excerpt {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.locations .type {
+  color: #999;
+  font-size: 10px;
+}
 
 .hidden {
   display: none;
@@ -93,7 +143,7 @@ h1 {
 
   .slideshow {
     height: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .slideshow-nav {
     height: 48px;
@@ -115,10 +165,8 @@ h1 {
   .close, .slick-prev, .slick-next { z-index: 100; }
 
   .additional {
-    position: absolute;
     bottom: 0;
-    right: 1rem;
-    font-size: 10px;
+    top: auto !important;
     a {
       display: block;
       &.loading:before {
@@ -176,12 +224,12 @@ h1 {
   }
   .slideshow-overlay {
     top: auto;
-    bottom: 120px;
+    bottom: 200px;
     padding-top: 0;
     padding-bottom: 0;
     > div {
-      > :first-child { margin-top: 2em; }
-      > :last-child { margin-bottom: 2em; }
+      > :first-child { margin-top: 1rem; }
+      > :last-child { margin-bottom: 1rem; }
     }
   }
 }
@@ -210,10 +258,17 @@ h1 {
 
 .slideshow {
   .slick-list, .slick-track, .slick-slide { height: 100%; }
-  .slick-initialized .slick-slide {
+  &.slick-initialized .slick-slide {
     display: flex;
     align-items: center;
   }
+}
+.slick-track {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-slider {
+  margin-bottom: 0;
 }
 .slideshow-nav img {
   width: 72px;

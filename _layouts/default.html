@@ -8,12 +8,35 @@
   {% else %}
   <div id="world-map" class="map-post" data-country data-trips="{{ site.data.trips | map: 'id' | join: ' ' }}"></div>
   {% endif %}
+  <h2><a href="/">{{ site.title }}</a></h2>
 </section>
 
 <section role="main" class="main-content">
-  <div class="{{ page.type }}">
+  <div class="{{ page.type }} group">
     {{ content }}
   </div>
 </section>
 
+<footer class="site-footer">
+  <div class="group">
+    <div class="column">
+      <h4>About</h4>
+      <p>This website is built using GeoJSON, Toshl Finance, Picasa and published using GitHub pages</p>
+      <ul>
+        <li>Author: Oskar Schöldström <public@oxy.fi></li>
+        <li>Source: <a href="https://github.com/oxyc/travels">github.com/oxyc/travels</a></li>
+        <li>Instagram: <a href="https://instagram.com/oskar.scholdstrom/">@oskar.scholdstrom</a></li>
+        <li>Tumblr: <a href="https://whatareyoudoinghere.net/">whatareyoudoinghere.net</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h4>Trips</h4>
+      {% include triplist.html trips=site.categories simple=true %}
+    </div>
+    <div class="column">
+      <h4>Tags</h4>
+      {% include categorylist.html categories=site.tags simple=true %}
+    </div>
+  </div>
+</footer>
 {% include footer.html %}

@@ -4,21 +4,41 @@ type: post
 ---
 {% assign expenditures_total = 0 %}
 {% assign days_total = 0 %}
-<h1>{{ page.title }}</h1>
-
-<div class="trips group">
-  <h6>Trips:</h6>
-  {% include triplist.html trips=page.categories simple=true %}
-</div>
-
+{% assign country_id = page.title | slugify %}
+{% assign data = site.data.countries[country_id] %}
+{% assign all_expenditures = site.data.expenditures %}
 <div class="content">
+  <h1>{{ page.title }}</h1>
+
+  <div class="trips group">
+    <h6>Trips:</h6>
+    {% include triplist.html trips=page.categories simple=true %}
+  </div>
+
   {{ content }}
+
+  <div class="locations">
+    <h3>Places I have visited in {{ page.title }}</h3>
+    <ul>
+    {% for location in data.features %}
+      {% if location.properties.visited %}
+        <li>
+          <span class="name">{{ location.properties.name }}</span> <span class="type">{{ location.properties.type }}</span>
+          {% if location.properties.description %}
+          <p class="excerpt">{{ location.properties.description }}</p>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+
 </div>
 
 <aside class="sidebar">
   {% include picasa-slideshow.html userid=site.author.picasa albumid=page.albumid albumtag=page.albumtag %}
 
-  {% if page.dates %}
+  {% if data.properties.dates %}
   <div class="visits">
     <h4>Visits</h4>
     <table>
@@ -30,10 +50,10 @@ type: post
         </tr>
       </thead>
       <tbody>
-        {% for date in page.dates %}
-          {% assign start_date = date.start | date: '%y-%m-%d' %}
+        {% for date in data.properties.dates %}
+          {% assign start_date = date.start | date: '%Y-%m-%d' %}
           {% assign start_date_unix = start_date | date: '%s' %}
-          {% assign end_date = date.end | date: '%y-%m-%d' %}
+          {% assign end_date = date.end | date: '%Y-%m-%d' %}
           {% assign end_date_unix = end_date | date: '%s' %}
         <tr>
           <td>{{ start_date | date_to_string }}</td>
@@ -50,30 +70,7 @@ type: post
   </div>
   {% endif %}
 
-  {% if page.expenditures %}
-  <div class="expenditures">
-    <h4>Expenditures</h4>
-    <table>
-      {% for expenditure in page.expenditures %}
-      {% assign expenditures_total = expenditures_total | plus: expenditure[1] %}
-      <tr>
-        <th>{{ expenditure[0] }}</th>
-        <td>${{ expenditure[1] }}</td>
-      </tr>
-      {% endfor %}
-      <tr>
-        <th>Total</th>
-        <td>${{ expenditures_total }}</td>
-      </tr>
-      {% if days_total %}
-      <tr>
-        <th>Cost per day</th>
-        <td>${{ expenditures_total | divided_by: days_total }}/day</td>
-      </tr>
-      {% endif %}
-    </table>
-  </div>
-  {% endif %}
+  {% include expenditures.html trips=page.categories country=country_id days=days_total %}
 
   {% if page.tags %}
   <div class="categories">

@@ -1,9 +1,27 @@
 {% if include.date %}
-  {% if date.start and date.end %}
-    {% assign start_date = date.start | date: '%y-%m-%d' %}
-    {% assign start_date_unix = start_date | date: '%s' %}
-    {% assign end_date = date.end | date: '%y-%m-%d' %}
-    {% assign end_date_unix = end_date | date: '%s' %}
-    <span class="visit">{{ start_date | date_to_string }} - {{ end_date | date_to_string }}</span>
+  {% if include.date.start and include.date.end %}
+    {% assign start_day = include.date.start | date: '%-d' %}
+    {% assign start_month = include.date.start | date: '%b' %}
+    {% assign start_year = include.date.start | date: '%Y' %}
+
+    {% assign end_day = include.date.end | date: '%-d' %}
+    {% assign end_month = include.date.end | date: '%b' %}
+    {% assign end_year = include.date.end | date: '%Y' %}
+
+    <span class="visit">
+    {% if start_day == end_day && start_month == end_month && start_year == end_year %}
+      {{ start_day }} {{ start_month }} {{ start_year }}
+    {% elsif start_month == end_month && start_year == end_year %}
+      {{ start_day }}–{{ end_day }} {{ start_month }} {{ start_year }}
+    {% elsif start_year == end_year %}
+      {{ start_day }} {{ start_month }} – {{ end_day }} {{ end_month }} {{ start_year }}
+    {% else %}
+      {{ start_day }} {{ start_month }} {{ start_year }} – {{ end_day }} {{ end_month }} {{ end_year }}
+    {% endif %}
+    </span>
+  {% elsif include.date.start %}
+    <span class="visit">
+      {{ include.date.start | date: '%-d %b %Y' }}
+    </span>
   {% endif %}
 {% endif %}

@@ -54,7 +54,7 @@
     '<% } %>' +
     '</table>' +
     '</div>' +
-    '<div class="additional">' +
+    '<div class="additional overlay">' +
     '<a href="#" class="view-exif" data-image="<%- original %>">View info</a>' +
     '<% if (latlng) { %>' +
     '<a href="#" class="view-on-map" data-id="<%- id %>" data-lng="<% latlng[1] %>">View on map</a>' +
@@ -383,16 +383,16 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
-      arrows: true
+      arrows: true,
+      infinite: false
     });
     $nav.slick({
       asNavFor: '.slideshow',
       lazyLoad: 'ondemand',
       slidesToShow: 18,
-      slidesToScroll: 18,
-      dots: true,
-      arrows: true,
-      focusOnSelect: true
+      arrows: false,
+      focusOnSelect: true,
+      infinite: false
     });
 
     return $slideshow;

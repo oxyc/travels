@@ -2,26 +2,56 @@
 layout: default
 type: trip
 ---
-<h1>{{ page.title }}</h1>
+{% assign trip_id = page.id %}
+{% assign data = site.data.trips[trip_id] %}
 
 <div class="content">
+  <h1>{{ page.title }}</h1>
+
+  {% if data.properties.description %}
+  <p class="preamble">{{ data.properties.description }}</p>
+  {% endif %}
+
   {{ content }}
 
-  <h3>Countries visited during the trip</h3>
+  <div class="countries">
+    <h3>Countries visited during the trip</h3>
+    <ul>
+    {% for country in site.posts reversed %}
+      {% if country.categories contains page.id %}
+        {% include country.html country=country %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 
-  <ul class="countries">
-  {% for country in site.posts reversed %}
-    {% if country.categories contains page.id %}
-      {% include country.html country=country %}
-    {% endif %}
-  {% endfor %}
-  </ul>
+  <div class="locations">
+    <h3>Places visited</h3>
+    <p class="excerpt">Note this list contains all locations I've ever visited in the countries of this trip. Some locations might be from other trips. You can have a look at the troute on the map to see which locations I actually visited.</p>
+    <ul>
+    {% for country in site.data.countries %}
+      {% if site.data.trips[trip_id].properties.countries contains country[1].properties.name %}
+        {% for location in country[1].features %}
+          {% if location.properties.visited %}
+          <li>
+            <span class="name">{{ location.properties.name }}</span> <span class="type">{{ location.properties.type }} in {{ country[1].properties.name }}</span>
+            {% if location.properties.description %}
+            <p class="excerpt">{{ location.properties.description }}</p>
+            {% endif %}
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 </div>
 
 <aside class="sidebar">
   {% include picasa-slideshow.html userid=site.author.picasa albumid=page.albumid albumtag=page.albumtag %}
+  {% assign data = site.data.trips[trip_id] %}
 
-  {% if page.date %}
+  {% if data.properties.date %}
   <div class="visits">
     <h4>Trip duration</h4>
     <table>
@@ -33,14 +63,14 @@ type: trip
         </tr>
       </thead>
       <tbody>
-        {% assign start_date = page.date.start | date: '%y-%m-%d' %}
+        {% assign start_date = data.properties.date.start | date: '%y-%m-%d' %}
         {% assign start_date_unix = start_date | date: '%s' %}
-        {% assign end_date = page.date.end | date: '%y-%m-%d' %}
+        {% assign end_date = data.properties.date.end | date: '%y-%m-%d' %}
         {% assign end_date_unix = end_date | date: '%s' %}
         <tr>
           <td>{{ start_date | date_to_string }}</td>
-          <td>{% if page.date.end %}{{ end_date | date_to_string }}{% endif %}</td>
-          <td>{% if page.date.end %}
+          <td>{% if data.properties.date.end %}{{ end_date | date_to_string }}{% endif %}</td>
+          <td>{% if data.properties.date.end %}
             {% assign days = end_date_unix | minus: start_date_unix | divided_by: 86400 %}
             {{ days }} days
             {% assign days_total = days_total | plus: days %}
@@ -50,4 +80,6 @@ type: trip
     </table>
   </div>
   {% endif %}
+
+  {% include expenditures.html trips=page.id country='' days=days_total %}
 </aside>

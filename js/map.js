@@ -41,7 +41,9 @@
 
   var templatePopup = _.template(
     '<strong><%- name %></strong> <small><%- type %></small><br>' +
-    '<em><% if (visited) { %>visited<% } else { %>planning to visit<% } %></em>'
+    '<% if (!visited) { %><em>planning to visit</em><br><% } %>' +
+    '<% if (typeof homebase !== "undefined" && homebase) { %><em>I used to live here</em><% } %>' +
+    '<% if (typeof description !== "undefined") { %><span class="description"><%- description %></span><% } %>'
   );
 
   function bindMarkerPopup(feature, layer) {
@@ -187,6 +189,7 @@
         exports.cluster.removeLayer(countryLayers[index]);
       }
     });
+
     return countryLayers;
   }
 
@@ -202,16 +205,6 @@
     for (var row in tripControl._layers) if (tripControl._layers.hasOwnProperty(row)) {
       leafletMeta[L.Util.stamp(tripControl._layers[row].layer)] = tripControl._layers[row].name;
     }
-    if (preSelectedTrips.length) {
-      _.chain(tripLayers)
-        .pick(function (layer) {
-          return preSelectedTrips.indexOf(layer.id) === -1;
-        })
-        .forEach(function (layer) {
-          exports.lMap.removeLayer(layer);
-        })
-        .value();
-    }
 
     exports.lMap.on('overlayadd overlayremove', function (overlay) {
       var index = leafletMeta[L.Util.stamp(overlay.layer)];
@@ -225,6 +218,17 @@
 
       toggleControlCheckboxes(control, countries, on);
     });
+
+    if (preSelectedTrips.length) {
+      _.chain(tripLayers)
+        .pick(function (layer) {
+          return preSelectedTrips.indexOf(layer.id) === -1;
+        })
+        .forEach(function (layer) {
+          exports.lMap.removeLayer(layer);
+        })
+        .value();
+    }
   }
 
   function init(data) {

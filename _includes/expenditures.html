@@ -1,0 +1,58 @@
+{% if include.trips %}
+  {% assign expense_food = 0 %}
+  {% assign expense_transportation = 0 %}
+  {% assign expense_accommodation = 0 %}
+  {% assign expense_entrance = 0 %}
+  {% assign expense_tour = 0 %}
+  {% assign expense_alcohol = 0 %}
+  {% assign expense_visa = 0 %}
+  {% assign expense_other = 0 %}
+  {% assign expense_flight = 0 %}
+  {% assign expense_total = 0 %}
+  {% for trip in include.trips %}
+    {% if site.data.expenditures[trip] %}
+    {% assign country_expenditures = site.data.expenditures[trip] | group_by:'country' %}
+    {% for row in country_expenditures %}
+      {% if include.country == empty or row.items[0].country == include.country %}
+        {% for expense in row.items %}
+          {% case expense.tags %}
+          {% when 'food' %}{% assign expense_food = expense_food | plus: expense.main_amount %}
+          {% when 'transportation' %}{% assign expense_transportation = expense_transportation | plus: expense.main_amount %}
+          {% when 'accommodation' %}{% assign expense_accommodation = expense_accommodation | plus: expense.main_amount %}
+          {% when 'entrance' %}{% assign expense_entrance = expense_entrance | plus: expense.main_amount %}
+          {% when 'tour' %}{% assign expense_tour = expense_tour | plus: expense.main_amount %}
+          {% when 'alcohol' %}{% assign expense_alcohol = expense_alcohol | plus: expense.main_amount %}
+          {% when 'visa' %}{% assign expense_visa = expense_visa | plus: expense.main_amount %}
+          {% when 'other' %}{% assign expense_other = expense_other | plus: expense.main_amount %}
+          {% when 'flight' %}{% assign expense_flight = expense_flight | plus: expense.main_amount %}
+          {% else %}
+           {{ expense.tags }} not found...
+          {% endcase %}
+          {% assign expense_total = expense_total | plus: expense.main_amount %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% if expense_total > 0 %}
+  <div class="expenditures">
+    <h4>Expenditures</h4>
+    <table>
+      {% if expense_food > 0 %}<tr><th>Food</th><td>${{ expense_food }}</td></tr>{% endif %}
+      {% if expense_transportation > 0 %}<tr><th>Transportation</th><td>${{ expense_transportation }}</td></tr>{% endif %}
+      {% if expense_accommodation > 0 %}<tr><th>Accommodation</th><td>${{ expense_accommodation }}</td></tr>{% endif %}
+      {% if expense_entrance > 0 %}<tr><th>Entrance fees</th><td>${{ expense_entrance }}</td></tr>{% endif %}
+      {% if expense_tour > 0 %}<tr><th>Tours</th><td>${{ expense_tour }}</td></tr>{% endif %}
+      {% if expense_alcohol > 0 %}<tr><th>Alcohol</th><td>${{ expense_alcohol }}</td></tr>{% endif %}
+      {% if expense_visa > 0 %}<tr><th>Visa fees</th><td>${{ expense_visa }}</td></tr>{% endif %}
+      {% if expense_other > 0 %}<tr><th>Other fees</th><td>${{ expense_other }}</td></tr>{% endif %}
+      {% if expense_flight > 0 %}<tr><th>Flights</th><td>${{ expense_flight }}</td></tr>{% endif %}
+      <tr class="total"><th>Total</th><td>${{ expense_total }}</td></tr>
+      {% if include.days > 0 %}
+      {% capture cpd %}{{ expense_total | times: '100' | divided_by: include.days }}{% endcapture %}
+      <tr class="cpd"><th>Cost per day</th><td>${{ cpd | split: '.' | first | divided_by: '100.0' }}/day</td></tr>
+      {% endif %}
+    </table>
+  </div>
+  {% endif %}
+{% endif %}

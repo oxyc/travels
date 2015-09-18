@@ -1,0 +1,14 @@
+{% if include.locations %}
+<ul>
+{% for location in include.locations %}
+  {% if location.properties.visited %}
+    <li>
+      <span class="name">{{ location.properties.name }}</span> <span class="type">{{ location.properties.type }}</span>
+      {% if location.properties.description %}
+      <p class="description">{{ location.properties.description }}</p>
+      {% endif %}
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endif %}
