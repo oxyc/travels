@@ -1,0 +1,407 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Peru"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puno",
+        "type": "City",
+        "country": "peru",
+        "description": "Stopped by to see the Uros",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.02960205078125,
+          -15.831893364540024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arequipa",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.54022216796875,
+          -16.404470456702413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chivay",
+        "description": "While hitchhiking with a tour bus, we stopped here to eat and sightsee",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6143798828125,
+          -15.646841418236296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabanaconde",
+        "type": "City",
+        "description": "Starting point for the Colca Canyon trek",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.98173522949219,
+          -15.623367469738133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colca Canyon Trek",
+        "type": "Trek",
+        "description": "Cabanaconde - Sangalle - Malata - San Juan de Chucho - Cabanaconde",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.97349548339844,
+          -15.595592001094285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cusco",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.982421875,
+          -13.515167165923378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ollantaytambo",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2625732421875,
+          -13.25665477832266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salar de Maras",
+        "type": "Sight",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.15648651123047,
+          -13.300009999476075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aguas Calientes",
+        "description": "Real name is Machu Picchu Pueblo",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.52555847167967,
+          -13.154543212417297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Machu Picchu",
+        "type": "Sight",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.54469871520996,
+          -13.164488848658722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mollepata",
+        "description": "Starting point of Salkantay Trek",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.52830505371094,
+          -13.508490762626565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salkantay Trek",
+        "type": "Trek",
+        "description": "Hiked from Mollepata to Collipapampa where I took a bus to the entrance of Llactapata. Landslides had ruined the trail so you would have had to hike on the main road. From Llactapata I walked to Aguas Calientes.",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.55611419677734,
+          -13.361228725904551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lima",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0526123046875,
+          -12.06618091465063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Caral",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.50579833984375,
+          -10.889950906052503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barranca",
+        "description": "Spent the night here while seeing Caral",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.76054382324219,
+          -10.753040674726652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huaraz",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.52914428710938,
+          -9.531686027524678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laguna 69 Trek",
+        "type": "Trek",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6015853881836,
+          -9.011911502253348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hualcayan",
+        "type": "City",
+        "description": "Starting point of the Alpamayo Trek",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.79727935791016,
+          -8.897621956877753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alpamayo Trek",
+        "type": "Trek",
+        "description": "We were plannin on doing the circuit but decided to skip the Santa Cruz part, therefore ending at Pomabamba",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.71110534667969,
+          -8.857934425512093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pomabamba",
+        "description": "End of Alpamayo Trek",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.45635986328125,
+          -8.82536709622796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trujillo",
+        "description": "Spent a day sightseeing",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.02877807617188,
+          -8.114974623769026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huanchaco",
+        "description": "Slept here while sightseeing the both the town and Trujillo",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.11392211914062,
+          -8.083703989184253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mancora",
+        "description": "Left my camera outside beneath the hammock during the rainiest day of the year",
+        "type": "City",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.04339599609375,
+          -4.102629809278476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tumbes",
+        "type": "Border Crossing",
+        "description": "Peru - Ecuador",
+        "country": "peru",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.46112060546875,
+          -3.566877191890649
+        ]
+      }
+    }
+  ]
+}

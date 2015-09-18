@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Singapore"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singapore",
+        "country": "singapore",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.82904052734375,
+          1.2935302390231982
+        ]
+      }
+    }
+  ]
+}

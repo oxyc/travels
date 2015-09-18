@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Trans Siberian Railway to Hong Kong",
+    "date": {
+      "start": "2009-09-28",
+      "end": "2009-12-30"
+    },
+    "countries": [
+      "Russia",
+      "Mongolia",
+      "China",
+      "Thailand"
+    ]
+  },
+  "features": []
+}

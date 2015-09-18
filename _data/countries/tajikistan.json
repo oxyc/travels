@@ -1,0 +1,177 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Tajikistan"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Murghab",
+        "description": "First city since the Kyrgyz border. Me, Ana, Casimir and David arrived by jeep from Osh, and hired another one (lada) from here onwards.",
+        "type": "City",
+        "country": "tajikistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.970947265625,
+          38.1734326790354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pshart Valley - Madiyan Valley",
+        "type": "Trek",
+        "description": "Not entirely sure these are the coordinates, but I'm pretty sure. Slept in a yurt the night before the hike.",
+        "country": "tajikistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.82949829101562,
+          38.26891497618184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gumbazkul",
+        "type": "Pass",
+        "description": "4731m",
+        "country": "tajikistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.82469177246094,
+          38.22307753495298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khorog",
+        "type": "City",
+        "country": "tajikistan",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.553955078125,
+          37.48575600784828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alichur",
+        "type": "City",
+        "country": "tajikistan",
+        "description": "Slept at the restaurant here for a night. This was where Casimir could have both sausage and eggs.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.25889587402344,
+          37.75117238560617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazar Dara",
+        "type": "City",
+        "country": "tajikistan",
+        "description": "Attempt at reaching Bazar Dara, an old mining community with a fort.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.36549758911133,
+          37.9077729054382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dushanbe",
+        "type": "City",
+        "country": "tajikistan",
+        "description": "Waited for a flight for three days, puked while bargaining for a hotel room, flew to Kabul but overstayed my visa by a few hours.",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.8018798828125,
+          38.59540719940386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panjakent",
+        "type": "City",
+        "country": "tajikistan",
+        "description": "Met Mithu (Bangladesh)",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.59819030761717,
+          39.48549517054311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Artuch",
+        "type": "City",
+        "country": "tajikistan",
+        "description": "Starting point of the Fann mountains trek",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.10562133789062,
+          39.328322372966625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fann Mountains",
+        "type": "Trek",
+        "country": "tajikistan",
+        "description": "Kulikalon lakes - Alaudin lakes",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.20158004760742,
+          39.246213281707746
+        ]
+      }
+    }
+  ]
+}

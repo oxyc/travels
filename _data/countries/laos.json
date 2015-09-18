@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Laos"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vientiane",
+        "country": "laos",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.645263671875,
+          17.95260646769184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luang Prabang",
+        "country": "laos",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.12615966796875,
+          19.88039176782252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oudomxay",
+        "country": "laos",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.98333740234375,
+          20.681614215933056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nong Khiaw",
+        "country": "laos",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.6126480102539,
+          20.570760461705813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Muang Mai",
+        "country": "laos",
+        "description": "Laos - Vietnam",
+        "type": "Border Crossing",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.72628784179688,
+          21.168404809014493
+        ]
+      }
+    }
+  ]
+}

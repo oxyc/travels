@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Malaysia"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuching",
+        "country": "malaysia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3521728515625,
+          1.5461379995639477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miri",
+        "country": "malaysia",
+        "type": "Border Crossing",
+        "visited": true,
+        "description": "Brunei - Malaysia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.983154296875,
+          4.384751860236625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Semenggoh Wildlife Center",
+        "description": "Orangutans",
+        "country": "malaysia",
+        "type": "Nature Reserve",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.32487869262695,
+          1.3975283353896548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuala Lumpur",
+        "country": "malaysia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.69563293457031,
+          3.155599509242843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brinchang",
+        "description": "Cameron Highlands: Tea plantations",
+        "country": "malaysia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.38458251953125,
+          4.4983926842676665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tanah Rata",
+        "country": "malaysia",
+        "description": "Cameron Highlands: Tea plantations",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.3763427734375,
+          4.466219050260423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malacca",
+        "description": "Woke up as someone was robbing me in the hostel",
+        "country": "malaysia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.25730895996094,
+          2.1857489471296665
+        ]
+      }
+    }
+  ]
+}

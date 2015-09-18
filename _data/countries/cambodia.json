@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Cambodia"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phnom Penh",
+        "country": "cambodia",
+        "description": "Met up with Oona",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.90020751953125,
+          11.560762096743941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Battambang",
+        "description": "Went on various tours with Oona",
+        "country": "cambodia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.20556640625,
+          13.095529720741494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siem Reap",
+        "description": "My night bus back to Vietnam never arrived, and I had to pay $100-200 (@todo) for a taxi to Phnom Penh so that I wouldn't miss my flight.",
+        "country": "cambodia",
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85513305664062,
+          13.35488207514474
+        ]
+      }
+    }
+  ]
+}
