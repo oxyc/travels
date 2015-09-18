@@ -4,7 +4,7 @@
     "name": "Thailand - The first journey",
     "description": "My first-ever backpacking experience which I did together with Sofia. You wouldn't believe how big my backpack was.",
     "countries": [
-      "Thailand"
+      { "name": "thailand", "dates": [] }
     ]
   },
   "features": []
