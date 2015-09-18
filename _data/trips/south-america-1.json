@@ -7,16 +7,57 @@
       "end": "2015-06-09"
     },
     "countries": [
-      "Italy",
-      "Vatican City",
-      "Argentina",
-      "Chile",
-      "Bolivia",
-      "Peru",
-      "Ecuador",
-      "Colombia",
-      "Unites States",
-      "Cuba"
+      {
+        "name": "italy",
+        "dates": [{ "start": "2015-01-10", "end": "2015-01-11" }]
+      },
+      {
+        "name": "vatican-city",
+        "dates": [{ "start": "2015-01-11", "end": "2015-01-11" }]
+      },
+      {
+        "name": "argentina",
+        "dates": [
+          { "start": "2015-01-12", "end": "2015-01-14" },
+          { "start": "2015-01-22", "end": "2015-01-24" },
+          { "start": "2015-02-11", "end": "2015-02-21" }
+        ]
+      },
+      {
+        "name": "chile",
+        "dates": [
+          { "start": "2015-01-15", "end": "2015-01-22" },
+          { "start": "2015-01-25", "end": "2015-02-11" },
+          { "start": "2015-02-21", "end": "2015-02-24" }
+        ]
+      },
+      {
+        "name": "bolivia",
+        "dates": [{ "start": "2015-02-25", "end": "2015-03-14" }]
+      },
+      {
+        "name": "peru",
+        "dates": [{ "start": "2015-03-14", "end": "2015-04-14" }]
+      },
+      {
+        "name": "ecuador",
+        "dates": [{ "start": "2015-04-14", "end": "2015-05-03" }]
+      },
+      {
+        "name": "colombia",
+        "dates": [
+          { "start": "2015-05-03", "end": "2015-05-08" },
+          { "start": "2015-05-10", "end": "2015-05-22" }
+        ]
+      },
+      {
+        "name": "usa",
+        "dates": [{ "start": "2015-05-08", "end": "2015-05-10" }]
+      },
+      {
+        "name": "cuba",
+        "dates": [{ "start": "2015-05-23", "end": "2015-06-09" }]
+      }
     ]
   },
   "features": [

@@ -29,19 +29,20 @@ type: trip
     <h3>Places visited</h3>
     <p class="excerpt">Note this list contains all locations I've ever visited in the countries of this trip. Some locations might be from other trips. You can have a look at the troute on the map to see which locations I actually visited.</p>
     <ul>
-    {% for country in site.data.countries %}
-      {% if site.data.trips[trip_id].properties.countries contains country[1].properties.name %}
-        {% for location in country[1].features %}
-          {% if location.properties.visited %}
-          <li>
-            <span class="name">{{ location.properties.name }}</span> <span class="type">{{ location.properties.type }} in {{ country[1].properties.name }}</span>
-            {% if location.properties.description %}
-            <p class="excerpt">{{ location.properties.description }}</p>
-            {% endif %}
-          </li>
+    {% for country in site.data.trips[trip_id].properties.countries %}
+      {% assign country_id = country.name | slugify %}
+      {% assign country_data = site.data.countries[country_id] %}
+      {% for location in country_data.features %}
+        {% if location.properties.visited %}
+        <li>
+          <span class="name">{{ location.properties.name }}</span>
+          <span class="type">{{ location.properties.type }} in {{ country.name }}</span>
+          {% if location.properties.description %}
+          <p class="excerpt">{{ location.properties.description }}</p>
           {% endif %}
-        {% endfor %}
-      {% endif %}
+        </li>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
     </ul>
   </div>
@@ -49,6 +50,7 @@ type: trip
 
 <aside class="sidebar">
   {% include picasa-slideshow.html userid=site.author.picasa albumid=page.albumid albumtag=page.albumtag %}
+
   {% assign data = site.data.trips[trip_id] %}
 
   {% if data.properties.date %}

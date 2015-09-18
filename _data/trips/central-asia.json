@@ -7,13 +7,13 @@
       "end": "2013-10-10"
     },
     "countries": [
-      "Kazakhstan",
-      "Kyrgyzstan",
-      "Tajikistan",
-      "Afghanistan",
-      "Uzbekistan",
-      "Azerbaijan",
-      "Georgia"
+      { "name": "kazakhstan", "dates": [] },
+      { "name": "kyrgyzstan", "dates": [] },
+      { "name": "tajikistan", "dates": [] },
+      { "name": "afghanistan", "dates": [] },
+      { "name": "uzbekistan", "dates": [] },
+      { "name": "azerbaijan", "dates": [] },
+      { "name": "georgia", "dates": [] }
     ]
   },
   "features": []

@@ -7,12 +7,12 @@
     },
     "name": "South East Asia while in Vietnam",
     "countries": [
-      "Vietnam",
-      "Cambodia",
-      "Malaysia",
-      "Singapore",
-      "Brunei",
-      "Thailand"
+      { "name": "vietnam", "dates": [] },
+      { "name": "cambodia", "dates": [] },
+      { "name": "malaysia", "dates": [] },
+      { "name": "singapore", "dates": [] },
+      { "name": "brunei", "dates": [] },
+      { "name": "thailand", "dates": [] }
     ]
   },
   "features": []

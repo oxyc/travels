@@ -7,8 +7,8 @@
       "end": "2010-04-14"
     },
     "countries": [
-      "India",
-      "Nepal"
+      { "name": "india", "dates": [] },
+      { "name": "nepal", "dates": [] }
     ]
   },
   "features": []

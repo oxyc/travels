@@ -7,16 +7,16 @@
       "end": ""
     },
     "countries": [
-      "Finland",
-      "Denmark",
-      "Germany",
-      "Sweden",
-      "Estonia",
-      "Norway",
-      "Spain",
-      "Australia",
-      "Egypt",
-      "United States"
+      { "name": "finland", "dates": [] },
+      { "name": "denmark", "dates": [] },
+      { "name": "germany", "dates": [] },
+      { "name": "sweden", "dates": [] },
+      { "name": "estonia", "dates": [] },
+      { "name": "norway", "dates": [] },
+      { "name": "spain", "dates": [] },
+      { "name": "australia", "dates": [] },
+      { "name": "egypt", "dates": [] },
+      { "name": "usa", "dates": [] }
     ]
   },
   "features": []

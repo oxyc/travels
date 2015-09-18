@@ -212,7 +212,7 @@
         return;
       }
       var trip = tripCollection[index];
-      var countries = trip.properties.countries;
+      var countries = _.pluck(trip.properties.countries, 'name');
       var control = exports.controls.country;
       var on = (overlay.type === 'overlayadd');
 

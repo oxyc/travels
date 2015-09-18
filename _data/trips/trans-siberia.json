@@ -7,10 +7,10 @@
       "end": "2009-12-30"
     },
     "countries": [
-      "Russia",
-      "Mongolia",
-      "China",
-      "Thailand"
+      { "name": "russia", "dates": [] },
+      { "name": "mongolia", "dates": [] },
+      { "name": "china", "dates": [] },
+      { "name": "thailand", "dates": [] }
     ]
   },
   "features": []
