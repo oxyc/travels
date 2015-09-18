@@ -76,7 +76,9 @@
     var map = L.map(selector, {
       center: [18, 0],
       zoom: 2,
-      maxZoom: 10
+      minZoom: 2,
+      maxZoom: 10,
+      scrollWheelZoom: false
     });
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

@@ -348,5 +348,9 @@ img.slick-loading {
     width: 100%;
   }
 }
+
+// .expenditure-chart.front {
+//   height: 1000px;
+// }
 {% endcapture %}
 {{ scss | scssify }}
