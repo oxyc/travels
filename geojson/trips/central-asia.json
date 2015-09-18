@@ -2,7 +2,19 @@
   "type": "FeatureCollection",
   "properties": {
     "name": "Central Asia",
-    "countries": ["Kazakhstan", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Uzbekistan", "Azerbaijan", "Georgia"]
+    "date": {
+      "start": "2013-06-14",
+      "end": "2013-10-10"
+    },
+    "countries": [
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan",
+      "Afghanistan",
+      "Uzbekistan",
+      "Azerbaijan",
+      "Georgia"
+    ]
   },
   "features": []
 }

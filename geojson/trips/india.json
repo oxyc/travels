@@ -2,7 +2,14 @@
   "type": "FeatureCollection",
   "properties": {
     "name": "India & Nepal",
-    "countries": ["India", "Nepal"]
+    "date": {
+      "start": "2010-02-03",
+      "end": "2010-04-14"
+    },
+    "countries": [
+      "India",
+      "Nepal"
+    ]
   },
   "features": []
 }

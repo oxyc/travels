@@ -2,6 +2,10 @@
   "type": "FeatureCollection",
   "properties": {
     "name": "Middle East, Caucasus and a bit of East Asia",
+    "date": {
+      "start": "2014-05-29",
+      "end": "2014-11-16"
+    },
     "countries": [
       "Thailand",
       "Laos",

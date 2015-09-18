@@ -2,6 +2,10 @@
   "type": "FeatureCollection",
   "properties": {
     "name": "Western South America",
+    "date": {
+      "start": "2015-01-10",
+      "end": "2015-06-09"
+    },
     "countries": [
       "Italy",
       "Vatican City",

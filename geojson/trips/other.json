@@ -2,6 +2,10 @@
   "type": "FeatureCollection",
   "properties": {
     "name": "Vacations etc",
+    "date": {
+      "start": "",
+      "end": ""
+    },
     "countries": [
       "Finland",
       "Denmark",
