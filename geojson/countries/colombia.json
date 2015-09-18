@@ -1,7 +1,11 @@
 {
   "type": "FeatureCollection",
   "properties": {
-    "name": "Colombia"
+    "name": "Colombia",
+    "dates": [
+      { "start": "2015-05-03", "end": "2015-05-08" },
+      { "start": "2015-05-10", "end": "2015-05-23" }
+    ]
   },
   "features": [
     {
