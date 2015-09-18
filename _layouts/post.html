@@ -72,7 +72,7 @@ type: post
 
   {% include expenditures.html trips=page.categories country=country_id days=days_total %}
 
-  {% if page.tags %}
+  {% if page.tags != empty %}
   <div class="categories">
     <h4>Categories</h4>
     {% include categorylist.html categories=page.tags %}
