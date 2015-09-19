@@ -2,7 +2,7 @@
   'use strict';
 
   // Short timeout as some geojson files might not exist yet.
-  var AJAX_TIMEOUT = 1000;
+  var AJAX_TIMEOUT = 5000;
 
   var exports = {};
 
