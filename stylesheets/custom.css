@@ -4,19 +4,34 @@
 
 .page-header {
   position: relative;
+  height: 60vh;
+  max-height: 500px;
+
   h2 {
     margin: 0;
     position: absolute;
     right: .5em;
     bottom: 1em;
     a { color: #fff; }
+    @media (max-width: 50rem) {
+      font-size: 1rem;
+      bottom: 2em;
+    }
   }
 }
 
+.main-content > div { position: relative; }
+
+#world-map { height: 100%; }
+
 .site-footer > div, .main-content {
-  padding: 2rem 6rem;
+  padding: 1rem;
   margin: 0 auto;
-  max-width: 64rem;
+  @media (min-width: 50rem) {
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    max-width: 64rem;
+  }
 }
 
 .site-footer {
@@ -27,10 +42,10 @@
   ul, ol { padding-left: 1.5em; }
 }
 
-#world-map { height: 500px; }
-
 .group {
-  display: flex;
+  @media (min-width: 50rem) {
+    display: flex;
+  }
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,9 +82,6 @@
 
 h1 {
   margin-bottom: 0;
-}
-.content, .sidebar {
-  float: left;
 }
 
 .post {
@@ -133,6 +145,11 @@ h1 {
   .open {
     color: #159957;
     text-decoration: underline;
+    @media (max-width: 50rem) {
+      position: absolute;
+      top: -1em;
+      right: -1em;
+    }
   }
 }
 
@@ -324,11 +341,20 @@ img.slick-loading {
   &.control-country:before { content: 'Countries'; }
   &.control-country {
     .leaflet-control-layers-overlays {
-      max-width: 404px;
+      max-width: 230px;
+      overflow-y: scroll;
+      z-index: 0;
+      max-height: 300px;
+      clear: left;
+      @media (max-width: 50rem) {
+        max-height: 30vh;
+      }
     }
     form label {
-      display: inline-block !important;
-      width: 100px;
+      @media (min-width: 50rem) {
+        display: inline-block !important;
+        width: 100px;
+      }
     }
   }
 }
@@ -353,7 +379,6 @@ img.slick-loading {
     width: 100%;
   }
 }
-
 // .expenditure-chart.front {
 //   height: 1000px;
 // }

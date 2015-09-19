@@ -108,15 +108,19 @@
 
   function createControl(type, layers) {
     var control = L.control.layers(null, layers, {collapsed: true}).addTo(exports.lMap);
-    setControlClass(control, type);
-    return control;
-  }
-
-  function setControlClass(control, className) {
     // Add custom classes to the leaflet control
     var container = control.getContainer();
     L.DomUtil.addClass(container, 'control-custom');
-    L.DomUtil.addClass(container, 'control-' + className);
+    L.DomUtil.addClass(container, 'control-' + type);
+
+    if (!L.Browser.touch) {
+      L.DomEvent
+        .disableClickPropagation(container)
+        .disableScrollPropagation(container);
+    } else {
+      L.DomEvent.disableClickPropagation(container);
+    }
+    return control;
   }
 
   function toggleControlCheckboxes(control, labels, onState) {

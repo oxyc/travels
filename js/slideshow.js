@@ -1,6 +1,8 @@
 (function ($, _, L, tMap) {
   'use strict';
 
+  var isSmallScreen = window.matchMedia && window.matchMedia('(max-width: 50rem)').matches;
+
   var CROP_FACTOR = {
     'FUJIFILM X-E2': 1.5
   };
@@ -389,7 +391,7 @@
     $nav.slick({
       asNavFor: '.slideshow',
       lazyLoad: 'ondemand',
-      slidesToShow: 18,
+      slidesToShow: isSmallScreen ? 9 : 18,
       arrows: false,
       focusOnSelect: true,
       infinite: false
