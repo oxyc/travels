@@ -7,6 +7,9 @@ layout: page
 A personal travel log of Oskar Schöldström. I've built this site to keep a
 record of my travels and collect as much as possible in one place.
 
+- Planned trips (and suggestions) are kept in the [issue
+  queue](https://github.com/oxyc/travels/issues) of this repository.
+
 - Travel routes are stored as [GeoJSON files](https://geojson.io), and
   displayed on the world map in different colors depending on the type of
   route.
