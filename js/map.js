@@ -127,7 +127,7 @@
     // List of the layer ids corresponding the the listed labels (strings).
     var layerIds = _.chain(control._layers)
       .pick(function (layer) {
-        return labels.indexOf(layer.name) !== -1;
+        return labels.indexOf(layer.layer.id) !== -1;
       })
       .keys()
       .value();
@@ -165,6 +165,7 @@
     _.forEach(countryLayers, function (layer, name) {
       dummyLayers[name] = L.layerGroup();
       dummyLayers[name].type = 'country';
+      dummyLayers[name].id = layer.id;
       // If a pre-selected country is defiend, exit here so that it's not
       // preselected.
       if (preSelectedCountries.length && preSelectedCountries.indexOf(layer.id) === -1) {
