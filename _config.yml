@@ -2,6 +2,7 @@ permalink: pretty
 exclude: ["CNAME", "README.md", "package.json", "node_modules"]
 
 base_path: "travels.oxy.fi"
+permalink: /:categories/:title/
 
 title: "Travel log of Oskar Schöldström"
 description: A Personal travel log of Oskar Schöldström
