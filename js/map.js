@@ -155,6 +155,15 @@
   }
 
   function createCountryLayers(countryCollection) {
+    countryCollection = countryCollection.sort(function (a, b) {
+      if (a.properties.id < b.properties.id) {
+        return -1;
+      }
+      if (a.properties.id > b.properties.id) {
+        return 1;
+      }
+      return 0;
+    });
     // The real layers
     var countryLayers = prepareLayers('country', countryCollection, {onEachFeature: bindMarkerPopup, pointToLayer: getMarkerIcon});
     // @see https://github.com/Leaflet/Leaflet.markercluster/issues/13
