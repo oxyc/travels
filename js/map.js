@@ -81,7 +81,7 @@
       zoom: 2,
       minZoom: 2,
       maxZoom: 10,
-      scrollWheelZoom: isSmallScreen ? false : true
+      scrollWheelZoom: !isSmallScreen
     });
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -261,9 +261,19 @@
       });
     });
 
-    exports.lMap.on('overlayadd overlayremove', function () {
-      exports.lMap.fitBounds(exports.cluster.getBounds());
-    });
+    exports.lMap.on('overlayadd overlayremove', _.debounce(function (event) {
+      if (event.layer.type && event.layer.type === 'country') {
+        var layers = exports.cluster.getLayers();
+        if (!layers.length) {
+          return;
+        }
+        var bounds = new L.LatLngBounds();
+        for (var i = 0, l = layers.length; i < l; i++) {
+          bounds.extend(layers[i].getLatLng());
+        }
+        exports.lMap.fitBounds(bounds);
+      }
+    }, 100));
 
     // Create the country layers.
     createCountryLayers(data.countries);
