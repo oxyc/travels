@@ -71,17 +71,17 @@ type: post
   </div>
   {% endif %}
 
-  {% if has_expenses != 0 %}
-  <h4>Cost per day</h4>
-  <div class="expenditure-chart" data-title="" data-chart="perTagCPD" data-country="{{ country_id }}"></div>
-  {% endif %}
-
-  {% include expenditures.html trips=page.categories country=country_id days=days_total %}
-
   {% if page.tags != empty %}
   <div class="categories">
     <h4>Categories</h4>
     {% include categorylist.html categories=page.tags %}
   </div>
+  {% endif %}
+
+
+  {% include expenditures.html trips=page.categories country=country_id days=days_total %}
+
+  {% if has_expenses != 0 %}
+  <div class="expenditure-chart" data-title="" data-chart="perTagCPD" data-country="{{ country_id }}"></div>
   {% endif %}
 </aside>

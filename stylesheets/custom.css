@@ -58,6 +58,11 @@
   }
   h4 { font-size: 1.3rem; }
   > div { margin-bottom: 1rem; }
+  .expenditure-chart {
+    @media (min-width: 50rem) {
+      height: 300px;
+    }
+  }
 }
 
 h1 {

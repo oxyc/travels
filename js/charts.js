@@ -26,7 +26,7 @@
         .value();
 
       $el.highcharts({
-        chart: {type: 'pie', height: 300, margin: 0, marginTop: -110, spacingTop: 0},
+        chart: {type: 'pie'},
         plotOptions: {
           pie: {
             allowPointSelect: true,
