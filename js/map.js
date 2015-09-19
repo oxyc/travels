@@ -28,7 +28,8 @@
     route: {color: '#000', opacity: 1, weight: 2},
     tour: {color: '#000', opacity: 1, weight: 2},
     flight: {color: '#000', opacity: 0.3, weight: 2},
-    boat: {color: '#2057D0', opacity: 0.3, wiehgt: 2}
+    boat: {color: '#2057D0', opacity: 0.3, weight: 2},
+    mouseover: {color: '#ff0000', opacity: 0.7, weight: 3}
   };
 
   var preSelectedTrips = exports.$map.data('trips').split(' ') || [];
@@ -58,7 +59,6 @@
       return [array[i], b];
     });
   }
-
 
   function bindMarkerPopup(feature, layer) {
     var content = templateMarkerPopup(feature.properties);
@@ -177,6 +177,20 @@
     }
   }
 
+  function setTripLayerStyles(feature, layer) {
+    var defaultStyle = getRouteStyle(feature);
+    bindRoutePopup(feature, layer);
+    layer.setStyle(defaultStyle);
+    (function () {
+      layer.on('mouseover', function () {
+        layer.setStyle(exports.routeStyles.mouseover);
+      });
+      layer.on('mouseout', function () {
+        layer.setStyle(defaultStyle);
+      });
+    })();
+  }
+
   function createCountryLayers(countryCollection) {
     countryCollection = countryCollection.sort(function (a, b) {
       if (a.properties.id < b.properties.id) {
@@ -233,7 +247,7 @@
   }
 
   function createTripLayers(tripCollection) {
-    var tripLayers = prepareLayers('trip', tripCollection, {onEachFeature: bindRoutePopup, style: getRouteStyle});
+    var tripLayers = prepareLayers('trip', tripCollection, {onEachFeature: setTripLayerStyles});
     if (!preSelectedCountries.length) {
       _.forEach(tripLayers, function (layer) {
         exports.lMap.addLayer(layer);
