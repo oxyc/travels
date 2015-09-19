@@ -42,15 +42,35 @@
   // Initialize
   $.getJSON('/world.json').done(init);
 
-  var templatePopup = _.template(
+  var templateMarkerPopup = _.template(
     '<strong><%- name %></strong> <small><%- type %></small><br>' +
     '<% if (!visited) { %><em>planning to visit</em><br><% } %>' +
     '<% if (typeof homebase !== "undefined" && homebase) { %><em>I used to live here</em><% } %>' +
     '<% if (typeof description !== "undefined") { %><span class="description"><%- description %></span><% } %>'
   );
+  var templateRoutePopup = _.template(
+    '<strong><%- name %></strong> <small><%- type %></small><br>' +
+    'Distance: <%- Math.round(distance / 1000) %> km'
+  );
+
+  function pairs(array) {
+    return array.slice(1).map(function (b, i) {
+      return [array[i], b];
+    });
+  }
+
 
   function bindMarkerPopup(feature, layer) {
-    var content = templatePopup(feature.properties);
+    var content = templateMarkerPopup(feature.properties);
+    layer.bindPopup(content);
+  }
+
+  function bindRoutePopup(feature, layer) {
+    feature.properties.distance = _.reduce(pairs(feature.geometry.coordinates), function (total, pair) {
+      return total + L.latLng(pair[0][1], pair[0][0])
+        .distanceTo(L.latLng(pair[1][1], pair[1][0]));
+    }, 0);
+    var content = templateRoutePopup(feature.properties);
     layer.bindPopup(content);
   }
 
@@ -213,7 +233,7 @@
   }
 
   function createTripLayers(tripCollection) {
-    var tripLayers = prepareLayers('trip', tripCollection, {style: getRouteStyle});
+    var tripLayers = prepareLayers('trip', tripCollection, {onEachFeature: bindRoutePopup, style: getRouteStyle});
     if (!preSelectedCountries.length) {
       _.forEach(tripLayers, function (layer) {
         exports.lMap.addLayer(layer);

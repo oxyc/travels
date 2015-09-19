@@ -123,8 +123,7 @@
     var totalAmount = _.chain(series)
       .filter('visible')
       .reduce(function (total, series) {
-        total += tagTotalData[series.name];
-        return total;
+        return total + tagTotalData[series.name];
       }, 0)
       .value();
 
