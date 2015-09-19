@@ -7,7 +7,7 @@
   var exports = {};
 
   exports.lMap = createMap('world-map');
-  exports.cluster = L.markerClusterGroup().addTo(exports.lMap);
+  exports.cluster = L.markerClusterGroup({maxClusterRadius: 20}).addTo(exports.lMap);
 
   exports.$map = $('#world-map');
   exports.controls = {};
