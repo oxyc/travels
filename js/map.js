@@ -284,6 +284,11 @@
 
       // Create the trip layers.
       createTripLayers(tripCollection);
+
+      if (!exports.controls.other) {
+        exports.controls.other = L.control.layers(null, null, {collapsed: false}).addTo(exports.lMap);
+        exports.controls.other.addOverlay(exports.cluster, 'Markers');
+      }
     });
   }
 
