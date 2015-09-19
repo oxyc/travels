@@ -2,6 +2,8 @@
 layout: page
 ---
 
+<div class="profile-photo"><img src="/images/profile.jpg" alt="Profile picture"></div>
+
 A personal travel log of Oskar Schöldström. I've built this site to keep a
 record of my travels and collect as much as possible in one place.
 

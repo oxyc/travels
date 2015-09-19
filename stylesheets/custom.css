@@ -2,6 +2,12 @@
 ---
 {% capture scss %}
 
+.profile-photo { text-align: center; }
+.profile-photo img {
+  border-radius: 50px;
+  width: 100px;
+}
+
 .page-header {
   position: relative;
   height: 60vh;
