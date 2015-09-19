@@ -25,7 +25,8 @@
     trek: {color: '#159957', opacity: 1, weight: 5},
     route: {color: '#000', opacity: 1, weight: 2},
     tour: {color: '#000', opacity: 1, weight: 2},
-    flight: {color: '#000', opacity: 0.3, weight: 2}
+    flight: {color: '#000', opacity: 0.3, weight: 2},
+    boat: {color: '#2057D0', opacity: 0.3, wiehgt: 2}
   };
 
   var preSelectedTrips = exports.$map.data('trips').split(' ') || [];
