@@ -1,6 +1,8 @@
 (function ($, _, L) {
   'use strict';
 
+  var isSmallScreen = window.matchMedia && window.matchMedia('(max-width: 50rem)').matches;
+
   // Short timeout as some geojson files might not exist yet.
   var AJAX_TIMEOUT = 5000;
 
@@ -79,7 +81,7 @@
       zoom: 2,
       minZoom: 2,
       maxZoom: 10,
-      scrollWheelZoom: false
+      scrollWheelZoom: isSmallScreen ? false : true
     });
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
