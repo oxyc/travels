@@ -415,5 +415,21 @@ iframe.embed {
   width: 100%;
   min-height: 500px;
 }
+.tinytooltip {
+  .arrow { display: none; }
+  .message {
+    overflow-y: scroll;
+    z-index: 0;
+    max-height: 200px;
+    border: solid 1px #c3c3c3;
+    background-color: #fff;
+  }
+  table {
+    text-align: left;
+    td, th {
+      padding: 2px 6px;
+    }
+  }
+}
 {% endcapture %}
 {{ scss | scssify }}

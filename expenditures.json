@@ -24,8 +24,10 @@
       {% for row in trip[1] %}
         {
           "country": "{{ row.country }}",
+          "date": "{{ row.date }}",
           "tags": "{{ row.tags }}",
-          "amount": "{{ row.main_amount }}"
+          "amount": "{{ row.main_amount }}",
+          "description": "{{ row.description }}"
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
       ]

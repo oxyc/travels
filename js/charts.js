@@ -6,7 +6,19 @@
     $.getJSON('/expenditures.json', init);
   }
 
+  var $tooltips = $();
+  var tooltipVisible = false;
+
   var tagsHidden = ['flight', 'boat'];
+
+  var templateExpenseTable = _.template(
+    '<table>' +
+    '<tr><th>Date</th><th>Amount</th><th>Description</th></tr>' +
+    '<% _.forEach(data, function (row) { %>' +
+    '<tr><td><%- row.date %><td>$<%- row.amount %></td><td><%- row.description || "" %></td></tr>' +
+    '<% }); %>' +
+    '</table>'
+  );
 
   var tripDate;
   var tagTotalData = {};
@@ -31,7 +43,16 @@
           pie: {
             allowPointSelect: true,
             dataLabels: {enabled: false},
-            showInLegend: true
+            showInLegend: true,
+            events: {
+              click: function (event) {
+                var tag = event.point.name;
+                var expenses = _.filter(data, function (expense) {
+                  return (expense.tags === tag);
+                });
+                showExpenseTable(event.target, expenses);
+              }
+            }
           }
         },
         tooltip: {
@@ -106,13 +127,41 @@
           plotLines: [getAveragePlotLine(series)]
         },
         legend: {reversed: true},
-        plotOptions: {series: {stacking: 'normal'}},
+        plotOptions: {
+          series: {stacking: 'normal'},
+          bar: {
+            events: {
+              click: function (event) {
+                var country = event.point.category;
+                var tag = this.name;
+                var expenses = _.filter(data, function (expense) {
+                  return (expense.country === country && expense.tags === tag);
+                });
+                showExpenseTable(event.target, expenses);
+              }
+            }
+          }
+        },
         tooltip: {valuePrefix: '$'},
         title: {text: options.title || ''},
         series: series
       });
     }
   };
+
+  function showExpenseTable(element, expenses) {
+    // Make this element distinquishable in the auto-close listener.
+    element.tooltipInitalizer = true;
+    $tooltips.not(element).trigger('hidetooltip');
+    var $tooltip = $(element)
+      .tinytooltip({
+        message: templateExpenseTable({data: expenses}),
+        hover: false
+      })
+      .trigger('showtooltip');
+    tooltipVisible = true;
+    $tooltips = $tooltips.add($tooltip);
+  }
 
   function isVisibleByDefault(tag) {
     return tagsHidden.indexOf(tag) === -1;
@@ -213,6 +262,14 @@
       }
 
       chartTypes[chartType]($this, tripData, options);
+    });
+
+    $(document).on('click', function (event) {
+      if (!tooltipVisible || (event.target && event.target.tooltipInitalizer)) {
+        return;
+      }
+      $tooltips.trigger('hidetooltip');
+      tooltipVisible = false;
     });
   }
 }).call(this, this.jQuery, this._);
