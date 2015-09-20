@@ -1,5 +1,8 @@
 permalink: pretty
-exclude: ["CNAME", "README.md", "package.json", "node_modules"]
+exclude: [
+  "CNAME", "README.md", "package.json", "node_modules",
+  "bower_components/select2/docs"
+]
 
 base_path: "travels.oxy.fi"
 permalink: /:categories/:title/
