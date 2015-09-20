@@ -60,7 +60,7 @@ type: post
           <td>{{ start_date | date_to_string }}</td>
           <td>{% if date.end %}{{ end_date | date_to_string }}{% endif %}</td>
           <td>{% if date.end %}
-            {% assign days = end_date_unix | minus: start_date_unix | divided_by: 86400 %}
+            {% assign days = end_date_unix | minus: start_date_unix | divided_by: 86400 | plus: 1 %}
             {{ days }} days
             {% assign days_total = days_total | plus: days %}
           {% endif %}</td>
