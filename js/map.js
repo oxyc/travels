@@ -44,7 +44,7 @@
   $.getJSON('/world.json').done(init);
 
   var templateMarkerPopup = _.template(
-    '<strong><%- name %></strong> <small><%- type %></small><br>' +
+    '<strong><%- name %>, <%- _.startCase(country) %></strong> <small><%- type %></small><br>' +
     '<% if (!visited) { %><em>planning to visit</em><br><% } %>' +
     '<% if (typeof homebase !== "undefined" && homebase) { %><em>I used to live here</em><% } %>' +
     '<% if (typeof description !== "undefined") { %><span class="description"><%- description %></span><% } %>'
