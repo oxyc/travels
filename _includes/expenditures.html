@@ -59,6 +59,8 @@
       {% if include.days > 0 %}
       {% capture cpd %}{{ expense_total | times: '100' | divided_by: include.days }}{% endcapture %}
       <tr class="cpd"><th>Cost per day</th><td>${{ cpd | split: '.' | first | divided_by: '100.0' }}/day</td></tr>
+      {% capture cpd_noflight %}{{ expense_total | minus: expense_flight | times: '100' | divided_by: include.days }}{% endcapture %}
+      <tr class="cpd no-flight"><th>Cost per day (no flights)</th><td>${{ cpd_noflight | split: '.' | first | divided_by: '100.0' }}/day</td></tr>
       {% endif %}
     </table>
   </div>
