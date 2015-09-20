@@ -213,6 +213,40 @@
           41.242255387042476
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stepanakert",
+        "description": "Nagorno Karabakh",
+        "type": "City",
+        "country": "armenia",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.778411865234375,
+          39.81170080625295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shushi",
+        "type": "City",
+        "country": "armenia",
+        "description": "Nagorno Karabakh",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.750946044921875,
+          39.756296389617624
+        ]
+      }
     }
   ]
 }
