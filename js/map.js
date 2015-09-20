@@ -201,6 +201,25 @@
     })();
   }
 
+  function createSearchControl() {
+    var control = new L.Control.Search({
+      layer: exports.cluster,
+      propertyName: 'name',
+      circleLocation: false,
+      zoom: 10
+    });
+
+    control.on('search_locationfound', function(e) {
+      exports.cluster.zoomToShowLayer(e.layer, function () {
+        if (e.layer._popup) {
+          e.layer.openPopup();
+        }
+      });
+    });
+
+    return control;
+  }
+
   function createCountryLayers(countryCollection) {
     countryCollection = countryCollection.sort(function (a, b) {
       if (a.properties.id < b.properties.id) {
@@ -321,6 +340,7 @@
 
     // Create the country layers.
     createCountryLayers(data.countries);
+    exports.lMap.addControl(createSearchControl());
 
     // Wait for all requests to finish
     $.whenAll.apply(null, _.pluck(tripCollection, 'promise')).always(function () {

@@ -29,6 +29,7 @@
     "fraction.js": "~3.0.0",
     "Leaflet.MakiMarkers": "~1.0.1",
     "leaflet.markercluster": "~0.4.0",
-    "leaflet-omnivore": "~0.3.2"
+    "leaflet-omnivore": "~0.3.2",
+    "leaflet-search": "~1.8.4"
   }
 }

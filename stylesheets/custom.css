@@ -385,6 +385,20 @@ img.slick-loading {
     width: 100%;
   }
 }
+.leaflet-control-search .search-input {
+  border: 0;
+  outline: none;
+  color: #000;
+}
+.leaflet-control-search .search-tip {
+  border-radius: 0;
+  margin: 0;
+  border-bottom: solid 1px #ececec;
+  background-color: #fff;
+  &:hover {
+    background-color: #ececec;
+  }
+}
 // .expenditure-chart.front {
 //   height: 1000px;
 // }
