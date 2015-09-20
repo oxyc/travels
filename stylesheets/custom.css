@@ -406,8 +406,11 @@ img.slick-loading {
     background-color: #ececec;
   }
 }
-.expenditure-chart.front {
-  height: 600px;
+.expenditure-chart {
+  height: 500px;
+  &.front {
+    height: 600px;
+  }
 }
 
 iframe.embed {
