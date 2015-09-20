@@ -399,8 +399,8 @@ img.slick-loading {
     background-color: #ececec;
   }
 }
-// .expenditure-chart.front {
-//   height: 1000px;
-// }
+.expenditure-chart.front {
+  height: 600px;
+}
 {% endcapture %}
 {{ scss | scssify }}
