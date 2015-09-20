@@ -14,6 +14,7 @@ If you want to find out more you can read about:
 - [Who I am and how this site is built](/about/)
 - [Recent changes done to the website](/changes/)
 - [What I have in my backpack](/backpack/)
+- [A list of all places grouped by type](/places/)
 
 ### Cost per day per country
 
