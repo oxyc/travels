@@ -3,8 +3,15 @@
   {% assign data = site.data.countries[country_id] %}
   {% capture date_str %}
   <span class="visit-list">
-    {% for date in data.properties.dates %}
-      | {% include visit-date.html date=date %}
+    {% for trip in site.data.trips %}
+      {% assign trip_hash = trip[1] %}
+      {% for country in trip_hash.properties.countries %}
+        {% if country.name == country_id %}
+          {% for date in country.dates %}
+            | {% include visit-date.html date=date %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </span>
   {% endcapture %}
@@ -16,4 +23,3 @@
     {% endunless %}
   </li>
 {% endif %}
-
