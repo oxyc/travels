@@ -1,4 +1,4 @@
-(function ($, _, L) {
+(function ($, _, L, omnivore) {
   'use strict';
 
   var isSmallScreen = window.matchMedia && window.matchMedia('(max-width: 50rem)').matches;
@@ -64,7 +64,7 @@
         layer.openPopup();
       }
     });
-  }
+  };
 
   function pairs(array) {
     return array.slice(1).map(function (b, i) {
@@ -136,8 +136,7 @@
         if (featureGroup.features.type === 'Topology') {
           var layer = L.geoJson(null, groupOptions);
           featureGroup.layer = omnivore.topojson.parse(featureGroup.features, null, layer);
-        }
-        else {
+        } else {
           featureGroup.layer = L.geoJson(featureGroup.features, groupOptions);
         }
         featureGroup.layer.type = type;
@@ -221,7 +220,7 @@
       zoom: 10
     });
 
-    control.on('search_locationfound', function(e) {
+    control.on('search_locationfound', function (e) {
       openPopup(e.layer);
     });
 
@@ -378,4 +377,4 @@
 
   // Export ourselves.
   this.tMap = exports;
-}).call(this, jQuery, this._, this.L);
+}).call(this, jQuery, this._, this.L, this.omnivore);

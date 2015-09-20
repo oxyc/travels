@@ -134,10 +134,12 @@
     var popup = L.popup({className: 'popup-photo'})
       .setContent(templatePhotoPopup(properties));
 
-    return L.marker(
+    var marker = L.marker(
       properties.latlng,
       {icon: L.MakiMarkers.icon(tMap.markers.photo)}
     ).bindPopup(popup);
+    marker.feature = {properties: {name: 'Photo'}};
+    return marker;
   }
 
   function createPhotoObject(entry) {
