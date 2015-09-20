@@ -217,6 +217,8 @@
       layer: exports.cluster,
       propertyName: 'name',
       circleLocation: false,
+      initial: false,
+      autoCollapse: true,
       zoom: 10
     });
 
