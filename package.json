@@ -4,7 +4,8 @@
   "description": "A record of my travels",
   "main": "index.js",
   "scripts": {
-    "test": "xo && node scripts/lint-country.js _data/countries/*.json && geojsonhint _data/*/*.json && jsonlint -q *.json _data/*/*.json"
+    "test": "xo && node scripts/lint-country.js _data/countries/*.json && geojsonhint _data/*/*.json && jsonlint -q *.json _data/*/*.json",
+    "build": "for i in _data/trips/*.json; do n=\"$(basename $i)\"; topojson -p -o geojson/trips/${n%.*}.topojson $i; done"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "file-exists": "^0.1.1",
     "geojson-merge": "^0.1.0",
     "marked": "^0.3.5",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "topojson": "^1.6.19"
   }
 }

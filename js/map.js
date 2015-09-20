@@ -116,8 +116,18 @@
 
   function prepareLayers(type, data, groupOptions) {
     var collection = _.chain(data)
+      // If it's TopoJson require that there be arcs.
+      .filter(function (featureGroup) {
+        return featureGroup.features.type !== 'Topology' || featureGroup.features.arcs.length;
+      })
       .forEach(function (featureGroup) {
-        featureGroup.layer = L.geoJson(featureGroup.features, groupOptions);
+        if (featureGroup.features.type === 'Topology') {
+          var layer = L.geoJson(null, groupOptions);
+          featureGroup.layer = omnivore.topojson.parse(featureGroup.features, null, layer);
+        }
+        else {
+          featureGroup.layer = L.geoJson(featureGroup.features, groupOptions);
+        }
         featureGroup.layer.type = type;
         featureGroup.layer.id = featureGroup.properties.id;
       })
@@ -250,7 +260,7 @@
     var tripLayers = prepareLayers('trip', tripCollection, {onEachFeature: setTripLayerStyles});
     if (!preSelectedCountries.length) {
       _.forEach(tripLayers, function (layer) {
-        exports.lMap.addLayer(layer);
+        layer.addTo(exports.lMap);
       });
     }
     var tripControl = exports.controls.trip = createControl('trip', tripLayers);
@@ -321,7 +331,7 @@
         })
         // Attach the features collected from the XHR request.
         .forEach(function (trip) {
-          trip.features = trip.promise.responseJSON.features;
+          trip.features = trip.promise.responseJSON;
         })
         .indexBy(function (trip) {
           return trip.properties.name;
