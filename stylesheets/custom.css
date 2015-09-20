@@ -133,6 +133,13 @@ h1 {
     }
   }
 }
+
+#commit-history {
+  .date {
+    color: #999;
+  }
+}
+
 .excerpt {
   font-size: 12px;
   margin-top: 0;
@@ -401,6 +408,12 @@ img.slick-loading {
 }
 .expenditure-chart.front {
   height: 600px;
+}
+
+iframe.embed {
+  border: 0;
+  width: 100%;
+  min-height: 500px;
 }
 {% endcapture %}
 {{ scss | scssify }}
