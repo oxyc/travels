@@ -119,7 +119,7 @@
   }
 
   function getAveragePlotLine(series) {
-    var tripDuration = (tripDate.end - tripDate.start) / 1000 / 3600 / 24;
+    var tripDuration = (tripDate.end - tripDate.start) / 1000 / 3600 / 24 + 1;
     var totalAmount = _.chain(series)
       .filter('visible')
       .reduce(function (total, series) {
@@ -143,7 +143,7 @@
         return _.reduce(country.dates, function (total, date) {
           var start = new Date(date.start);
           var end = new Date(date.end);
-          return total + (end - start) / 1000 / 3600 / 24;
+          return total + (end - start) / 1000 / 3600 / 24 + 1;
         }, 0);
       })
       .value();
