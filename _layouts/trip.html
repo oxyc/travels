@@ -41,13 +41,7 @@ type: trip
       {% assign country_data = site.data.countries[country_id] %}
       {% for location in country_data.features %}
         {% if location.properties.visited %}
-        <li>
-          <span class="name">{{ location.properties.name }}</span>
-          <span class="type">{{ location.properties.type }} in {{ country.name }}</span>
-          {% if location.properties.description %}
-          <p class="excerpt">{{ location.properties.description }}</p>
-          {% endif %}
-        </li>
+        <li>{% include location.html location=location.properties country=country_data.properties %}</li>
         {% endif %}
       {% endfor %}
     {% endfor %}

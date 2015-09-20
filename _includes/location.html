@@ -1,0 +1,7 @@
+<span class="name">{{ include.location.name }}</span>
+<span class="type">{{ include.location.type }}
+{% if include.country.name %} in {{ include.country.name }}{% endif %}
+</span>
+{% if include.location.description %}
+<p class="excerpt">{{ include.location.description }}</p>
+{% endif %}

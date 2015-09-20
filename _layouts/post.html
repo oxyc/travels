@@ -23,12 +23,7 @@ type: post
     <ul>
     {% for location in data.features %}
       {% if location.properties.visited %}
-        <li>
-          <span class="name">{{ location.properties.name }}</span> <span class="type">{{ location.properties.type }}</span>
-          {% if location.properties.description %}
-          <p class="excerpt">{{ location.properties.description }}</p>
-          {% endif %}
-        </li>
+        <li>{% include location.html location=location.properties %}</li>
       {% endif %}
     {% endfor %}
     </ul>
