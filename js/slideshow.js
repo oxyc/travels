@@ -242,8 +242,10 @@
       hideSlideshow($slideshow);
       var id = $(this).data('id');
       var marker = locations[id];
-      marker.openPopup();
-      tMap.lMap.panTo(marker.getLatLng());
+      if (!tMap.openPopup(marker)) {
+        tMap.lMap.panTo(marker.getLatLng());
+        tMap.lMap.setZoom(10);
+      }
     });
     // Display the slide in when the leaflet popup is clicked.
     $(document).on('click', '.leaflet-popup a.photo-popup', function (event) {

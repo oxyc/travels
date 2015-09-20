@@ -54,6 +54,18 @@
     'Distance: <%- Math.round(distance / 1000) %> km'
   );
 
+  var openPopup = exports.openPopup = function (layer) {
+    // Exit if the layer isnt visible
+    if (!exports.cluster.hasLayer(layer) || (!layer._icon && !layer.__parent._icon)) {
+      return false;
+    }
+    exports.cluster.zoomToShowLayer(layer, function () {
+      if (layer._popup) {
+        layer.openPopup();
+      }
+    });
+  }
+
   function pairs(array) {
     return array.slice(1).map(function (b, i) {
       return [array[i], b];
@@ -210,11 +222,7 @@
     });
 
     control.on('search_locationfound', function(e) {
-      exports.cluster.zoomToShowLayer(e.layer, function () {
-        if (e.layer._popup) {
-          e.layer.openPopup();
-        }
-      });
+      openPopup(e.layer);
     });
 
     return control;
