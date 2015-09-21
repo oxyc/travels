@@ -321,6 +321,16 @@
           exports.lMap.removeLayer(layer);
         })
         .value();
+
+      _.chain(tripLayers)
+        .pick(function (layer) {
+          return preSelectedTrips.indexOf(layer.id) !== -1;
+        })
+        .forEach(function (layer) {
+          exports.lMap.removeLayer(layer);
+          exports.lMap.addLayer(layer);
+        })
+        .value();
     }
   }
 
