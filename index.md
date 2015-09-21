@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<div class="profile-photo"><img src="/images/profile.jpg" alt="Profile picture"></div>
+<div class="profile-photo"><img src="/images/custom/profile-small.jpg" alt="Profile picture" width="100" height="100"></div>
 
 This is a travel log of all the trips I have done and all countries I have
 visited. I've built it to keep a record of my travels and gather all the data

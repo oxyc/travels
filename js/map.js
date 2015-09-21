@@ -1,6 +1,8 @@
 (function ($, _, L, omnivore) {
   'use strict';
 
+  L.Icon.Default.imagePath = '/dist/images';
+
   var isSmallScreen = window.matchMedia && window.matchMedia('(max-width: 50rem)').matches;
 
   // Short timeout as some geojson files might not exist yet.

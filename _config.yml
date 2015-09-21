@@ -1,7 +1,6 @@
 permalink: pretty
 exclude: [
-  "CNAME", "README.md", "package.json", "node_modules",
-  "bower_components/select2/docs"
+  "CNAME", "README.md", "package.json", "node_modules", "bower_components"
 ]
 
 base_path: "travels.oxy.fi"
