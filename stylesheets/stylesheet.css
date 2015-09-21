@@ -16,10 +16,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.page-header {
-  text-align: center;
-  background-color: #159957; }
-
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {

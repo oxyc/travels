@@ -335,6 +335,12 @@
       });
     });
 
+    // Remove the placeholder image as it gets dislpayed while tiles are
+    // fetched.
+    exports.lMap.once('zoomstart', function () {
+      exports.$map.css('background-image', 'none');
+    });
+
     exports.lMap.on('overlayadd overlayremove', _.debounce(function (event) {
       if (event.layer.type && event.layer.type === 'country') {
         var layers = exports.cluster.getLayers();
