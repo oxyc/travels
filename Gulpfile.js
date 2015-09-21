@@ -8,6 +8,7 @@ var cp = require('child_process');
 var livereload = require('gulp-livereload');
 var express = require('express');
 var prefix = require('gulp-autoprefixer');
+var inlineimage = require('gulp-inline-image');
 
 var source = {
   scriptsThirdParty: [
@@ -80,6 +81,7 @@ gulp.task('scripts', function () {
 gulp.task('stylesheets-abovefold', function () {
   return gulp.src(source.stylesheetsAboveFold)
     .pipe(sass())
+    .pipe(inlineimage())
     .pipe(prefix(['> 1%', 'IE 8', 'IE 9']))
     .pipe(concat('abovefold.css'))
     .pipe(minifyCss({

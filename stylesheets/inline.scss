@@ -8,6 +8,7 @@
   position: relative;
   height: 60vh;
   max-height: 500px;
+  overflow: hidden;
 
   h2 {
     margin: 0;
@@ -24,7 +25,11 @@
 
 .main-content > div { position: relative; }
 
-#world-map { height: 100%; }
+#world-map {
+  height: 100%;
+  background: inline-image('../dist/images/custom/world-map-small.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 
 .site-footer > div, .main-content {
   padding: 1rem;
