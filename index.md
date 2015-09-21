@@ -16,6 +16,10 @@ If you want to find out more you can read about:
 - [What I have in my backpack](/backpack/)
 - [A list of all places grouped by type](/places/)
 
+### Trips
+
+{% include triplist.html trips=site.categories %}
+
 ### Cost per day per country
 
 <div class="expenditure-chart front" data-title="" data-chart="perCountryCPD"></div>
@@ -23,10 +27,6 @@ If you want to find out more you can read about:
 ### Countries visited
 
 {% include countrylist.html countries=site.posts %}
-
-### Trips
-
-{% include triplist.html trips=site.categories %}
 
 ### Tags
 
