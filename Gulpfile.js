@@ -4,6 +4,10 @@ var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
+var cp = require('child_process');
+var livereload = require('gulp-livereload');
+var express = require('express');
+var prefix = require('gulp-autoprefixer');
 
 var source = {
   scriptsThirdParty: [
@@ -47,35 +51,55 @@ var source = {
   images: ['images/{,*/}*.{png,jpg,jpeg,gif}']
 };
 
+gulp.task('jekyll', function (done) {
+  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+    .on('exit', function () {
+      console.log('-- Finished Jekyll build --');
+    })
+    .on('close', done);
+});
+
 gulp.task('scripts-thirdparty', function () {
   return gulp.src(source.scriptsThirdParty)
     .pipe(concat('thirdparty.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('_site/dist'))
+    .pipe(livereload());
 });
+
 gulp.task('scripts', function () {
   return gulp.src(source.scripts)
     .pipe(concat('app.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('_site/dist'))
+    .pipe(livereload());
 });
+
 gulp.task('stylesheets-abovefold', function () {
   return gulp.src(source.stylesheetsAboveFold)
     .pipe(sass())
+    .pipe(prefix(['> 1%', 'IE 8', 'IE 9']))
     .pipe(concat('abovefold.css'))
     .pipe(minifyCss({
       relativeTo: '/dist/'
     }))
-    .pipe(gulp.dest('_includes'));
+    .pipe(gulp.dest('_includes'))
+    .pipe(livereload());
 });
+
 gulp.task('stylesheets', function () {
   return gulp.src(source.stylesheets)
     .pipe(sass())
+    .pipe(prefix(['> 1%', 'IE 8', 'IE 9']))
     .pipe(concat('stylesheet.min.css'))
     .pipe(minifyCss({
       relativeTo: '/dist/'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('_site/dist'))
+    .pipe(livereload());
 });
 
 gulp.task('images', function () {
@@ -83,7 +107,30 @@ gulp.task('images', function () {
     .pipe(imagemin({
       progressive: true
     }))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('_site/dist/images'))
+    .pipe(livereload());
+});
+
+gulp.task('serve', function () {
+  var server = express();
+  server.use(express.static('_site/'));
+  server.listen(4000);
+});
+
+gulp.task('watch', function () {
+  livereload.listen();
+
+  gulp.watch(source.stylesheetsAboveFold, ['stylesheets-abovefold', 'jekyll']);
+  gulp.watch(source.stylesheets, ['stylesheets']);
+  gulp.watch(source.scripts, ['scripts']);
+  gulp.watch(source.scriptsThirdParty, ['scripts-thirdparty']);
+  gulp.watch(['{,*/}*.html', '{,*/}*.md', '!_site/**', '!_site/*/**'], ['jekyll']);
+
+  gulp.watch(['_site/*/**']).on('change', function (file) {
+    livereload.changed(file);
+  });
 });
 
 gulp.task('build', ['stylesheets', 'stylesheets-abovefold', 'scripts', 'scripts-thirdparty']);
+gulp.task('default', ['build', 'jekyll', 'serve', 'watch']);
