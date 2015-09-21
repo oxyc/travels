@@ -7,7 +7,7 @@ base_path: "travels.oxy.fi"
 permalink: /:categories/:title/
 
 title: "Travel log of Oskar Schöldström"
-description: A Personal travel log of Oskar Schöldström
+description: A collection of places I've seen, routes I've traveled and how much I spent while doing it
 
 author:
   name: Oskar Schöldström

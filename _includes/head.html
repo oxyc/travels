@@ -8,7 +8,7 @@
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
 
-  {% capture site_description %}{{ site.description }}. Visited {{ site.data.countries | size }} countries of the world so far.{% endcapture %}
+  {% capture site_description %}{{ site.description }}. So far I've visited {{ site.data.countries | size }} countries.{% endcapture %}
   {% if page.description %}
     {% assign description = page.description %}
   {% elsif page.type == "trip" %}
