@@ -6,14 +6,28 @@ var validFeatureTypes = [
   'City',
   'Border Crossing',
   'Trek',
-  'National Park',
   'Sight',
-  'UNESCO Heritage Site',
   'Nomadic Village',
-  'Nature Reserve',
   'Pass',
   'Peak'
 ];
+
+var validTrips = [
+  'south-america-1',
+  'south-east-asia',
+  'central-asia',
+  'other',
+  'thailand',
+  'middle-east',
+  'india',
+  'trans-siberia'
+];
+
+function invalidElements(a, b) {
+  return a.filter(function (value) {
+    return b.indexOf(value) === -1;
+  });
+}
 
 function verify(json) {
   assert.equal(json.type, 'FeatureCollection', 'requires the root type to be set to FeatureCollection');
@@ -27,6 +41,9 @@ function verify(json) {
     assert.equal(typeof feature.properties.type, 'string', 'requires that each feature has a type');
     assert.ok(validFeatureTypes.indexOf(feature.properties.type) !== -1, feature.properties.type + ' is not a valid type');
     assert.equal(typeof feature.properties.visited, 'boolean', 'requires that each feature has a visited property');
+    assert.equal(typeof feature.properties.trips, 'object', 'requires that each feature has a trip');
+    var invalidTrips = invalidElements(feature.properties.trips, validTrips);
+    assert.equal(invalidTrips.length, 0, invalidTrips.join(', ') + ' is not a valid trip');
   });
 }
 

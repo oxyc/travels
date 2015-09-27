@@ -5,7 +5,7 @@ title: Places I have visited
 {{ page.title }}
 ================
 
-{% assign types = 'Trek|National Park|Nature Reserve|Sight|UNESCO Heritage Site|Nomadic Village|Pass|Peak|City|Border Crossing' | split: '|' %}
+{% assign types = 'Trek|Sight|Nomadic Village|Pass|Peak|City|Border Crossing' | split: '|' %}
 
 ### Type of location
 
