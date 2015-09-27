@@ -24,6 +24,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "other",
         "name": "Australia"
       },
       "geometry": {

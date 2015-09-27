@@ -18,6 +18,7 @@
       "type": "Feature",
       "properties": {
         "name": "Russia - Hong Kong",
+        "trip": "trans-siberia",
         "type": "Route"
       },
       "geometry": {
@@ -2446,6 +2447,7 @@
       "type": "Feature",
       "properties": {
         "type": "Boat",
+        "trip": "trans-siberia",
         "name": "Hong Kong - Macau"
       },
       "geometry": {
@@ -2490,6 +2492,7 @@
       "type": "Feature",
       "properties": {
         "name": "Macau - Bangkok",
+        "trip": "trans-siberia",
         "type": "Flight"
       },
       "geometry": {
@@ -2510,6 +2513,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "trans-siberia",
         "name": "Thailand"
       },
       "geometry": {
@@ -2678,6 +2682,7 @@
       "type": "Feature",
       "properties": {
         "type": "Boat",
+        "trip": "trans-siberia",
         "name": "Ban Phe - Ko Samet"
       },
       "geometry": {
@@ -2702,6 +2707,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tiger Leaping Gorge Trek",
+        "trip": "trans-siberia",
         "type": "Trek"
       },
       "geometry": {

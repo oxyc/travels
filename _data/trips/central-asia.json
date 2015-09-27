@@ -21,7 +21,8 @@
       "type": "Feature",
       "properties": {
         "name": "Almaty - Karakol",
-        "type": "Route"
+        "type": "Route",
+        "trip": "central-asia"
       },
       "geometry": {
         "type": "LineString",
@@ -1853,6 +1854,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ak Suu - Song Kol",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -2153,6 +2155,7 @@
       "type": "Feature",
       "properties": {
         "name": "Kyzart - Murghab",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -2845,6 +2848,7 @@
       "type": "Feature",
       "properties": {
         "name": "Murghab - Artuch",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -3893,6 +3897,7 @@
       "type": "Feature",
       "properties": {
         "name": "Fann Mountains - Khorog - Dushanbe",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -4729,6 +4734,7 @@
       "type": "Feature",
       "properties": {
         "name": "Afghanistan - Uzbekistan",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -7301,6 +7307,7 @@
       "type": "Feature",
       "properties": {
         "name": "Baku - Tbilisi",
+        "trip": "central-asia",
         "type": "Route"
       },
       "geometry": {
@@ -7873,6 +7880,7 @@
       "type": "Feature",
       "properties": {
         "name": "Toshkent - Baku",
+        "trip": "central-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -7893,6 +7901,7 @@
       "type": "Feature",
       "properties": {
         "name": "Dushanbe - Kabul",
+        "trip": "central-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -7913,6 +7922,7 @@
       "type": "Feature",
       "properties": {
         "name": "Kabul - Herat",
+        "trip": "central-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -7933,6 +7943,7 @@
       "type": "Feature",
       "properties": {
         "name": "Karakol Trek: Jeti Oguz - Ak Suu",
+        "trip": "central-asia",
         "type": "Trek"
       },
       "geometry": {
@@ -8181,6 +8192,7 @@
       "type": "Feature",
       "properties": {
         "name": "Song Kol Horse Trek",
+        "trip": "central-asia",
         "type": "Trek"
       },
       "geometry": {
@@ -8361,6 +8373,7 @@
       "type": "Feature",
       "properties": {
         "name": "Pshart Valley - Madiyan Valley Trek",
+        "trip": "central-asia",
         "type": "Trek"
       },
       "geometry": {
@@ -8445,6 +8458,7 @@
       "type": "Feature",
       "properties": {
         "name": "Fann Mountains Trek: Kulikalon Lakes - Alaudin Lakes",
+        "trip": "central-asia",
         "type": "Trek"
       },
       "geometry": {

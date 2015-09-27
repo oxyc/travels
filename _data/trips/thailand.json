@@ -12,6 +12,7 @@
       "type": "Feature",
       "properties": {
         "name": "Thailand",
+        "trip": "thailand",
         "type": "Route"
       },
       "geometry": {

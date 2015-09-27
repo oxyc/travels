@@ -65,6 +65,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "south-america-1",
         "name": "Ushuaia - Machu-Picchu"
       },
       "geometry": {
@@ -3721,6 +3722,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "south-america-1",
         "name": "Machu-Picchu - Alpamayo"
       },
       "geometry": {
@@ -4109,6 +4111,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "south-america-1",
         "name": "Pomabamba (Alpamayo) to Cali"
       },
       "geometry": {
@@ -5013,6 +5016,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "south-america-1",
         "name": "Cartagena to Medellin"
       },
       "geometry": {
@@ -5641,6 +5645,7 @@
       "type": "Feature",
       "properties": {
         "type": "Route",
+        "trip": "south-america-1",
         "name": "Cuba"
       },
       "geometry": {
@@ -6169,6 +6174,7 @@
       "type": "Feature",
       "properties": {
         "type": "Tour",
+        "trip": "south-america-1",
         "name": "Salar de Uyuni"
       },
       "geometry": {
@@ -6309,6 +6315,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "south-america-1",
         "name": "Torres del Paine - Circuit",
         "duration": 5
       },
@@ -6514,6 +6521,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "south-america-1",
         "name": "Colca Canyon",
         "duration": 2
       },
@@ -6591,6 +6599,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "south-america-1",
         "name": "Salkantay to Machu Picchu",
         "duration": 4
       },
@@ -6836,6 +6845,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "south-america-1",
         "name": "Laguna 69",
         "duration": 1
       },
@@ -6933,6 +6943,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "south-america-1",
         "name": "Alpamayo",
         "duration": 6
       },
@@ -7218,6 +7229,7 @@
       "type": "Feature",
       "properties": {
         "type": "Flight",
+        "trip": "south-america-1",
         "name": "Cali - Cartagena"
       },
       "geometry": {
@@ -7238,6 +7250,7 @@
       "type": "Feature",
       "properties": {
         "type": "Flight",
+        "trip": "south-america-1",
         "name": "Cartagena - Fort Lauderdale - Cartagena"
       },
       "geometry": {
@@ -7258,6 +7271,7 @@
       "type": "Feature",
       "properties": {
         "type": "Flight",
+        "trip": "south-america-1",
         "name": "Medellin - La Habana"
       },
       "geometry": {

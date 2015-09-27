@@ -20,6 +20,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cambodia",
+        "trip": "south-east-asia",
         "type": "Route"
       },
       "geometry": {
@@ -208,6 +209,7 @@
       "type": "Feature",
       "properties": {
         "name": "Kuala Lumpur - Singapore",
+        "trip": "south-east-asia",
         "type": "Route"
       },
       "geometry": {
@@ -476,6 +478,7 @@
       "type": "Feature",
       "properties": {
         "name": "Brunei - Kuching",
+        "trip": "south-east-asia",
         "type": "Route"
       },
       "geometry": {
@@ -760,6 +763,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hanoi - Ho Chi Minh",
+        "trip": "south-east-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -780,6 +784,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hanoi - Kuala Lumpur",
+        "trip": "south-east-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -800,6 +805,7 @@
       "type": "Feature",
       "properties": {
         "name": "Singapore - Brunei",
+        "trip": "south-east-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -820,6 +826,7 @@
       "type": "Feature",
       "properties": {
         "name": "Bandar Seri Begawan - Bangar",
+        "trip": "south-east-asia",
         "type": "Boat"
       },
       "geometry": {
@@ -1072,6 +1079,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hanoi - Da Nang",
+        "trip": "south-east-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -1092,6 +1100,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hanoi - Phu Quoc",
+        "trip": "south-east-asia",
         "type": "Flight"
       },
       "geometry": {
@@ -1112,6 +1121,7 @@
       "type": "Feature",
       "properties": {
         "name": "Da Nang - Hue - Hoi An",
+        "trip": "south-east-asia",
         "type": "Route"
       },
       "geometry": {

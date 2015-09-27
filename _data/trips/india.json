@@ -16,6 +16,7 @@
       "type": "Feature",
       "properties": {
         "name": "New Delhi - Kovalam - Alappuzha",
+        "trip": "india",
         "type": "Route"
       },
       "geometry": {
@@ -1012,6 +1013,7 @@
       "type": "Feature",
       "properties": {
         "name": "Alappuzha - Kochi",
+        "trip": "india",
         "type": "Boat"
       },
       "geometry": {
@@ -1156,6 +1158,7 @@
       "type": "Feature",
       "properties": {
         "name": "- Besisahar",
+        "trip": "india",
         "type": "Route"
       },
       "geometry": {
@@ -2380,6 +2383,7 @@
       "type": "Feature",
       "properties": {
         "name": "Beni - New Delhi",
+        "trip": "india",
         "type": "Route"
       },
       "geometry": {
@@ -2636,6 +2640,7 @@
       "type": "Feature",
       "properties": {
         "type": "Trek",
+        "trip": "india",
         "name": "Annapurna Circuit"
       },
       "geometry": {
