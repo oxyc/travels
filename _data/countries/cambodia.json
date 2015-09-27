@@ -9,7 +9,8 @@
       "properties": {
         "name": "Phnom Penh",
         "country": "cambodia",
-        "description": "Met up with Oona",
+        "description": "Met up with Oona here. Met Thijs at the hostel.",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -25,8 +26,9 @@
       "type": "Feature",
       "properties": {
         "name": "Battambang",
-        "description": "Went on various tours with Oona",
+        "description": "Went on various tours in the area with Oona",
         "country": "cambodia",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -44,6 +46,7 @@
         "name": "Siem Reap",
         "description": "My night bus back to Vietnam never arrived, and I had to pay $100-200 (@todo) for a taxi to Phnom Penh so that I wouldn't miss my flight.",
         "country": "cambodia",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },

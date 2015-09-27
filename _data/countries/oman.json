@@ -8,6 +8,8 @@
       "type": "Feature",
       "properties": {
         "name": "Muscat",
+        "trips": ["middle-east"],
+        "description": "CouchSurfed with Robert. He really took care of me when I turned sick.",
         "type": "City",
         "country": "oman",
         "visited": true
@@ -26,6 +28,8 @@
         "name": "Ibra",
         "type": "City",
         "country": "oman",
+        "description": "CouchSurfed with Malik. Met his friends, including Muhammad. Had iftar together",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Sur",
         "type": "City",
+        "description": "Dropped by while hitchhiking",
+        "trips": ["middle-east"],
         "country": "oman",
         "visited": true
       },
@@ -59,6 +65,7 @@
         "type": "City",
         "country": "oman",
         "description": "Slept outside a museum-castle and got a fever preventing me from traveling",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -76,6 +83,7 @@
         "type": "Trek",
         "country": "oman",
         "description": "Left my bag in an abandoned shak, put my camera in a plastic food bag and went neck deep through the river into the Wadi.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

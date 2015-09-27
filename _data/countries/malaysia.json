@@ -9,6 +9,8 @@
       "properties": {
         "name": "Kuching",
         "country": "malaysia",
+        "description": "Spent a day, mostly to see the orangutan wildlife center",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -23,27 +25,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Miri",
-        "country": "malaysia",
-        "type": "Border Crossing",
-        "visited": true,
-        "description": "Brunei - Malaysia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.983154296875,
-          4.384751860236625
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Semenggoh Wildlife Center",
         "description": "Orangutans",
+        "trips": ["south-east-asia"],
         "country": "malaysia",
-        "type": "Nature Reserve",
+        "type": "Sight",
         "visited": true
       },
       "geometry": {
@@ -59,6 +45,8 @@
       "properties": {
         "name": "Kuala Lumpur",
         "country": "malaysia",
+        "description": "Arrived in the middle of the night, and couldn't find my hostel. Lots of drunk people tried to help me, but eventually at 5am I found it on my own. Best hostel I've been at so far",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -74,8 +62,9 @@
       "type": "Feature",
       "properties": {
         "name": "Brinchang",
-        "description": "Cameron Highlands: Tea plantations",
         "country": "malaysia",
+        "description": "Hiked around the tea plantations in the Cameron Highlands",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -92,7 +81,8 @@
       "properties": {
         "name": "Tanah Rata",
         "country": "malaysia",
-        "description": "Cameron Highlands: Tea plantations",
+        "description": "Hiked around the tea plantations in the Cameron Highlands",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -108,8 +98,9 @@
       "type": "Feature",
       "properties": {
         "name": "Malacca",
-        "description": "Woke up as someone was robbing me in the hostel",
+        "description": "Woke up as someone was going through my pockets in the hostel. He said he was looking for water... He had broken in through the door with some magnetic gadget that disabled the lock",
         "country": "malaysia",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },

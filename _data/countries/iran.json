@@ -10,6 +10,7 @@
         "name": "Mashhad",
         "type": "City",
         "country": "iran",
+        "trips": ["middle-east"],
         "description": "Snuck into the Imam Reza Complex pretending I was a muslim. Suddently the guards started asking questions. Met Lucile.",
         "visited": true
       },
@@ -26,6 +27,7 @@
       "properties": {
         "name": "Bajgiran",
         "type": "Border Crossing",
+        "trips": ["middle-east"],
         "country": "iran",
         "description": "Turkmenistan - Iran. Shared a taxi with a weird turkish guy.",
         "visited": true
@@ -43,6 +45,7 @@
       "properties": {
         "name": "Mirjaveh",
         "type": "Border Crossing",
+        "trips": ["middle-east"],
         "country": "iran",
         "description": "Iran - Pakistan. Stayed here overnight, not allowed to go to the nearby market by myself. Security reasons.",
         "visited": true
@@ -60,6 +63,7 @@
       "properties": {
         "name": "Zahedan",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "iran",
         "description": "Mostly passed through on the way to Mirjaveh",
         "visited": true
@@ -77,6 +81,8 @@
       "properties": {
         "name": "Bam",
         "type": "City",
+        "description": "Went to see Arg-e Bam",
+        "trips": ["middle-east"],
         "country": "iran",
         "visited": true
       },
@@ -94,6 +100,7 @@
         "name": "Kerman",
         "type": "City",
         "country": "iran",
+        "trips": ["middle-east"],
         "description": "Did a quick tour of the cities sights before continuing towards Bam. Met the Pakistani without a passport here.",
         "visited": true
       },
@@ -111,6 +118,7 @@
         "name": "Yazd",
         "type": "City",
         "country": "iran",
+        "trips": ["middle-east"],
         "description": "Met Germain and Rosie.",
         "visited": true
       },
@@ -127,6 +135,7 @@
       "properties": {
         "name": "Shiraz",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "iran",
         "visited": true
       },
@@ -142,6 +151,7 @@
       "type": "Feature",
       "properties": {
         "name": "Persepolis",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iran",
         "visited": true
@@ -158,6 +168,8 @@
       "type": "Feature",
       "properties": {
         "name": "Esfahan",
+        "description": "Forgot my passport at a hostel in Kashan, another traveler delivered it to me here",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iran",
         "visited": true
@@ -174,6 +186,8 @@
       "type": "Feature",
       "properties": {
         "name": "Qom",
+        "description": "They wouldn't let me enter the shrine",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iran",
         "visited": true
@@ -190,6 +204,8 @@
       "type": "Feature",
       "properties": {
         "name": "Tehran",
+        "description": "Met up with Sona again",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iran",
         "visited": true
@@ -206,6 +222,8 @@
       "type": "Feature",
       "properties": {
         "name": "Kashan",
+        "description": "Forgot my passport at the hostel",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iran",
         "visited": true

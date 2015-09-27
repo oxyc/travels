@@ -11,6 +11,7 @@
         "type": "City",
         "country": "turkey",
         "description": "First time I arrived by air from Tel Aviv. Second time I went straight to the airport after a bus from Sulaimaniyah",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -28,6 +29,7 @@
         "type": "City",
         "country": "turkey",
         "description": "Passed through on the way to Ephesus",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -44,6 +46,7 @@
         "name": "Ephesus",
         "type": "City",
         "country": "turkey",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -58,6 +61,7 @@
       "type": "Feature",
       "properties": {
         "name": "Pamukkale",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -74,6 +78,8 @@
       "type": "Feature",
       "properties": {
         "name": "Antalya",
+        "description": "We wanted to swim!",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -90,6 +96,8 @@
       "type": "Feature",
       "properties": {
         "name": "Antakya",
+        "description": "Stopped by only for a few hours",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -106,6 +114,8 @@
       "type": "Feature",
       "properties": {
         "name": "Göreme",
+        "description": "Cappadocia",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -122,6 +132,8 @@
       "type": "Feature",
       "properties": {
         "name": "Uchisar",
+        "description": "Cappadocia",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -141,6 +153,7 @@
         "type": "City",
         "country": "turkey",
         "description": "Underground city",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -156,6 +169,7 @@
       "properties": {
         "name": "Cappadocia Valley Trek",
         "type": "Trek",
+        "trips": ["middle-east"],
         "country": "turkey",
         "visited": true
       },
@@ -171,6 +185,8 @@
       "type": "Feature",
       "properties": {
         "name": "Diyarbakir",
+        "description": "Experienced the friendliness of the Kurdish people",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -187,6 +203,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hasankeyf",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "turkey",
         "visited": true
@@ -204,6 +221,7 @@
       "properties": {
         "name": "Mardin",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "turkey",
         "visited": true
       },
@@ -220,6 +238,8 @@
       "properties": {
         "name": "Van",
         "type": "City",
+        "description": "Had an amazing breakfast before continuing to the church",
+        "trips": ["middle-east"],
         "country": "turkey",
         "visited": true
       },
@@ -235,7 +255,9 @@
       "type": "Feature",
       "properties": {
         "name": "Akdamar Adasi",
+        "description": "Met Marcus while waiting for the boat to the island",
         "type": "Sight",
+        "trips": ["middle-east"],
         "country": "turkey",
         "visited": true
       },
@@ -252,6 +274,8 @@
       "properties": {
         "name": "Dogubayazit",
         "type": "City",
+        "description": "Hitchhiked here with Marcus and slept on a field. He introduced me to canned beans for dinner",
+        "trips": ["middle-east"],
         "country": "turkey",
         "visited": true
       },
@@ -260,23 +284,6 @@
         "coordinates": [
           44.084014892578125,
           39.54641191968671
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Silopi",
-        "type": "Border Crossing",
-        "description": "Turkey - Iraq",
-        "country": "turkey",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          42.47039794921875,
-          37.24795784818133
         ]
       }
     }

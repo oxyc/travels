@@ -9,6 +9,8 @@
       "properties": {
         "name": "Ulaanbaatar",
         "country": "mongolia",
+        "description": "Met Anya at the hostel. CouchSurfed with Chris",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "Mörön",
         "country": "mongolia",
+        "description": "CouchSurfed in a yurt with American peace corps volunteer Patrick. Also met Agustinus",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -42,6 +46,8 @@
         "name": "Toom",
         "country": "mongolia",
         "type": "Nomadic Village",
+        "description": "Our car left us here for 2 days as it went back to Mörön for tuning. Helped the family slaughter a goat",
+        "trips": ["trans-siberia"],
         "visited": true
       },
       "geometry": {
@@ -57,6 +63,8 @@
       "properties": {
         "name": "Tsagaannuur",
         "country": "mongolia",
+        "description": "Went to ask about my future from a Shaman",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -72,7 +80,8 @@
       "type": "Feature",
       "properties": {
         "name": "East Taiga",
-        "description": "Visiting the Reindeer People (Dukha)",
+        "description": "Went to visit the Tsaataan people. Also known as the Dukha, or the Reindeer people. Agustinus knowledge of languages really amazed me.",
+        "trips": ["trans-siberia"],
         "country": "mongolia",
         "type": "Nomadic Village",
         "visited": true
@@ -82,23 +91,6 @@
         "coordinates": [
           99.47845458984375,
           51.62483746174322
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Zamiin-Uud",
-        "country": "mongolia",
-        "description": "Mongolia - China",
-        "type": "Border Crossing",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          111.86004638671875,
-          43.74530493763506
         ]
       }
     }

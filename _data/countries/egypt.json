@@ -10,6 +10,7 @@
         "name": "Aswan",
         "type": "City",
         "country": "egypt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -27,6 +28,7 @@
         "type": "City",
         "country": "egypt",
         "description": "Met Max for the first time",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -43,6 +45,7 @@
         "name": "Abu Simbel",
         "type": "City",
         "country": "egypt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -58,6 +61,7 @@
       "properties": {
         "name": "Hurghada",
         "type": "City",
+        "trips": ["other"],
         "country": "egypt",
         "description": "Visited as a child with by family",
         "visited": true
@@ -76,6 +80,8 @@
         "name": "Dahab",
         "type": "City",
         "country": "egypt",
+        "description": "Forgot my boots in a van. Called around until I somehow reached the driver. Max brought my boots on the way to Jordan",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -93,6 +99,7 @@
         "type": "City",
         "country": "egypt",
         "description": "Met Haramain",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -109,6 +116,7 @@
         "name": "St. Catherine",
         "type": "City",
         "country": "egypt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -124,7 +132,9 @@
       "properties": {
         "name": "Mount Sinai",
         "type": "Trek",
+        "description": "Hiked up during the night to reach the summit for sunrise. My guide (forced on me) was too stoned to walk so he went home to sleep",
         "country": "egypt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -141,6 +151,7 @@
         "name": "Giza",
         "type": "City",
         "country": "egypt",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -157,6 +168,8 @@
         "name": "Cairo",
         "type": "City",
         "country": "egypt",
+        "description": "Arrived in the middle of the night from Yemen. While looking for a hostel two guys tried to rob me. I screamed and flung my boots at them.",
+        "trips": ["other", "middle-east"],
         "visited": true
       },
       "geometry": {
@@ -174,6 +187,7 @@
         "type": "Border Crossing",
         "country": "egypt",
         "description": "Passing through Israel to get to Jordan. Me, Max an Keenan were cutting it close as Israeli officers interrogated me about my passport. Met Keenan on the way.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

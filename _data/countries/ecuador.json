@@ -9,6 +9,8 @@
       "properties": {
         "name": "Tulcan",
         "country": "ecuador",
+        "description": "Spent the night here on my bus ride from Bogota to Cuenca",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "Quito",
         "country": "ecuador",
+        "description": "Spent a lot of time drinking a lot of coffee with David",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Baños",
         "country": "ecuador",
+        "description": "Tried zip lining for the first time",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -56,6 +62,8 @@
       "type": "Feature",
       "properties": {
         "name": "Quilotoa Loop",
+        "description": "Did a 3 day hike",
+        "trips": ["south-america-1"],
         "country": "ecuador",
         "type": "Trek",
         "visited": true
@@ -71,23 +79,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Chimborazo",
-        "country": "ecuador",
-        "type": "Trek",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -78.80973815917969,
-          -1.467887492920394
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Cuenca",
+        "trips": ["south-america-1"],
         "country": "ecuador",
         "type": "City",
         "visited": true,
@@ -106,6 +99,8 @@
       "properties": {
         "name": "Huaquillas",
         "country": "ecuador",
+        "description": "Bought 7 cartons of cigarettes. Peruvian prices.",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -114,38 +109,6 @@
         "coordinates": [
           -80.22628784179688,
           -3.481208809323797
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Parque Nactional Galápagos",
-        "country": "ecuador",
-        "type": "National Park",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.31585693359375,
-          -0.7497954927187406
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Otavalo",
-        "country": "ecuador",
-        "type": "City",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -78.26248168945312,
-          0.22933898720413795
         ]
       }
     }

@@ -10,6 +10,8 @@
         "name": "Ta'izz",
         "type": "City",
         "country": "yemen",
+        "description": "Went to see the fort",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -25,6 +27,7 @@
       "properties": {
         "name": "Ibb",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "yemen",
         "visited": true
       },
@@ -41,6 +44,8 @@
       "properties": {
         "name": "Sana'a",
         "type": "City",
+        "description": "Arrived together with Harriet to start the tour around Yemen",
+        "trips": ["middle-east"],
         "country": "yemen",
         "visited": true
       },
@@ -58,6 +63,7 @@
         "name": "Al Hajjara",
         "type": "City",
         "country": "yemen",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -74,6 +80,7 @@
         "name": "Manakha",
         "type": "City",
         "country": "yemen",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -90,6 +97,7 @@
         "name": "Haraz Mountains",
         "type": "Trek",
         "country": "yemen",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

@@ -11,6 +11,7 @@
         "type": "City",
         "country": "norway",
         "description": "Worked in a restaurant for a summer to save money for my trans-siberian trip.",
+        "trips": ["other"],
         "homebase": true,
         "visited": true
       },

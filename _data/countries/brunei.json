@@ -8,7 +8,9 @@
       "type": "Feature",
       "properties": {
         "name": "Bandar Seri Begawan",
+        "description": "Met an English teacher at the youth hostel who worked illegally in some remote village in Thailand",
         "country": "brunei",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "Bangar",
         "country": "brunei",
+        "description": "Took a boat here to try and get on a last minute tour of the national park",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Laby Taman",
         "country": "brunei",
+        "description": "Took a taxi here, hitchhiked back. As I couldn't get on a list minute tour of the national park I came here to see a bit more of Brunei",
+        "trips": ["south-east-asia"],
         "type": "Trek",
         "visited": true
       },
@@ -49,23 +55,6 @@
         "coordinates": [
           115.17594337463379,
           4.757098304643499
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kuala Belait",
-        "country": "brunei",
-        "type": "Border Crossing",
-        "description": "Brunei - Malaysia",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.21558380126953,
-          4.5819005656199225
         ]
       }
     }

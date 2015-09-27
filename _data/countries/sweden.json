@@ -10,6 +10,7 @@
         "name": "Stockholm",
         "type": "City",
         "country": "sweden",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -26,6 +27,7 @@
         "name": "Uppsala",
         "type": "City",
         "country": "sweden",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -42,6 +44,7 @@
         "name": "Göteborg",
         "type": "City",
         "country": "sweden",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -58,6 +61,7 @@
         "name": "Hultsfred",
         "type": "City",
         "description": "Heard RATM live at Hultsfred Festival",
+        "trips": ["other"],
         "country": "sweden",
         "visited": true
       },

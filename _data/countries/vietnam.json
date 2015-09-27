@@ -9,6 +9,8 @@
       "properties": {
         "name": "Hanoi",
         "country": "vietnam",
+        "description": "Lived here with Phuong",
+        "trips": ["south-east-asia", "middle-east"],
         "type": "City",
         "visited": true,
         "homebase": true
@@ -26,7 +28,8 @@
       "properties": {
         "name": "Halong Bay",
         "country": "vietnam",
-        "type": "UNESCO Heritage Site",
+        "trips": ["middle-east"],
+        "type": "Sight",
         "visited": true
       },
       "geometry": {
@@ -41,6 +44,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ninh Binh",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -57,7 +61,8 @@
       "type": "Feature",
       "properties": {
         "name": "Tam Coc",
-        "description": "Halong Bay on land",
+        "trips": ["south-east-asia"],
+        "description": "Halong Bay on land. Visited with my dad",
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -74,7 +79,9 @@
       "type": "Feature",
       "properties": {
         "name": "Hue",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
+        "description": "Visited twice, first time with Phuong and second time with my dad",
         "type": "City",
         "visited": true
       },
@@ -90,6 +97,7 @@
       "type": "Feature",
       "properties": {
         "name": "Da Nang",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -106,6 +114,8 @@
       "type": "Feature",
       "properties": {
         "name": "Ho Chi Minh City",
+        "description": "Stopped by on the way to Cambodia",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -122,8 +132,9 @@
       "type": "Feature",
       "properties": {
         "name": "Duong Dong",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
-        "description": "Stayed at Eden Resort",
+        "description": "Stayed at Eden Resort while on vacation",
         "type": "City",
         "visited": true
       },
@@ -139,6 +150,7 @@
       "type": "Feature",
       "properties": {
         "name": "An Thoi",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -155,6 +167,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hoi An",
+        "trips": ["south-east-asia"],
         "country": "vietnam",
         "type": "City",
         "visited": true
@@ -171,7 +184,8 @@
       "type": "Feature",
       "properties": {
         "name": "Dien Bien Phu",
-        "description": "Laos - Vietnam",
+        "trips": ["south-east-asia"],
+        "description": "Spent the day with a crazy South Korean girl",
         "country": "vietnam",
         "type": "Border Crossing",
         "visited": true

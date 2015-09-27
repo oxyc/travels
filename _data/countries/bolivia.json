@@ -10,6 +10,8 @@
         "name": "Cochabamba",
         "type": "City",
         "country": "bolivia",
+        "description": "First time I decided to take a taxi to the bus station early in the morning. Bolivian bus stations are not known as the safest of places",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -26,6 +28,7 @@
         "name": "Sucre",
         "type": "City",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -42,6 +45,8 @@
         "name": "Potosi",
         "type": "City",
         "country": "bolivia",
+        "description": "Cerro Rico",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -57,7 +62,9 @@
       "properties": {
         "name": "Uyuni",
         "type": "City",
+        "description": "My entrance to Salars de Uyuni",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -73,7 +80,9 @@
       "properties": {
         "name": "Torotoro",
         "type": "City",
+        "description": "Met Kate on the bus ride here",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -88,8 +97,10 @@
       "type": "Feature",
       "properties": {
         "name": "Torotoro National Park Trek",
-        "type": "National Park",
+        "type": "Trek",
         "country": "bolivia",
+        "description": "Took two tours together with André, Diana and some other people",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -106,6 +117,7 @@
         "name": "La Paz",
         "type": "City",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -123,6 +135,7 @@
         "type": "City",
         "description": "Bicycled the Death Road independetly and finished in Coroico",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -137,8 +150,10 @@
       "type": "Feature",
       "properties": {
         "name": "Copacabana",
+        "description": "Met Lea on the bus here",
         "type": "City",
         "country": "bolivia",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -154,7 +169,8 @@
       "properties": {
         "name": "Challapampa",
         "type": "City",
-        "description": "Took the boat to the southern end of Isla del Sol and walked here where we spent the night",
+        "description": "Took the boat to the southern end of Isla del Sol and walked here where with Lea",
+        "trips": ["south-america-1"],
         "country": "bolivia",
         "visited": true
       },

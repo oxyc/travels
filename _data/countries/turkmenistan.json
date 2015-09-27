@@ -10,7 +10,8 @@
         "name": "Ashgabat",
         "type": "City",
         "country": "turkmenistan",
-        "description": "Arrived by air for a tour. Driver was late, and you weren't allowed to smoke at the airport.",
+        "description": "As I got turned back at the border when I tried coming here the year before I decided on taking a tour this time. Arrived by air and my driver was late.  You weren't allowed to smoke at the airport.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -27,7 +28,8 @@
         "name": "Darvaza Gas Crater",
         "type": "Sight",
         "country": "turkmenistan",
-        "description": "Door to Hell",
+        "description": "Door to Hell. Met an interesting Swedish photographer, and two weird Spanish guys who traveled for the purpose of visiting each country in the world",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

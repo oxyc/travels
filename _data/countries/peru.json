@@ -11,6 +11,7 @@
         "type": "City",
         "country": "peru",
         "description": "Stopped by to see the Uros",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -27,6 +28,8 @@
         "name": "Arequipa",
         "type": "City",
         "country": "peru",
+        "description": "Really liked the city, thought about moving here",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -42,6 +45,7 @@
       "properties": {
         "name": "Chivay",
         "description": "While hitchhiking with a tour bus, we stopped here to eat and sightsee",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -60,6 +64,7 @@
         "name": "Cabanaconde",
         "type": "City",
         "description": "Starting point for the Colca Canyon trek",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -77,6 +82,7 @@
         "name": "Colca Canyon Trek",
         "type": "Trek",
         "description": "Cabanaconde - Sangalle - Malata - San Juan de Chucho - Cabanaconde",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -93,6 +99,8 @@
       "properties": {
         "name": "Cusco",
         "type": "City",
+        "description": "Met up with David again.",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -110,6 +118,8 @@
         "name": "Ollantaytambo",
         "type": "City",
         "country": "peru",
+        "description": "Spent half a day and stayed here for the night after seeing Moray and Maras",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -124,6 +134,8 @@
       "type": "Feature",
       "properties": {
         "name": "Salar de Maras",
+        "description": "Hitchhiked, and took shared taxis with David",
+        "trips": ["south-america-1"],
         "type": "Sight",
         "country": "peru",
         "visited": true
@@ -141,6 +153,7 @@
       "properties": {
         "name": "Aguas Calientes",
         "description": "Real name is Machu Picchu Pueblo",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -158,6 +171,8 @@
       "properties": {
         "name": "Machu Picchu",
         "type": "Sight",
+        "description": "Didn't really enjoy it, but you can't go to South America without seeing Machu Picchu",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -174,6 +189,7 @@
       "properties": {
         "name": "Mollepata",
         "description": "Starting point of Salkantay Trek",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -192,6 +208,7 @@
         "name": "Salkantay Trek",
         "type": "Trek",
         "description": "Hiked from Mollepata to Collipapampa where I took a bus to the entrance of Llactapata. Landslides had ruined the trail so you would have had to hike on the main road. From Llactapata I walked to Aguas Calientes.",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -208,6 +225,8 @@
       "properties": {
         "name": "Lima",
         "type": "City",
+        "description": "Spent quite a few days here with Daivd. Loved the pretty girls, the location, and the great food.",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -224,6 +243,8 @@
       "properties": {
         "name": "Caral",
         "type": "City",
+        "description": "Thought it might be worth seeing the ruins. It wasn't",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -240,6 +261,7 @@
       "properties": {
         "name": "Barranca",
         "description": "Spent the night here while seeing Caral",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -256,6 +278,8 @@
       "type": "Feature",
       "properties": {
         "name": "Huaraz",
+        "description": "Met Nuria at the hostel who joined me and David for our trek",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -272,6 +296,8 @@
       "type": "Feature",
       "properties": {
         "name": "Laguna 69 Trek",
+        "description": "Very nice trek. Got lost from the trail and hiked through the bush. First one at the top!",
+        "trips": ["south-america-1"],
         "type": "Trek",
         "country": "peru",
         "visited": true
@@ -290,6 +316,7 @@
         "name": "Hualcayan",
         "type": "City",
         "description": "Starting point of the Alpamayo Trek",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -307,6 +334,7 @@
         "name": "Alpamayo Trek",
         "type": "Trek",
         "description": "We were plannin on doing the circuit but decided to skip the Santa Cruz part, therefore ending at Pomabamba",
+        "trips": ["south-america-1"],
         "country": "peru",
         "visited": true
       },
@@ -322,7 +350,8 @@
       "type": "Feature",
       "properties": {
         "name": "Pomabamba",
-        "description": "End of Alpamayo Trek",
+        "description": "End of Alpamayo Trek. On the bus back to civilization we ran out of petrol, broke the bus and slept by the road for 8h.",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -339,7 +368,8 @@
       "type": "Feature",
       "properties": {
         "name": "Trujillo",
-        "description": "Spent a day sightseeing",
+        "description": "Spent a day sightseeing with David, Nuria and an Argentinian girl",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -357,6 +387,7 @@
       "properties": {
         "name": "Huanchaco",
         "description": "Slept here while sightseeing the both the town and Trujillo",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -374,6 +405,7 @@
       "properties": {
         "name": "Mancora",
         "description": "Left my camera outside beneath the hammock during the rainiest day of the year",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "peru",
         "visited": true
@@ -383,23 +415,6 @@
         "coordinates": [
           -81.04339599609375,
           -4.102629809278476
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tumbes",
-        "type": "Border Crossing",
-        "description": "Peru - Ecuador",
-        "country": "peru",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.46112060546875,
-          -3.566877191890649
         ]
       }
     }

@@ -10,6 +10,8 @@
         "name": "Punta Arenas",
         "type": "City",
         "country": "chile",
+        "description": "Met Simiel and her friend who were also hitchhiking here. Stayed at Simiel's.",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -24,6 +26,8 @@
       "type": "Feature",
       "properties": {
         "name": "Puerto Natales",
+        "description": "Met Pablo as I came back from my hike",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "chile",
         "visited": true
@@ -39,8 +43,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Parque Nacional Torres del Paine",
-        "type": "National Park",
+        "name": "Torres del Paine: Circuit Trek",
+        "type": "Trek",
+        "description": "Did the circuit trek in 5 days instead of the recommended 7-9 days",
+        "trips": ["south-america-1"],
         "country": "chile",
         "visited": true
       },
@@ -56,7 +62,8 @@
       "type": "Feature",
       "properties": {
         "name": "Puerto Rio Tranquilo",
-        "description": "Camped at a popular camping area",
+        "description": "Camped at a popular camping area. Met someone who drove his motorcycle from Alaska here",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "chile",
         "visited": true
@@ -74,6 +81,7 @@
       "properties": {
         "name": "Coyhaqiue",
         "description": "Camped outside of town",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "chile",
         "visited": true
@@ -92,6 +100,7 @@
         "name": "Puno",
         "type": "City",
         "description": "Camped in an abandoned house",
+        "trips": ["south-america-1"],
         "country": "chile",
         "visited": true
       },
@@ -108,7 +117,8 @@
       "properties": {
         "name": "Puno",
         "type": "City",
-        "description": "Stayed with my drivers family who lives here",
+        "description": "Stayed with my Sergio's family who lives here",
+        "trips": ["south-america-1"],
         "country": "chile",
         "visited": true
       },
@@ -124,8 +134,10 @@
       "type": "Feature",
       "properties": {
         "name": "Parque Nacional Queulat",
-        "type": "National Park",
+        "type": "Trek",
+        "description": "Did a short hike with my Chilean parents to see the glacier",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -142,6 +154,7 @@
         "name": "Puerto Montt",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -157,6 +170,7 @@
       "properties": {
         "name": "Puerto Varas",
         "description": "Got a ride from Chiloe with some European girls heading this way",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "chile",
         "visited": true
@@ -175,6 +189,7 @@
         "name": "Castro",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -188,25 +203,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Quinchao",
-        "type": "City",
-        "country": "chile",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.42231750488281,
-          -42.537903898420694
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Achao",
+        "description": "Went to see an old church",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -221,8 +222,10 @@
       "type": "Feature",
       "properties": {
         "name": "Dalcahue",
+        "description": "More churces",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -237,8 +240,10 @@
       "type": "Feature",
       "properties": {
         "name": "Curaro de Velez",
+        "description": "More churces",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -253,9 +258,10 @@
       "type": "Feature",
       "properties": {
         "name": "Valdivia",
-        "description": "Got a ride all the way to Santiago",
+        "description": "Got a ride from here all the way to Santiago",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -272,6 +278,8 @@
         "name": "Santiago",
         "type": "City",
         "country": "chile",
+        "description": "CouchSurfed with Miguel Met Samuel and Dave.",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -286,8 +294,10 @@
       "type": "Feature",
       "properties": {
         "name": "Valparaiso",
+        "description": "Met up with my Chilean mom who lives here",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -302,8 +312,10 @@
       "type": "Feature",
       "properties": {
         "name": "San Pedro de Atacama",
+        "description": "Met Natanael who worked at the hostel where I stayed",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -320,6 +332,8 @@
         "name": "Calama",
         "type": "City",
         "country": "chile",
+        "description": "Spent the day while waiting to get on a tour to Chuquicamata mine",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -334,8 +348,10 @@
       "type": "Feature",
       "properties": {
         "name": "Chuquicamata",
+        "description": "Largest open-pit mine in the world. Che Guevara was here",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -350,8 +366,10 @@
       "type": "Feature",
       "properties": {
         "name": "Iquique",
+        "description": "Met a photographer at Humberstone and spent the day with him here before going to Bolivia",
         "type": "City",
         "country": "chile",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -368,6 +386,8 @@
         "name": "Humberstone",
         "type": "City",
         "country": "chile",
+        "description": "Abandoned saltpeter works. Slept by the highway outside of the town as some dogs chased me away when I arrived in the middle of the night. Met a photographer",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {

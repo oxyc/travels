@@ -7,25 +7,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Taraz",
-        "type": "Border Crossing",
-        "country": "kazakhstan",
-        "description": "Kazakhstan - Kyrgyzstan",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          71.4056396484375,
-          42.88401467044253
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Shymkent",
         "type": "City",
+        "description": "Stopped by quickly on the way to and from Turkestan",
+        "trips": ["central-asia"],
         "country": "kazakhstan",
         "visited": true
       },
@@ -44,6 +29,7 @@
         "type": "Trek",
         "country": "kazakhstan",
         "description": "Only had time to see the first and the second lake",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -60,7 +46,8 @@
         "name": "Almaty",
         "type": "City",
         "country": "kazakhstan",
-        "description": "Met Casimir for the first time. Also Mikhail",
+        "description": "Met Casimir for the first time. Also met Mikhail",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -78,6 +65,7 @@
         "type": "City",
         "country": "kazakhstan",
         "description": "Entrance to the Kolsai Lake trek",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -95,6 +83,7 @@
         "type": "City",
         "country": "kazakhstan",
         "description": "Didn't even stay overnight, only spent a long day before continuing.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -112,6 +101,7 @@
         "type": "City",
         "country": "kazakhstan",
         "description": "Hiked, got lost, and met Aida.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -127,6 +117,8 @@
       "properties": {
         "name": "Turkestan",
         "type": "City",
+        "description": "My first proper sight in Central Asia. Not worth it.",
+        "trips": ["central-asia"],
         "country": "kazakhstan",
         "visited": true
       },

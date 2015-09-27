@@ -9,6 +9,8 @@
       "properties": {
         "name": "Suleimaniyah",
         "type": "City",
+        "description": "Took a flight to Najaf, but they turned me back, and I took a bus straight to Istanbul. Whoah that's a lot of distance on one bus ride",
+        "trips": ["middle-east"],
         "country": "iraq",
         "visited": true
       },
@@ -25,6 +27,7 @@
       "properties": {
         "name": "Erbil",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "iraq",
         "visited": true
       },
@@ -41,6 +44,8 @@
       "properties": {
         "name": "Dahuk",
         "type": "City",
+        "description": "Went to a Syrian refugee camp",
+        "trips": ["middle-east"],
         "country": "iraq",
         "visited": true
       },
@@ -57,6 +62,7 @@
       "properties": {
         "name": "Amedi",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "iraq",
         "visited": true
       },
@@ -72,6 +78,8 @@
       "type": "Feature",
       "properties": {
         "name": "Koysinjaq",
+        "description": "CouchSurfed with Ali who showed me around",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iraq",
         "visited": true
@@ -88,6 +96,7 @@
       "type": "Feature",
       "properties": {
         "name": "Lalish",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iraq",
         "visited": true
@@ -104,6 +113,7 @@
       "type": "Feature",
       "properties": {
         "name": "Sulav",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "iraq",
         "description": "Really just a restaurant stop where I slept and my phone was stolen.",

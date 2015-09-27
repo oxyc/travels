@@ -10,6 +10,8 @@
         "name": "Kabul",
         "type": "City",
         "country": "afghanistan",
+        "description": "I just so happened to be on the same flight (long story why I had to fly) as an old hippie (who visited Afghanistan in the 70s) I met in Khorog earlier. Shared a room with him.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -25,7 +27,9 @@
       "properties": {
         "name": "Bamiyan",
         "type": "City",
+        "description": "Took the dangerous route here and had to hide myself the entire drive from Kabul. After the taxi driver tried to charge me for risking his life taking me.",
         "country": "afghanistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -40,8 +44,10 @@
       "type": "Feature",
       "properties": {
         "name": "Band-e-Amir",
-        "type": "National Park",
+        "type": "Sight",
+        "description": "Took a taxi here",
         "country": "afghanistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -56,8 +62,10 @@
       "type": "Feature",
       "properties": {
         "name": "Mazar-i-Sharif",
+        "description": "Went on a quest to find beer but settled for some Tajik Whiskey at an Indian restaurant",
         "type": "City",
         "country": "afghanistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -74,6 +82,8 @@
         "name": "Herat",
         "type": "City",
         "country": "afghanistan",
+        "description": "Randomly met a CouchSurfer in a shop as I was bargainning for a USB cable. He ended up paying for it as he got pissed by the price they were charging me.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -81,23 +91,6 @@
         "coordinates": [
           62.22656249999999,
           34.35704160076073
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hairitan",
-        "type": "Border Crossing",
-        "description": "Afghanistan - Uzbekistan",
-        "country": "afghanistan",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          67.42927551269531,
-          37.22158045838649
         ]
       }
     }

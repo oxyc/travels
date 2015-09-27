@@ -10,6 +10,7 @@
         "name": "Dubai",
         "type": "City",
         "country": "uae",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -25,6 +26,7 @@
       "properties": {
         "name": "Sharjah",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "uae",
         "visited": true
       },
@@ -42,6 +44,8 @@
         "name": "Jaziraah Al Hamra",
         "type": "City",
         "country": "uae",
+        "description": "Stayed with Marco whom I met in Uzbekistan",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -57,6 +61,7 @@
       "properties": {
         "name": "Al Ain",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "uae",
         "visited": true
       },
@@ -73,6 +78,8 @@
       "properties": {
         "name": "Jebel Hafeet",
         "type": "Peak",
+        "description": "Hitchhiked to the top with two Somalis in way too warm weather",
+        "trips": ["middle-east"],
         "country": "uae",
         "visited": true
       },
@@ -89,6 +96,8 @@
       "properties": {
         "name": "Abu Dhabi",
         "type": "City",
+        "description": "Spent the day, and slept at the airport. Went to the Mosque for Iftar and Masdar City where I took a ride in a self driving car",
+        "trips": ["middle-east"],
         "country": "uae",
         "visited": true
       },

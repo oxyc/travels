@@ -8,6 +8,7 @@
       "type": "Feature",
       "properties": {
         "name": "Vatican City",
+        "trips": ["south-america-1"],
         "type": "City",
         "country": "vatican",
         "visited": true

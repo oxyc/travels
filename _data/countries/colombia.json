@@ -11,56 +11,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bogotá",
-        "country": "colombia",
-        "type": "City",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.11376953125,
-          4.674979814820243
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "San Gil",
-        "country": "colombia",
-        "type": "City",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.1689453125,
-          6.56638897982234
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Bucaramanga",
-        "country": "colombia",
-        "type": "City",
-        "visited": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.1634521484375,
-          7.1281470178687405
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Cali",
         "country": "colombia",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -77,6 +30,8 @@
       "properties": {
         "name": "Ipiales",
         "country": "colombia",
+        "description": "Went to see Las Lajas cathedral",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -92,7 +47,9 @@
       "type": "Feature",
       "properties": {
         "name": "Medellín",
+        "description": "Spent my time with Alvaro mostly",
         "country": "colombia",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -108,7 +65,9 @@
       "type": "Feature",
       "properties": {
         "name": "Cartagena",
+        "description": "Met Alvaro, went to Playa Blanca",
         "country": "colombia",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -125,6 +84,7 @@
       "properties": {
         "name": "Santa Marta",
         "country": "colombia",
+        "trips": ["south-america-1"],
         "type": "City",
         "visited": true
       },
@@ -140,8 +100,10 @@
       "type": "Feature",
       "properties": {
         "name": "Parque Nacional Natural Tayrona",
+        "description": "Walked around the park",
+        "trips": ["south-america-1"],
         "country": "colombia",
-        "type": "National Park",
+        "type": "Trek",
         "visited": true
       },
       "geometry": {

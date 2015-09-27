@@ -9,6 +9,8 @@
       "properties": {
         "name": "Beijing",
         "country": "china",
+        "description": "CouchSurfed with Sona",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -25,7 +27,8 @@
       "properties": {
         "name": "Erenhot",
         "country": "china",
-        "description": "Mongolia - China",
+        "description": "Spent a few hours walking around town and ordering something random off the menu at a restaurant. Turned out to be a meal for 5.",
+        "trips": ["trans-siberia"],
         "type": "Border Crossing",
         "visited": true
       },
@@ -41,7 +44,9 @@
       "type": "Feature",
       "properties": {
         "name": "Xi'an",
+        "description": "Spent the day with some other travelers... Can't remember who they were",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -56,25 +61,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Luoyang",
-        "country": "china",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.4176025390625,
-          34.639987356029515
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Dengfeng",
-        "description": "Shaolin Monastery",
+        "description": "Shaolin Monastery. Was to cheap to enter, so me and another cheap Brittish girl stayed outside watching some monks training",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -89,24 +79,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Zhengzhou",
-        "country": "china",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.64257812499999,
-          34.73709847578162
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Chengdu",
         "country": "china",
+        "description": "CouchSurfed with three Chinese girls, can't remember their names unfortunately",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -122,7 +98,9 @@
       "type": "Feature",
       "properties": {
         "name": "Kangding",
+        "description": "Some hiking in the surrounding hills",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -138,6 +116,8 @@
       "type": "Feature",
       "properties": {
         "name": "Litang Town",
+        "description": "Watched a sky burial",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "City",
         "visited": true
@@ -154,6 +134,8 @@
       "type": "Feature",
       "properties": {
         "name": "Xiangcheng",
+        "description": "Met Tristano",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "City",
         "visited": true
@@ -170,6 +152,8 @@
       "type": "Feature",
       "properties": {
         "name": "Lijiang",
+        "description": "Went to a local wedding",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "City",
         "visited": true
@@ -187,6 +171,7 @@
       "properties": {
         "name": "Shangri-la",
         "description": "Zhongdian",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "City",
         "visited": true
@@ -203,6 +188,8 @@
       "type": "Feature",
       "properties": {
         "name": "Qiaotou",
+        "description": "Spent the night at the entrance to Tiger Leaping Gorge",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "City",
         "visited": true
@@ -219,6 +206,8 @@
       "type": "Feature",
       "properties": {
         "name": "Tiger Leaping Gorge",
+        "description": "Did a hike with Maren, Sean, Tristano, Luiza, Jean",
+        "trips": ["trans-siberia"],
         "country": "china",
         "type": "Trek",
         "visited": true
@@ -235,7 +224,9 @@
       "type": "Feature",
       "properties": {
         "name": "Kunming",
+        "description": "Short sightseeing before continuing to east",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -253,6 +244,7 @@
         "name": "Guiling",
         "country": "china",
         "type": "City",
+        "trips": ["trans-siberia"],
         "visited": true
       },
       "geometry": {
@@ -267,7 +259,9 @@
       "type": "Feature",
       "properties": {
         "name": "Longsheng",
+        "description": "Hiked around the rice terraces but there was so much fog I couldn't see further than 5 meters",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -283,7 +277,9 @@
       "type": "Feature",
       "properties": {
         "name": "Yangshuo",
+        "description": "Slept for free by going to a school to talk English. Met up with Anya again",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -299,7 +295,9 @@
       "type": "Feature",
       "properties": {
         "name": "Hong Kong",
+        "description": "Met Jean randomly at a hostel. Met Massy",
         "country": "china",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -315,8 +313,10 @@
       "type": "Feature",
       "properties": {
         "name": "Macau",
+        "description": "Due to H1N1 both hostels in Macau were closed and I slept on the beach.",
         "country": "china",
         "type": "City",
+        "trips": ["trans-siberia"],
         "visited": true
       },
       "geometry": {

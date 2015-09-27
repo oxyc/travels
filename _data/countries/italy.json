@@ -9,6 +9,7 @@
       "properties": {
         "name": "Rome",
         "type": "City",
+        "trips": ["south-america-1"],
         "country": "italy",
         "description": "Spent a day transiting on my way to South America",
         "visited": true

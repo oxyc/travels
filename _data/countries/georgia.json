@@ -7,24 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sadakhlo",
-        "type": "Border Crossing",
-        "description": "Armenia - Georgia",
-        "country": "georgia",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.79898452758789,
-          41.241029142571136
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Tbilisi",
+        "description": "Met up with David and Ana before my flight to Vietnam",
+        "trips": ["middle-east", "central-asia"],
         "type": "City",
         "country": "georgia",
         "visited": true
@@ -41,6 +26,8 @@
       "type": "Feature",
       "properties": {
         "name": "Sighnaghi",
+        "description": "Wine place",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "georgia",
         "visited": true
@@ -56,24 +43,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Zugdidi",
-        "type": "City",
-        "country": "georgia",
-        "description": "Arrived by night train on the way to Svaneti",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.875762939453125,
-          42.50652766705062
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Mestia",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "georgia",
         "visited": true
@@ -90,6 +61,8 @@
       "type": "Feature",
       "properties": {
         "name": "Koruldi Lake Trek",
+        "description": "Couldn't stop walking, it was too beautiful here",
+        "trips": ["middle-east"],
         "type": "Trek",
         "country": "georgia",
         "visited": true
@@ -106,7 +79,9 @@
       "type": "Feature",
       "properties": {
         "name": "Chalaadi Glacier Trek",
+        "description": "Not worth it",
         "type": "Trek",
+        "trips": ["middle-east"],
         "country": "georgia",
         "visited": true
       },
@@ -123,6 +98,7 @@
       "properties": {
         "name": "Kazbegi",
         "type": "City",
+        "trips": ["middle-east"],
         "description": "Stepantsminda",
         "country": "georgia",
         "visited": true
@@ -138,23 +114,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gergeti Trinity Church",
-        "type": "Sight",
-        "country": "georgia",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.62022066116333,
-          42.662383388450124
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Kazbegi Trek",
+        "trips": ["middle-east"],
         "type": "Trek",
         "country": "georgia",
         "visited": true
@@ -172,7 +133,8 @@
       "properties": {
         "name": "Sagarejo",
         "type": "City",
-        "description": "Passing through while hitchhiking",
+        "trips": ["middle-east"],
+        "description": "Hitchhiked with a horse",
         "country": "georgia",
         "visited": true
       },
@@ -188,6 +150,8 @@
       "type": "Feature",
       "properties": {
         "name": "David Gareja Monastery Complex",
+        "description": "Accidentally almost walked over to Azerbaijan",
+        "trips": ["middle-east"],
         "type": "Sight",
         "country": "georgia",
         "visited": true

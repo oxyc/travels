@@ -12,6 +12,7 @@
         "description": "Visited with my family as well as alone, but I was too young to have seen anything of interest",
         "state": "FL",
         "country": "usa",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -28,6 +29,7 @@
         "name": "Boynton Beach",
         "state": "FL",
         "type": "City",
+        "trips": ["other", "south-america-1"],
         "country": "usa",
         "visited": true
       },
@@ -45,6 +47,8 @@
         "name": "Ocean Ridge",
         "state": "FL",
         "type": "City",
+        "description": "Visiting my aunt who lives here",
+        "trips": ["other", "south-america-1"],
         "country": "usa",
         "visited": true
       },

@@ -9,6 +9,8 @@
       "properties": {
         "name": "Singapore",
         "country": "singapore",
+        "description": "Stayed with Phuongs friend who introduced me to some amazing food. Met Kanittha.",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },

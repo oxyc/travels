@@ -9,6 +9,8 @@
       "properties": {
         "name": "Kathmandu",
         "country": "nepal",
+        "description": "Didn't like it",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -23,25 +25,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bhimdatta",
-        "description": "India - Nepal",
-        "country": "nepal",
-        "type": "Border Crossing",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          80.17822265625,
-          28.967297862201765
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Pokhara",
         "country": "nepal",
+        "description": "Went for my first steak in months together with Nadav. To save money we didn't order any side dishes or drinks, just the steak.",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -58,6 +45,8 @@
       "properties": {
         "name": "Annapurna Circuit",
         "country": "nepal",
+        "description": "Walked the circuit in 11 days. Or was it 13, not sure.",
+        "trips": ["india"],
         "type": "Trek",
         "visited": true,
         "duration": 13
@@ -74,8 +63,9 @@
       "type": "Feature",
       "properties": {
         "name": "Thorung Pass",
-        "description": "Annapurna Circuit",
+        "description": "The pass on the Annapurna Circuit. To save time I skipped acclimitizing and walked from two camps away over pass.",
         "country": "nepal",
+        "trips": ["india"],
         "type": "Pass",
         "visited": true
       },
@@ -84,39 +74,6 @@
         "coordinates": [
           83.97262573242188,
           28.781050491669934
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Butwal",
-        "country": "nepal",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          83.46450805664062,
-          27.698120147680104
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Belahiya",
-        "description": "Nepal - India",
-        "country": "nepal",
-        "type": "Border Crossing",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          83.46931457519531,
-          27.478120981743103
         ]
       }
     }

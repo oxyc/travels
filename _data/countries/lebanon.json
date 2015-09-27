@@ -10,6 +10,8 @@
         "name": "Beirut",
         "type": "City",
         "country": "lebanon",
+        "description": "Met Haya from CouchSurfing.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -26,7 +28,8 @@
         "name": "Tyre",
         "type": "City",
         "country": "lebanon",
-        "description": "Sur in Arabic",
+        "description": "Sur in Arabic. Just spent a few hours to sightsee",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -43,7 +46,8 @@
         "name": "Tripoli",
         "type": "City",
         "country": "lebanon",
-        "description": "Heard there was a pro-ISIS walk in Tripoli the same day I was tehre.",
+        "description": "Heard there was a pro-ISIS walk in Tripoli the same day I was there. Had a fun conversation with the military",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -60,7 +64,8 @@
         "name": "Byblos",
         "type": "City",
         "country": "lebanon",
-        "description": "Jbail in Arabic",
+        "trips": ["middle-east"],
+        "description": "Jbail in Arabic. Spent a few hours sightseeing.",
         "visited": true
       },
       "geometry": {
@@ -75,6 +80,8 @@
       "type": "Feature",
       "properties": {
         "name": "Bsharri",
+        "description": "Hitchhiked here to go hiking. Met a girl from the philippines working at the hostel.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "lebanon",
         "visited": true
@@ -91,6 +98,8 @@
       "type": "Feature",
       "properties": {
         "name": "Baalbeck",
+        "description": "Due to the insecure situation, and being tired from hiking I decided to take buses around to mountains to reach Baalbeck.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "lebanon",
         "visited": true
@@ -107,6 +116,8 @@
       "type": "Feature",
       "properties": {
         "name": "Qadisha Valley Trek",
+        "description": "Got lost following the trail on Maps.ME. Turned out there were two trails only a few meters apart but above and below a ridge",
+        "trips": ["middle-east"],
         "type": "Trek",
         "country": "lebanon",
         "visited": true
@@ -124,6 +135,8 @@
       "properties": {
         "name": "Sidon",
         "type": "City",
+        "description": "Went to see the fort, and sightsee around town for 1-2h",
+        "trips": ["middle-east"],
         "country": "lebanon",
         "visited": true
       },

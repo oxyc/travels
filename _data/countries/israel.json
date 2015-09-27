@@ -9,6 +9,7 @@
       "properties": {
         "name": "Eilat",
         "type": "Border Crossing",
+        "trips": ["middle-east"],
         "country": "israel",
         "description": "Egypt - Israel - Jordan as well as Jordan - Israel. Mostly passed through and waited for a ride all day",
         "visited": true
@@ -26,6 +27,7 @@
       "properties": {
         "name": "Ein Gedi",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "israel",
         "description": "Stopped to cook shakshuka on the way to Jerusalem",
         "visited": true
@@ -43,8 +45,9 @@
       "properties": {
         "name": "Jerusalem",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "israel",
-        "description": "Met Ira, Mona, Szymon.",
+        "description": "CouchSurfed with Ira and met Mona, Szymon.",
         "visited": true
       },
       "geometry": {
@@ -60,6 +63,8 @@
       "properties": {
         "name": "Tel Aviv",
         "type": "City",
+        "description": "CouchSurfed with Zehavit",
+        "trips": ["middle-east"],
         "country": "israel",
         "visited": true
       },
@@ -75,6 +80,7 @@
       "type": "Feature",
       "properties": {
         "name": "Jaffa",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "israel",
         "visited": true
@@ -91,6 +97,8 @@
       "type": "Feature",
       "properties": {
         "name": "Haifa",
+        "description": "CouchSurfed with Asaf and Hani",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "israel",
         "visited": true
@@ -108,6 +116,8 @@
       "properties": {
         "name": "Acre",
         "type": "City",
+        "description": "My first coffee treat in Israel",
+        "trips": ["middle-east"],
         "country": "israel",
         "visited": true
       },
@@ -124,6 +134,7 @@
       "properties": {
         "name": "Nazareth",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "israel",
         "description": "First and only time I paid for accommodation in Israel",
         "visited": true
@@ -140,6 +151,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tiberias",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "israel",
         "description": "Had a quick look at the city, and started walking north to find a spot where I could camp.",
@@ -157,6 +169,8 @@
       "type": "Feature",
       "properties": {
         "name": "Yehudia",
+        "description": "Combined two of the three treks here",
+        "trips": ["middle-east"],
         "type": "Trek",
         "country": "israel",
         "visited": true
@@ -174,8 +188,9 @@
       "properties": {
         "name": "Hebron",
         "type": "City",
+        "description": "Palestine: Went to see the clash between a Palestinian town and an Israeli settlement",
+        "trips": ["middle-east"],
         "country": "israel",
-        "description": "Palestine",
         "visited": true
       },
       "geometry": {
@@ -191,6 +206,7 @@
       "properties": {
         "name": "Betlehem",
         "type": "City",
+        "trips": ["middle-east"],
         "country": "israel",
         "description": "Palestine",
         "visited": true
@@ -208,8 +224,9 @@
       "properties": {
         "name": "Jericho",
         "type": "City",
+        "description": "Palestine: Walked up to a monastery on the side of the mountain",
+        "trips": ["middle-east"],
         "country": "israel",
-        "description": "Palestine",
         "visited": true
       },
       "geometry": {
@@ -225,8 +242,9 @@
       "properties": {
         "name": "Ramallah",
         "type": "City",
+        "description": "Palestine: Went to see Yasser Arafat's tomb",
+        "trips": ["middle-east"],
         "country": "israel",
-        "description": "Palestine",
         "visited": true
       },
       "geometry": {

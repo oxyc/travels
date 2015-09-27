@@ -8,6 +8,8 @@
       "type": "Feature",
       "properties": {
         "name": "New Delhi",
+        "trips": ["other", "india", "central-asia"],
+        "description": "Stayed at Sam's. Met too many people to mention. Highlight is Sam and Shreyaanaa",
         "country": "india",
         "type": "City",
         "visited": true
@@ -24,6 +26,8 @@
       "type": "Feature",
       "properties": {
         "name": "Haridwar",
+        "trips": ["india"],
+        "description": "Kumbh Mela",
         "country": "india",
         "type": "City",
         "visited": true
@@ -40,6 +44,7 @@
       "type": "Feature",
       "properties": {
         "name": "Amritsar",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -56,6 +61,8 @@
       "type": "Feature",
       "properties": {
         "name": "Jammu",
+        "description": "Sat on the roof of the bus coming here",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -72,6 +79,7 @@
       "type": "Feature",
       "properties": {
         "name": "Dharamshala",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -88,6 +96,7 @@
       "type": "Feature",
       "properties": {
         "name": "Jodhpur",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -104,6 +113,8 @@
       "type": "Feature",
       "properties": {
         "name": "Udaipur",
+        "description": "Met David Adam",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -120,6 +131,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ahmedabad",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -136,7 +148,9 @@
       "type": "Feature",
       "properties": {
         "name": "Agra",
+        "description": "Took me the entire trip to decide if I should pay the entrance fee or not. It was worth it",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -151,24 +165,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bareilly",
-        "country": "india",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.43115234375,
-          28.352733760237818
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Mumbai",
+        "description": "Met up with Sofia who came from Finland to travel with me for a few weeks",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -184,7 +184,9 @@
       "type": "Feature",
       "properties": {
         "name": "Gokarna",
+        "description": "Nice beach area",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -199,24 +201,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Thiruvananthapuram",
-        "country": "india",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.95648193359375,
-          8.5131192506703
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Kovalam",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -233,6 +220,7 @@
       "properties": {
         "name": "Varkala",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -248,6 +236,7 @@
       "type": "Feature",
       "properties": {
         "name": "Kollam",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -264,6 +253,8 @@
       "type": "Feature",
       "properties": {
         "name": "Alappuzha",
+        "description": "Started a river cruise from here",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -280,6 +271,8 @@
       "type": "Feature",
       "properties": {
         "name": "Kochi",
+        "description": "Ended the cruise here",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -295,24 +288,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kannur",
-        "country": "india",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          75.3662109375,
-          11.875414424662937
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Bekal",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -329,6 +307,7 @@
       "properties": {
         "name": "Munnar",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -343,24 +322,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Karwar",
-        "country": "india",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          74.1357421875,
-          14.817370620155266
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Margao",
         "country": "india",
+        "trips": ["india"],
         "type": "City",
         "visited": true
       },
@@ -377,6 +341,7 @@
       "properties": {
         "name": "Panaji",
         "country": "india",
+        "trips": ["india", "other"],
         "type": "City",
         "visited": true
       },
@@ -391,24 +356,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Anjuna",
-        "country": "india",
-        "type": "City",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          73.7405776977539,
-          15.583687077803896
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Calangute",
         "country": "india",
+        "trips": ["india", "other"],
         "type": "City",
         "visited": true
       },
@@ -424,6 +374,7 @@
       "type": "Feature",
       "properties": {
         "name": "Candolim",
+        "trips": ["india", "other"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -440,6 +391,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hampi",
+        "trips": ["other"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -456,6 +408,8 @@
       "type": "Feature",
       "properties": {
         "name": "Varanasi",
+        "description": "First time I really felt heat",
+        "trips": ["india"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -472,6 +426,8 @@
       "type": "Feature",
       "properties": {
         "name": "Kolkata",
+        "description": "Went to Sam and Nanju's wedding",
+        "trips": ["other"],
         "country": "india",
         "type": "City",
         "visited": true
@@ -488,7 +444,8 @@
       "type": "Feature",
       "properties": {
         "name": "Banbasa",
-        "description": "India - Nepal",
+        "description": "Had some very questionable cold meat. Didn't get sick",
+        "trips": ["india"],
         "country": "india",
         "type": "Border Crossing",
         "visited": true
@@ -505,7 +462,8 @@
       "type": "Feature",
       "properties": {
         "name": "Sunauli",
-        "description": "Nepal - India: Crossing with a visa extension",
+        "description": "Got a visa extension to return to Finland",
+        "trips": ["india"],
         "country": "india",
         "type": "Border Crossing",
         "visited": true

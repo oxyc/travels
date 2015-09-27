@@ -10,6 +10,7 @@
         "name": "Sydney",
         "country": "australia",
         "type": "City",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -25,7 +26,8 @@
       "properties": {
         "name": "Blue Mountains National Park",
         "country": "australia",
-        "type": "National Park",
+        "type": "Sight",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {

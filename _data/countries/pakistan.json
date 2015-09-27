@@ -8,9 +8,10 @@
       "type": "Feature",
       "properties": {
         "name": "Taftan",
-        "type": "Border Crossing",
-        "description": "Iran - Pakistan",
+        "type": "City",
+        "description": "Iran - Pakistan border crossing. Waited at the levis office half the day before they drove me to Dalbandin",
         "country": "pakistan",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -27,6 +28,7 @@
         "name": "Dalbandin",
         "type": "City",
         "description": "First night during the Taftan - Quetta police escort. Police officer tried to scam me by asking for gasoline money",
+        "trips": ["middle-east"],
         "country": "pakistan",
         "visited": true
       },
@@ -44,6 +46,8 @@
         "name": "Quetta",
         "type": "City",
         "country": "pakistan",
+        "description": "Met Zachary and two other motorcyclists at the hotel. Was not allowed to leave the hotel without a police escort. They were outside the hotel watching us all the time",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -60,6 +64,8 @@
         "name": "Lahore",
         "type": "City",
         "country": "pakistan",
+        "description": "One of my favorite cities. Lovely place. The entire city is a market",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -75,7 +81,8 @@
       "properties": {
         "name": "Wagah",
         "type": "City",
-        "description": "Did not cross the border, just went to see the border ceremony",
+        "description": "Did not cross the border, just went to see the border ceremony where there had been a suicide bomging two weeks earlier",
+        "trips": ["middle-east"],
         "country": "pakistan",
         "visited": true
       },
@@ -93,6 +100,8 @@
         "name": "Islamabad",
         "type": "City",
         "country": "pakistan",
+        "description": "Only spent a few hours, too expensive, and boring to be worth stopping. Went north instead.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -109,6 +118,8 @@
         "name": "Rawalpindi",
         "type": "City",
         "country": "pakistan",
+        "description": "Only spent a few hours on the way north",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -125,6 +136,7 @@
         "name": "Mansehra",
         "type": "City",
         "description": "Mandatory stopover on the way north and back. Slept in a triple room by the bus station for $3. Really creepy boy working there.",
+        "trips": ["middle-east"],
         "country": "pakistan",
         "visited": true
       },
@@ -142,6 +154,8 @@
         "name": "Naran",
         "type": "City",
         "country": "pakistan",
+        "description": "Only stayed for a day to see the lake",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -156,6 +170,8 @@
       "type": "Feature",
       "properties": {
         "name": "Saif-ul-Malok",
+        "description": "Hitchhiked halfway before the there was too much snow to drive. Me and the Pakistanis on tour, hiked up where I got altitude sickness (or something).",
+        "trips": ["middle-east"],
         "type": "Trek",
         "country": "pakistan",
         "visited": true
@@ -173,6 +189,7 @@
       "properties": {
         "name": "Chilas",
         "description": "Road from Naran - Chilas was closes, so I had to backtrack and go around. Slept here for a night.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "pakistan",
         "visited": true
@@ -189,6 +206,8 @@
       "type": "Feature",
       "properties": {
         "name": "Gilgit",
+        "description": "Spent half a day sightseeing while waiting for a bus.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "pakistan",
         "visited": true
@@ -205,6 +224,8 @@
       "type": "Feature",
       "properties": {
         "name": "Karimabad",
+        "description": "Finally met some other travelers. Gorgeous place",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "pakistan",
         "visited": true
@@ -222,6 +243,8 @@
       "properties": {
         "name": "Passu",
         "type": "City",
+        "description": "Hiked to the glacier and the suspension bridge. As far north as I went",
+        "trips": ["middle-east"],
         "country": "pakistan",
         "visited": true
       },

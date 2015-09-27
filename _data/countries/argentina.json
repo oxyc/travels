@@ -10,6 +10,7 @@
         "name": "Buenos Aires",
         "type": "City",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "description": "Spent a full transit day here on the way from Finland to Ushuaia",
         "visited": true
       },
@@ -28,6 +29,7 @@
         "type": "City",
         "description": "Arrived hoping to catch a cruise to Antarctica, sadly the prices had gone up 2-3 times. I slept underneath a tree outside town and then started hitchhiking north.",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -45,6 +47,7 @@
         "type": "City",
         "description": "Met Emilio as I hitchhiked out of Ushuaia and stayed with him at one of his friends for the night.",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -62,6 +65,7 @@
         "type": "City",
         "description": "Got a ride with my Chilean parents from Puerto Natales. The next day I continued with them for the entire Carretera Austral",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -76,9 +80,10 @@
       "type": "Feature",
       "properties": {
         "name": "Perito Moreno",
-        "type": "National Park",
-        "description": "Met up with my chilean parents again as I was on my way back to Calafate",
+        "type": "Sight",
+        "description": "Met up with my Chilean parents again as I was on my way back to Calafate",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -94,8 +99,9 @@
       "properties": {
         "name": "Gobernador Gregores",
         "type": "City",
-        "description": "While hitchhiking, we all shared a tent and cooked a great dinner.",
+        "description": "While hitchhiking, we all shared a tent and cooked an amazing dinner.",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -111,6 +117,8 @@
       "properties": {
         "name": "Cueva de las Manos",
         "type": "Sight",
+        "description": "Would have been impossible reaching this place unless the people I was hitchhiked with just so happened to be going there too",
+        "trips": ["south-america-1"],
         "country": "argentina",
         "visited": true
       },
@@ -125,26 +133,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Los Antiguos",
-        "type": "Border Crossing",
-        "description": "Argentina - Chile",
-        "country": "argentina",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.63360595703125,
-          -46.55130547880641
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Uspallata",
+        "description": "Where Seven Years in Tibet was filmed",
         "type": "City",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -160,7 +153,9 @@
       "properties": {
         "name": "Puente del Inca",
         "type": "Sight",
+        "description": "As I decided to hitchhike from the border this natural bridge just happened to be walking distance away",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -176,7 +171,8 @@
       "properties": {
         "name": "Las Cuevas",
         "type": "Border Crossing",
-        "description": "Chile - Argentina: Got off the bus as it would have taken hours to get through customs. Instead I started hitchhiking",
+        "description": "Got off the bus as it would have taken hours to get through customs. Instead I started hitchhiking",
+        "trips": ["south-america-1"],
         "country": "argentina",
         "visited": true
       },
@@ -192,8 +188,10 @@
       "type": "Feature",
       "properties": {
         "name": "Mendoza",
+        "description": "Ate an overrated steak",
         "type": "City",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -209,8 +207,9 @@
       "properties": {
         "name": "Maipu",
         "type": "City",
-        "description": "Bicycle wine tour",
+        "description": "Bicycle wine tour with Gerard. Ended the day with an asado.",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -228,6 +227,7 @@
         "type": "City",
         "description": "After wasting a day trying to hitchhike north I gave up and decided to go back to San Juan to take a bus to Salta",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -244,6 +244,8 @@
         "name": "Salta",
         "type": "City",
         "country": "argentina",
+        "description": "Rained each time I was here, and I was here like 3 times.",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -261,6 +263,7 @@
         "type": "City",
         "description": "Spent the night sleeping under the stars at El Anfiteatro.",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -276,8 +279,9 @@
       "properties": {
         "name": "Cachi",
         "type": "City",
-        "description": "Had a quick look at the town before walking north to find a place to sleep",
+        "description": "Hitchhied here in a police car together with Rodrigo. Had a quick look at the town before walking north to find a place to sleep",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -295,6 +299,7 @@
         "type": "City",
         "description": "Spent the night sleeping in a cemetery",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -312,6 +317,7 @@
         "type": "City",
         "description": "Celebrated Carnival",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {
@@ -329,6 +335,7 @@
         "type": "City",
         "description": "Woke up early to hitchhike onward to Chile",
         "country": "argentina",
+        "trips": ["south-america-1"],
         "visited": true
       },
       "geometry": {

@@ -10,6 +10,7 @@
         "name": "Las Palmas de Gran Canaria",
         "type": "City",
         "country": "spain",
+        "trips": ["other"],
         "description": "Family trip, too young to remember.",
         "visited": true
       },
@@ -27,6 +28,7 @@
         "name": "Santa Cruz de Tenerife",
         "type": "City",
         "country": "spain",
+        "trips": ["other"],
         "description": "Family trip, too young to remember.",
         "visited": true
       },

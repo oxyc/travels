@@ -10,6 +10,7 @@
         "name": "Goris",
         "type": "City",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -24,8 +25,10 @@
       "type": "Feature",
       "properties": {
         "name": "Tatev Monastery",
+        "description": "Met a Russian hitchhiker",
         "type": "Sight",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -42,6 +45,7 @@
         "name": "Tatevi Anapat Monastery",
         "type": "Sight",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -58,6 +62,7 @@
         "name": "Noravank Monastery",
         "type": "Sight",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -71,9 +76,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Khor Virap",
+        "name": "Khor Virap Monastery",
+        "description": "Banged on the door, hoping a monk would open and let me sleep inside the monastery. Sadly no one answered and I slept outside",
         "type": "Sight",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -91,6 +98,7 @@
         "type": "City",
         "country": "armenia",
         "description": "While hitchhiking with a tour group, we stopped to buy some wine at Areni Wine Factory",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -107,6 +115,8 @@
         "name": "Yerevan",
         "type": "City",
         "country": "armenia",
+        "description": "Stayed at Kalle's place",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -121,6 +131,7 @@
       "type": "Feature",
       "properties": {
         "name": "Geghard Monastery",
+        "trips": ["middle-east"],
         "type": "Sight",
         "country": "armenia",
         "visited": true
@@ -136,25 +147,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Garni",
-        "type": "City",
-        "country": "armenia",
-        "visited": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.72903251647949,
-          40.119368398670055
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Sanahin Monastery",
         "type": "Sight",
         "country": "armenia",
+        "description": "One of the last monasteries on my monastery hunt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -171,6 +168,8 @@
         "name": "Haghpat Monastery",
         "type": "Sight",
         "country": "armenia",
+        "description": "One of the last monasteries on my monastery hunt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -187,6 +186,8 @@
         "name": "Alaverdi",
         "type": "City",
         "country": "armenia",
+        "description": "Very atmospheric mining town next to two churches I was visiting",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -200,17 +201,18 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bagratashen",
-        "type": "Border Crossing",
-        "description": "Armenia - Georgia",
+        "name": "Garni",
+        "type": "City",
+        "description": "Garni Temple",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          44.8201847076416,
-          41.242255387042476
+          44.72903251647949,
+          40.119368398670055
         ]
       }
     },
@@ -218,9 +220,10 @@
       "type": "Feature",
       "properties": {
         "name": "Stepanakert",
-        "description": "Nagorno Karabakh",
+        "description": "Capital of Nagorno Karabakh",
         "type": "City",
         "country": "armenia",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -237,7 +240,8 @@
         "name": "Shushi",
         "type": "City",
         "country": "armenia",
-        "description": "Nagorno Karabakh",
+        "description": "Ghost town in Nagorno Karabakh",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

@@ -9,7 +9,9 @@
       "properties": {
         "name": "Baku",
         "type": "City",
+        "description": "Met Jake and Elaine",
         "country": "azerbaijan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -27,6 +29,7 @@
         "type": "Sight",
         "country": "azerbaijan",
         "description": "Got a ride with Jake who was heading to Georgia. He dropped me off at the junction of R10 and M2.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -44,6 +47,7 @@
         "type": "City",
         "country": "azerbaijan",
         "description": "Arrived after dark and couldn't find Casimir until the morning after when his hostel host figured out who I was.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -61,6 +65,7 @@
         "type": "City",
         "country": "azerbaijan",
         "description": "Where Casimir got excited about Xash.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -78,6 +83,7 @@
         "type": "Sight",
         "description": "Very boring ruins",
         "country": "azerbaijan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -92,8 +98,10 @@
       "type": "Feature",
       "properties": {
         "name": "Sheki",
+        "description": "I treated Casimir to the best restaurant available in exchange for him doing the same for me in Hong Kong. Also where I shaved as this was the end of my trip.",
         "type": "City",
         "country": "azerbaijan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {

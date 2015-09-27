@@ -9,6 +9,7 @@
       "properties": {
         "name": "Porvoo",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "visited": true
       },
@@ -25,6 +26,7 @@
       "properties": {
         "name": "Helsinki",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "homebase": true,
         "visited": true
@@ -42,6 +44,7 @@
       "properties": {
         "name": "Vantaa",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "visited": true
       },
@@ -58,6 +61,7 @@
       "properties": {
         "name": "Espoo",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "visited": true
       },
@@ -74,6 +78,7 @@
       "properties": {
         "name": "Hanko",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "visited": true
       },
@@ -90,6 +95,7 @@
       "properties": {
         "name": "Raseborg",
         "type": "City",
+        "trips": ["other"],
         "country": "finland",
         "homebase": true,
         "visited": true
@@ -106,6 +112,7 @@
       "type": "Feature",
       "properties": {
         "name": "Kimito",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -122,6 +129,7 @@
       "type": "Feature",
       "properties": {
         "name": "Dalsbruk",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -138,6 +146,7 @@
       "type": "Feature",
       "properties": {
         "name": "Turku",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -154,6 +163,7 @@
       "type": "Feature",
       "properties": {
         "name": "Naantali",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -170,6 +180,7 @@
       "type": "Feature",
       "properties": {
         "name": "Pargas",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -186,6 +197,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tampere",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -202,6 +214,7 @@
       "type": "Feature",
       "properties": {
         "name": "Vaasa",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -218,6 +231,8 @@
       "type": "Feature",
       "properties": {
         "name": "Ivalo",
+        "description": "Came here with Phuong while I was in Finland for christmas",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -234,6 +249,8 @@
       "type": "Feature",
       "properties": {
         "name": "Inari",
+        "description": "Came here with Phuong while I was in Finland for christmas. Saw Aurora Borealis",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true
@@ -250,6 +267,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mariehamn",
+        "trips": ["other"],
         "type": "City",
         "country": "finland",
         "visited": true

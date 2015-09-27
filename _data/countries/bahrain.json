@@ -10,6 +10,8 @@
         "name": "Manama",
         "type": "City",
         "country": "bahrain",
+        "description": "CouchSurfed at JR's. Joan showed me around the city.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

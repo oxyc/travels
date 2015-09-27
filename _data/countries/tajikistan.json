@@ -9,6 +9,7 @@
       "properties": {
         "name": "Murghab",
         "description": "First city since the Kyrgyz border. Me, Ana, Casimir and David arrived by jeep from Osh, and hired another one (lada) from here onwards.",
+        "trips": ["central-asia"],
         "type": "City",
         "country": "tajikistan",
         "visited": true
@@ -27,6 +28,7 @@
         "name": "Pshart Valley - Madiyan Valley",
         "type": "Trek",
         "description": "Not entirely sure these are the coordinates, but I'm pretty sure. Slept in a yurt the night before the hike.",
+        "trips": ["central-asia"],
         "country": "tajikistan",
         "visited": true
       },
@@ -43,8 +45,9 @@
       "properties": {
         "name": "Gumbazkul",
         "type": "Pass",
-        "description": "4731m",
+        "description": "Beautiful pass at 4731m. Really demanding hike with David, Ana and Casimir. Who doesn't do sports in Hong Kong",
         "country": "tajikistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -61,6 +64,8 @@
         "name": "Khorog",
         "type": "City",
         "country": "tajikistan",
+        "description": "Met Setfan. Was here on several occasions as the border to Afghanistan closed when I was about to cross",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -78,6 +83,7 @@
         "type": "City",
         "country": "tajikistan",
         "description": "Slept at the restaurant here for a night. This was where Casimir could have both sausage and eggs.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -95,6 +101,7 @@
         "type": "City",
         "country": "tajikistan",
         "description": "Attempt at reaching Bazar Dara, an old mining community with a fort.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -112,6 +119,7 @@
         "type": "City",
         "country": "tajikistan",
         "description": "Waited for a flight for three days, puked while bargaining for a hotel room, flew to Kabul but overstayed my visa by a few hours.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -128,7 +136,8 @@
         "name": "Panjakent",
         "type": "City",
         "country": "tajikistan",
-        "description": "Met Mithu (Bangladesh)",
+        "description": "Met Mithu. Entrance to Fann Mountains",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -145,7 +154,8 @@
         "name": "Artuch",
         "type": "City",
         "country": "tajikistan",
-        "description": "Starting point of the Fann mountains trek",
+        "description": "Starting point of the Fann mountains trek. Met a group of people I started hiking with",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -163,6 +173,7 @@
         "type": "Trek",
         "country": "tajikistan",
         "description": "Kulikalon lakes - Alaudin lakes",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {

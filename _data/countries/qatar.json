@@ -9,6 +9,8 @@
       "properties": {
         "name": "Doha",
         "type": "City",
+        "description": "CouchSurfed with DJ and met lots of other couchsurfers through him. Hilarious guy who taught me a lot",
+        "trips": ["middle-east"],
         "country": "qatar",
         "visited": true
       },
@@ -26,6 +28,7 @@
         "name": "Al Wakrah",
         "type": "City",
         "country": "qatar",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

@@ -11,6 +11,7 @@
         "type": "City",
         "country": "jordan",
         "description": "Slept on the beach after having chased a thief who stole someones phone. I found him but realized I was too alone (weak) to do antyhing.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -26,6 +27,8 @@
       "properties": {
         "name": "Wadi Rum",
         "type": "Trek",
+        "description": "Hitchhiked with a bedouin who drove me past the guards to avoid the entrance fee. He then drove me into the Wadi where we found a spot in the shade to eat the first proper meal in a long time.",
+        "trips": ["middle-east"],
         "country": "jordan",
         "visited": true
       },
@@ -41,7 +44,9 @@
       "type": "Feature",
       "properties": {
         "name": "Petra",
-        "type": "UNESCO Heritage Site",
+        "type": "Sight",
+        "description": "Went with Max and Keenan. Took me a long time to decide to actually pay the ridiculous entrance fee.",
+        "trips": ["middle-east"],
         "country": "jordan",
         "visited": true
       },
@@ -58,6 +63,8 @@
       "properties": {
         "name": "Wadi Musa",
         "type": "City",
+        "description": "The entrance to Petra, slept here for 2 nights",
+        "trips": ["middle-east"],
         "country": "jordan",
         "visited": true
       },
@@ -74,6 +81,8 @@
       "properties": {
         "name": "Amman",
         "type": "City",
+        "description": "Had a quick look at the historical center and stayed at the first hostel in the country. Palestinian caretaker who told me about how the Israelis shot at him when he was left between the borders in the middle of the night",
+        "trips": ["middle-east"],
         "country": "jordan",
         "visited": true
       },
@@ -89,6 +98,8 @@
       "type": "Feature",
       "properties": {
         "name": "Jerash",
+        "description": "Visited for a few hours with Max.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "jordan",
         "visited": true
@@ -107,6 +118,7 @@
         "name": "Karak",
         "type": "City",
         "country": "jordan",
+        "trips": ["middle-east"],
         "description": "Visited the fort en route south",
         "visited": true
       },
@@ -125,6 +137,7 @@
         "type": "City",
         "country": "jordan",
         "description": "Passed through on the way to the Dead Sea. Bought beer.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -141,7 +154,8 @@
         "name": "Qasr Amra",
         "type": "Sight",
         "country": "jordan",
-        "description": "Our second desert castle",
+        "description": "Our second desert castle while hitchhiking with Max and Keenan",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -159,6 +173,7 @@
         "type": "Sight",
         "country": "jordan",
         "description": "First of the desert castles. We took a bus here and hitchhiked back.",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -175,7 +190,8 @@
         "name": "Mount Nebo",
         "type": "Sight",
         "country": "jordan",
-        "description": "The final stop before our ride return back. He basically drove us across the country.",
+        "description": "This is where Moses overlooked the promised land. The final stop before our driver returned back home. Our friendly driver basically drove us across the country",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {
@@ -192,7 +208,8 @@
         "name": "Dead Sea",
         "type": "Sight",
         "country": "jordan",
-        "description": "Slept by the Dead Sea",
+        "description": "Slept by the Dead Sea. Woke up with our legs white with salt",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

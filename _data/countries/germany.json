@@ -8,6 +8,7 @@
       "type": "Feature",
       "properties": {
         "name": "Munich",
+        "trips": ["other"],
         "type": "City",
         "country": "germany",
         "description": "Visited during a Drupal Conference with my colleagues",

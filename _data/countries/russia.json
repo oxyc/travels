@@ -9,6 +9,8 @@
       "properties": {
         "name": "St. Petersburg",
         "country": "russia",
+        "description": "CouchSurfed with Jenya and his girlfriend who got me in touch with her sisters in Moscow. Also met Ana and Daria. My first couchsurfing experience",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "Moscow",
         "country": "russia",
+        "description": "CouchSurfed with Masha and Sasha who showed me around town and still keep in contact with me",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Nizhny Novgorod",
         "country": "russia",
+        "description": "Dariya got me in touch with Elizaveta who I CouchSurfed with.",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -57,6 +63,8 @@
       "properties": {
         "name": "Kazan",
         "country": "russia",
+        "description": "CouchSurfed with Ira and Kostya. Got a crush on Alina.",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -73,6 +81,8 @@
       "properties": {
         "name": "Yekaterinburg",
         "country": "russia",
+        "description": "CouchSurfed with Olga who took me to the Asia-Europe line for pictures.",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -89,6 +99,8 @@
       "properties": {
         "name": "Omsk",
         "country": "russia",
+        "description": "Spent a long day sightseeing before taking a night train out",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -105,6 +117,8 @@
       "properties": {
         "name": "Novosibirsk",
         "country": "russia",
+        "description": "Spent a day, went to the train museum and got a private tour in Russian",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -120,6 +134,8 @@
       "type": "Feature",
       "properties": {
         "name": "Krasnoyarsk",
+        "description": "CouchSurfed with a really weird girl. Went up to her Dasha in the hills.",
+        "trips": ["trans-siberia"],
         "country": "russia",
         "type": "City",
         "visited": true
@@ -136,6 +152,8 @@
       "type": "Feature",
       "properties": {
         "name": "Irkutsk",
+        "description": "On the bus into town a girl approached me as I was looking in my Lonely Planet. He invited me to stay in her closed down hostel for the night",
+        "trips": ["trans-siberia"],
         "country": "russia",
         "type": "City",
         "visited": true
@@ -152,6 +170,8 @@
       "type": "Feature",
       "properties": {
         "name": "Ulan Ude",
+        "description": "Splurged by staying a hotel for the first time on my trip. No hostels in town. Not much except for another Lenin statue",
+        "trips": ["trans-siberia"],
         "country": "russia",
         "type": "City",
         "visited": true
@@ -169,6 +189,8 @@
       "properties": {
         "name": "Listvyanka",
         "country": "russia",
+        "description": "Hiked a bit to see the lake.",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },

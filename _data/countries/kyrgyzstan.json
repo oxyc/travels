@@ -11,6 +11,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Met up with Casimir, David and Ana to head for Tajikistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -28,6 +29,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Met David for the first time",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -45,6 +47,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Realized I had past my destinations by mistake, but got off at this tourist town instead. Basically just wandered back and forth along the main road. Party place.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -62,6 +65,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Prepared for my trek, bought a sleeping bag, rented stuff.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -79,6 +83,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Starting point for the trek: Jeti-Oguz - Ak-Suu",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -96,6 +101,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "End of trek: Jeti-Oguz - Ak-Suu",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -112,7 +118,8 @@
         "name": "Ala-Kol Trek",
         "type": "Trek",
         "country": "kyrgyzstan",
-        "description": "Jeti-Oguz to Ak-Suu",
+        "description": "Jeti-Oguz to Ak-Suu. While hiking I forgot my camera on a rock before crossing a pass. I was too lazy to walk back for it... First time I heard about people trekking without a tent, some old man who did the same trek by sleeping under pine trees",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -130,6 +137,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Relaxed in a yurt by the beach. Met a Danish couple.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -147,6 +155,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "Met Casimir (for the second time) on the bus from Tamga and I decided to join him to Song Kol. Met Phuong for the first time.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -164,6 +173,7 @@
         "type": "Nomadic Village",
         "country": "kyrgyzstan",
         "description": "Not sure about the coordinates, but I think it was the northern part of the lake. Arranged for a horse trek from here.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -181,6 +191,7 @@
         "type": "City",
         "country": "kyrgyzstan",
         "description": "End of our horse trek from Song Kol",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -198,6 +209,7 @@
         "type": "Trek",
         "country": "kyrgyzstan",
         "description": "Horse trek from Song Kol to Kyzart. Stayed at a yurt and cooked dinner with some Germans, Casimiar and Phuong on our one night.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {

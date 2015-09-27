@@ -10,7 +10,8 @@
         "name": "Termiz",
         "type": "Border Crossing",
         "country": "uzbekistan",
-        "description": "Afghanistan - Uzbekistan",
+        "description": "Spent a few hours after coming from Afghanistan. Interesting border crossing...",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -27,7 +28,8 @@
         "name": "Samarkand",
         "type": "City",
         "country": "uzbekistan",
-        "description": "",
+        "trips": ["central-asia"],
+        "description": "Met Markus",
         "visited": true
       },
       "geometry": {
@@ -44,7 +46,8 @@
         "name": "Tashkent",
         "type": "City",
         "country": "uzbekistan",
-        "description": "Met Markus",
+        "description": "Spent most time with Markus",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -61,6 +64,7 @@
         "name": "Shahrisabz",
         "type": "City",
         "country": "uzbekistan",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -77,6 +81,8 @@
         "name": "Bukhara",
         "type": "City",
         "country": "uzbekistan",
+        "description": "Came here, hitchhiking on a tour bus with Marco",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -93,6 +99,7 @@
         "name": "Nukus",
         "type": "City",
         "country": "uzbekistan",
+        "trips": ["central-asia"],
         "description": "Met Marco",
         "visited": true
       },
@@ -111,6 +118,7 @@
         "type": "City",
         "country": "uzbekistan",
         "description": "Ship graveyard by what used to be the Aral Sea.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -128,6 +136,7 @@
         "type": "City",
         "country": "uzbekistan",
         "description": "Marco got me interested in photography",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {
@@ -145,6 +154,7 @@
         "type": "Nomadic Village",
         "country": "uzbekistan",
         "description": "Stayed at a touristic Yurt Camp with Marco. Hitchhiked with a tour bus to Bukhara the following day.",
+        "trips": ["central-asia"],
         "visited": true
       },
       "geometry": {

@@ -10,6 +10,7 @@
         "name": "Krabi",
         "country": "thailand",
         "description": "My first-ever backpacking stop",
+        "trips": ["thailand"],
         "type": "City",
         "visited": true
       },
@@ -26,6 +27,8 @@
       "properties": {
         "name": "Ao Nang",
         "country": "thailand",
+        "description": "Primary spot on my vaction with Sofia",
+        "trips": ["thailand"],
         "type": "City",
         "visited": true
       },
@@ -43,6 +46,7 @@
         "name": "Kamala",
         "country": "thailand",
         "description": "Vacationing at Ayara Kamala Resport & Spa",
+        "trips": ["thailand"],
         "type": "City",
         "visited": true
       },
@@ -59,6 +63,7 @@
       "properties": {
         "name": "Bangkok",
         "country": "thailand",
+        "trips": ["thailand", "trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -76,6 +81,7 @@
         "name": "Pattaya",
         "country": "thailand",
         "description": "Visting a former colleague from Oslo: Kung Snikvard Qvarsebo",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -93,6 +99,7 @@
         "name": "Ko Samet",
         "country": "thailand",
         "description": "Not sure where I stayed... Escaped here after seeing Pattaya and waiting for my flight back to Finland.",
+        "trips": ["trans-siberia"],
         "type": "City",
         "visited": true
       },
@@ -109,6 +116,7 @@
       "properties": {
         "name": "Khon Kaen",
         "country": "thailand",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true,
         "homebase": true
@@ -126,6 +134,7 @@
       "properties": {
         "name": "Sisaket",
         "country": "thailand",
+        "trips": ["south-east-asia"],
         "type": "City",
         "visited": true
       },
@@ -143,6 +152,7 @@
         "name": "Nong Khai",
         "description": "Sala Kaew Ku: Statue Park",
         "country": "thailand",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },

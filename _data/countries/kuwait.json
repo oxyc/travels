@@ -8,6 +8,8 @@
       "type": "Feature",
       "properties": {
         "name": "Kuwait City",
+        "description": "Walked around town all day before meeting my CouchSurfing host Abdullah, and his friends from Bahrain, who arrived from Georgia at 3am.",
+        "trips": ["middle-east"],
         "type": "City",
         "country": "kuwait",
         "visited": true

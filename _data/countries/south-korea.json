@@ -9,6 +9,8 @@
       "properties": {
         "name": "Busan",
         "country": "south-korea",
+        "description": "Stayed in a really nice hostel with a big fluffy dog. The owner invited me to dinner with her brother downstairs",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "Seoul",
         "country": "south-korea",
+        "description": "Met up with David whom I met in India",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Gyenongju",
         "country": "south-korea",
+        "description": "Went to the oldest hostel in South Korea. The recently deceased owner seemed like a fascinating person",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -57,6 +63,8 @@
       "properties": {
         "name": "Sokcho",
         "country": "south-korea",
+        "description": "Hitchhiked here to see the national park. Slept in a Jjimjilbang.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -73,7 +81,9 @@
       "properties": {
         "name": "Seoraksan",
         "country": "south-korea",
-        "type": "National Park",
+        "description": "Unfortunately I hurt my foot in Japan so I couldn't hike properly",
+        "type": "Trek",
+        "trips": ["middle-east"],
         "visited": true
       },
       "geometry": {

@@ -9,6 +9,8 @@
       "properties": {
         "name": "Puerto Princesa",
         "country": "philippines",
+        "description": "Arrived by flight in the afternoon. Went on the firefly tour Phuong recommended.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -25,6 +27,8 @@
       "properties": {
         "name": "El Nido",
         "country": "philippines",
+        "description": "Met Daniël and Quiel on the bus here. We went on a snorkeling tour together.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -41,6 +45,8 @@
       "properties": {
         "name": "Manila",
         "country": "philippines",
+        "description": "Took the bus to the historic center and spent the day walking back to the airport.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -57,6 +63,8 @@
       "properties": {
         "name": "Coron",
         "country": "philippines",
+        "description": "Only spent a day, only divers and diving here.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -73,6 +81,8 @@
       "properties": {
         "name": "Calapan",
         "country": "philippines",
+        "description": "Not much to see here",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },
@@ -89,6 +99,8 @@
       "properties": {
         "name": "Sabang",
         "country": "philippines",
+        "description": "Shouldn't even have stopped here. Island hopping was the wrong decision.",
+        "trips": ["middle-east"],
         "type": "City",
         "visited": true
       },

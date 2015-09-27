@@ -11,6 +11,7 @@
         "type": "City",
         "country": "denmark",
         "description": "Visited with my mother when I was too young to remember",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
@@ -28,6 +29,7 @@
         "type": "City",
         "country": "denmark",
         "description": "Visited with my mother when I was too young to remember",
+        "trips": ["other"],
         "visited": true
       },
       "geometry": {
