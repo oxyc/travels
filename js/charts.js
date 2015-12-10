@@ -9,7 +9,7 @@
   var $tooltips = $();
   var tooltipVisible = false;
 
-  var tagsHidden = ['flight', 'boat'];
+  var tagsHidden = ['flight', 'boat', 'tour'];
 
   var templateExpenseTable = _.template(
     '<table>' +
