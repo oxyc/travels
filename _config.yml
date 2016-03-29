@@ -20,4 +20,7 @@ author:
 
 google_analytics: UA-6980403-12
 
+gems:
+  - jekyll-feed
+
 # https://picasaweb.google.com/data/feed/base/user/114201888556629445485/albumid/
