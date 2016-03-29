@@ -21,16 +21,39 @@ type: trip
   <div class="expenditure-chart" data-title="" data-chart="perCountryCPD" data-trip="{{ trip_id }}"></div>
   {% endif %}
 
-  <div class="countries">
-    <h3>Countries visited during the trip</h3>
-    <ul>
+  {% capture blog_posts %}
+    {% for post in site.posts reversed %}
+      {% if post.categories contains page.id and post.type == 'blog' %}
+        {% include post.html post=post %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% assign blog_post_count = blog_posts|strip|size %}
+  {% if blog_post_count > 0 %}
+    <div class="blog-posts">
+      <h3>Blog posts</h3>
+      <ul>
+        {{ blog_posts }}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% capture country_posts %}
     {% for country in site.posts reversed %}
-      {% if country.categories contains page.id %}
+      {% if country.categories contains page.id and country.type != 'blog' %}
         {% include country.html country=country %}
       {% endif %}
     {% endfor %}
-    </ul>
-  </div>
+  {% endcapture %}
+  {% assign country_post_count = country_posts|strip|size %}
+  {% if country_post_count > 0 %}
+    <div class="countries">
+      <h3>Countries visited during the trip</h3>
+      <ul>
+        {{ country_posts }}
+      </ul>
+    </div>
+  {% endif %}
 
   <div class="locations">
     <h3>Places visited</h3>

@@ -1,0 +1,30 @@
+---
+layout: default
+type: post
+---
+{% assign days_total = 0 %}
+{% assign country_id = page.title | slugify %}
+{% assign data = site.data.countries[country_id] %}
+{% capture expenditures %}{% include expenditures.html trips=page.categories country=country_id days=days_total %}{% endcapture %}
+{% assign has_expenses = expenditures | number_of_words %}
+
+<div class="content">
+  <h1>{{ page.title }}</h1>
+
+  <div class="trips group">
+    <h6>Trips:</h6>
+    {% include triplist.html trips=page.categories simple=true %}
+  </div>
+
+  {{ content }}
+
+</div>
+
+<aside class="sidebar">
+  {% if page.tags != empty %}
+  <div class="categories">
+    <h4>Categories</h4>
+    {% include categorylist.html categories=page.tags %}
+  </div>
+  {% endif %}
+</aside>
