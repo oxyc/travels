@@ -19,6 +19,7 @@ author:
   instagram: "@oskar.scholdstrom"
 
 google_analytics: UA-6980403-12
+disqus: "//travelsoxyfi.disqus.com"
 
 gems:
   - jekyll-feed
