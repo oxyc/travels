@@ -266,8 +266,10 @@
     // Controls point the the dummy layers.
     var countryControl = exports.controls.country = createControl('country', dummyLayers);
     // Add a mapping so that we can find the real layer alter.
-    for (var row in countryControl._layers) if (countryControl._layers.hasOwnProperty(row)) {
-      leafletMeta[L.Util.stamp(countryControl._layers[row].layer)] = countryControl._layers[row].name;
+    for (var row in countryControl._layers) {
+      if (countryControl._layers.hasOwnProperty(row)) {
+        leafletMeta[L.Util.stamp(countryControl._layers[row].layer)] = countryControl._layers[row].name;
+      }
     }
 
     exports.lMap.on('overlayadd overlayremove', function (overlay) {
@@ -295,8 +297,10 @@
     }
     var tripControl = exports.controls.trip = createControl('trip', tripLayers);
 
-    for (var row in tripControl._layers) if (tripControl._layers.hasOwnProperty(row)) {
-      leafletMeta[L.Util.stamp(tripControl._layers[row].layer)] = tripControl._layers[row].name;
+    for (var row in tripControl._layers) {
+      if (tripControl._layers.hasOwnProperty(row)) {
+        leafletMeta[L.Util.stamp(tripControl._layers[row].layer)] = tripControl._layers[row].name;
+      }
     }
 
     exports.lMap.on('overlayadd overlayremove', function (overlay) {
