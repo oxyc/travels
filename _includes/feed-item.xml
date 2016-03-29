@@ -1,0 +1,7 @@
+<entry>
+  <title>{{ post.title }}</title>
+  <link href="http://{{ site.base_path }}{{ post.url }}"/>
+  <updated>{{ post.date | date_to_xmlschema }}</updated>
+  <id>http://{{ site.base_path }}{{ post.id }}</id>
+  <content type="html">{{ post.content | xml_escape }}</content>
+</entry>

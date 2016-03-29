@@ -1,0 +1,9 @@
+---
+layout: feed
+feed_path: /trips/pct
+---
+{% for post in site.posts %}
+  {% if post.categories contains 'pct' and post.type == 'blog' %}
+    {% include feed-item.xml post = post %}
+  {% endif %}
+{% endfor %}
