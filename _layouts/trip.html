@@ -22,7 +22,7 @@ type: trip
   {% endif %}
 
   {% capture blog_posts %}
-    {% for post in site.posts reversed %}
+    {% for post in site.posts %}
       {% if post.categories contains page.id and post.type == 'blog' %}
         {% include post.html post=post %}
       {% endif %}

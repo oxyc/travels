@@ -16,6 +16,17 @@ If you want to find out more you can read about:
 - [What I have in my backpack](/backpack/)
 - [A list of all places grouped by type](/places/)
 
+<div class="blog-posts">
+  <h3>Blog posts</h3>
+  <ul>
+{% for post in site.posts %}
+  {% if post.type == 'blog' %}
+    {% include post.html post=post %}
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+
 ### Trips
 
 {% include triplist.html trips=site.categories %}
