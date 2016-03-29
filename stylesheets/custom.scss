@@ -267,3 +267,15 @@ img.slick-loading {
 .lp {
   font-size: 0.8rem;
 }
+
+img.left, img.right {
+  margin: 1rem;
+}
+img.left {
+  float: left;
+  margin-left: 0;
+}
+img.right {
+  float: right;
+  margin-right: 0;
+}
