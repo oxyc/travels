@@ -8,8 +8,8 @@ og_image: http://i.imgur.com/yKh8RnI.jpg
 ---
 Downside of being a hobby photographer: 22% of my entire gear weight is my
 camera and half of my entire gear weight will be worn. Auch! Because of this
-I've spent a lot of money on lower the weight of all my other gear though. The
-camera is now the only luxury item I carry and I feel that justifies it's
+I've spent a lot of money on lowering the weight of all my other gear though.
+The camera is now the only luxury item I carry and I feel that justifies it's
 weight.
 
 My entire gear weight will be approximately 7.63kg (17 lbs) with the worn
