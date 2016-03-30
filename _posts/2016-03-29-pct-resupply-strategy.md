@@ -4,6 +4,7 @@ layout: blog-post
 categories: ['pct']
 tags: ['pct']
 type: blog
+og_image: http://i.imgur.com/L7A9c9d.jpg
 ---
 On this blog I favour other more structured alternatives, but for making easily
 editable plans, Google Maps is great. I thought I'd share a few of the
@@ -39,7 +40,7 @@ rather not pick a town which requires a long hitchhike unless I really have
 to. For additional comparison I also looked up reviews of every stop to see
 how feasible it would be to resupply there.
 
-![Resupply strategy](http://i.imgur.com/L7A9c9d.jpg)
+![Resupply strategy][og-image]
 
 ### A couple of good pages I found for reading about indvidual towns
 
@@ -140,3 +141,5 @@ only the necessary topographical tiles (637mb).
 [pct-waypoints-gpx]:https://drive.google.com/file/d/0B4ZjYmMuEKWrVzVWaWxrcTQ5NTQ/view?usp=sharing
 [pct-waypoints-kmz]: https://drive.google.com/file/d/0B4ZjYmMuEKWrdkpneXlNLUsyQlE/view?usp=sharing
 [pct-waypoints-geojson]:https://drive.google.com/file/d/0B4ZjYmMuEKWrUHJXd2pnZk5qeU0/view?usp=sharing
+
+[og-image]: http://i.imgur.com/L7A9c9d.jpg

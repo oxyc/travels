@@ -4,6 +4,7 @@ layout: blog-post
 categories: ['pct']
 tags: ['pct']
 type: blog
+og_image: http://i.imgur.com/yKh8RnI.jpg
 ---
 Downside of being a hobby photographer: 22% of my entire gear weight is my
 camera and half of my entire gear weight will be worn. Auch! Because of this
