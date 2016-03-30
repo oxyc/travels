@@ -1,0 +1,30 @@
+{% capture posts %}
+{% for post in site.posts %}
+  {% if post.type == 'blog' %}
+    {% if include.type == 'full' %}
+
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+{{ post.excerpt }}
+
+<a href="{{ post.url }}">Read the full post</a>
+
+    {% elsif include.type == 'short' %}
+
+      {% include post.html post=post no_excerpt='yes' %}
+
+    {% else %}
+
+      {% include post.html post=post %}
+
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% endcapture %}
+{% assign post_count = posts | number_of_words %}
+
+{% if post_count %}
+{% if include.type != 'full' %}<ul>{% endif %}
+  {{ posts }}
+{% if include.type != 'full' %}</ul>{% endif %}
+{% endif %}

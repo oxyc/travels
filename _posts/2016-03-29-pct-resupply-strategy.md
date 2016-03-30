@@ -1,5 +1,5 @@
 ---
-title: Planning a resupply strategy for the PCT.
+title: Planning a resupply strategy for the PCT
 layout: blog-post
 categories: ['pct']
 tags: ['pct']

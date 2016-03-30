@@ -18,13 +18,7 @@ If you want to find out more you can read about:
 
 <div class="blog-posts">
   <h3>Blog posts</h3>
-  <ul>
-{% for post in site.posts %}
-  {% if post.type == 'blog' %}
-    {% include post.html post=post %}
-  {% endif %}
-{% endfor %}
-  </ul>
+  {% include bloglist.html %}
 </div>
 
 ### Trips

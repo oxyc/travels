@@ -2,8 +2,8 @@
   <li>
     <a href="{{ include.post.url }}">{{ include.post.title }} <span class="visit-list">{{ include.post.date | date_to_string }}</span></a>
     {% assign excerpt = include.post.excerpt | strip_newlines %}
-    {% unless excerpt == '' %}
+    {% if excerpt != '' and include.no_excerpt == nil %}
       <p class="excerpt">{{ excerpt | remove: '<p>' | remove: '</p>' }}</p>
-    {% endunless %}
+    {% endif %}
   </li>
 {% endif %}
