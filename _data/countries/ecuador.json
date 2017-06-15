@@ -27,10 +27,11 @@
       "properties": {
         "name": "Quito",
         "country": "ecuador",
-        "description": "Spent a lot of time drinking a lot of coffee with David",
-        "trips": ["south-america-1"],
+        "description": "Spent a lot of time drinking a lot of coffee with David. Now living here.",
+        "trips": ["south-america-1", "south-america-2"],
         "type": "City",
-        "visited": true
+        "visited": true,
+        "homebase": true
       },
       "geometry": {
         "type": "Point",
@@ -80,7 +81,8 @@
       "type": "Feature",
       "properties": {
         "name": "Cuenca",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "south-america-2"],
+        "description": "Lived here.",
         "country": "ecuador",
         "type": "City",
         "visited": true,
@@ -109,6 +111,172 @@
         "coordinates": [
           -80.22628784179688,
           -3.481208809323797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guayaquil",
+        "country": "ecuador",
+        "description": "Visited Michelle a few times.",
+        "trips": ["south-america-2"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.89257812499999,
+          -2.1857489471296665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riobamba",
+        "country": "ecuador",
+        "description": "Spent the day with Keith before heading to Chimbrazo",
+        "trips": ["south-america-2"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.72802734375,
+          -1.6806671337507222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Machachi",
+        "country": "ecuador",
+        "description": "Dropped by twice as me and Keith were hiking and climibing volcanoes.",
+        "trips": ["south-america-2"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.56666564941406,
+          -0.5122307252991675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aloasi",
+        "country": "ecuador",
+        "description": "Spent a bit of time on the way up Corazon.",
+        "trips": ["south-america-2"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.58451843261719,
+          -0.5188394207787667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chaupi",
+        "country": "ecuador",
+        "description": "Spent the night in a hostel after Corazon and before Iliniza Norte.",
+        "trips": ["south-america-2"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.64116668701172,
+          -0.6025203277975997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cotopaxi Circuit",
+        "country": "ecuador",
+        "description": "Warm up hike as preparation for climibing Chimborazo. 80 km.",
+        "duration": 3,
+        "trips": ["south-america-2"],
+        "type": "Trek",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.39740753173828,
+          -0.6804497024083547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corazon",
+        "country": "ecuador",
+        "description": "Climbed a 4790m Volcano with Keith.",
+        "trips": ["south-america-2"],
+        "type": "Peak",
+        "duration": 1,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.66159439086914,
+          -0.5259630718092625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iliniza Norte",
+        "country": "ecuador",
+        "description": "Climbed a 5126m Volcano with Keith.",
+        "trips": ["south-america-2"],
+        "type": "Peak",
+        "duration": 1,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.72133255004883,
+          -0.6497243864550782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chimborazo",
+        "country": "ecuador",
+        "description": "Climbed to the furthest point from the center of the earth together with Keith. 6263m Volcano.",
+        "trips": ["south-america-2"],
+        "type": "Peak",
+        "duration": 2,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.81351470947266,
+          -1.465999836635066
         ]
       }
     }

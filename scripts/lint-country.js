@@ -13,6 +13,7 @@ var validFeatureTypes = [
 ];
 
 var validTrips = [
+  'south-america-2',
   'south-america-1',
   'south-east-asia',
   'central-asia',
