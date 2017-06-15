@@ -3,16 +3,19 @@ var fs = require('fs');
 var assert = require('assert');
 
 var validFeatureTypes = [
+  'Campground',
   'City',
   'Border Crossing',
   'Trek',
   'Sight',
   'Nomadic Village',
+  'Other',
   'Pass',
   'Peak'
 ];
 
 var validTrips = [
+  'pct',
   'south-america-2',
   'south-america-1',
   'south-east-asia',

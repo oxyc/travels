@@ -59,6 +59,1004 @@
           26.526877449686918
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seattle",
+        "state": "WA",
+        "country": "usa",
+        "description": "Preparing for PCT and met up with Simon.",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.32177734375,
+          47.60245929546312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harts Pass",
+        "state": "WA",
+        "country": "usa",
+        "description": "Hiked up from the road with Simon after being dropped off by our Trail Angel Detour (Bert) who gave us a ride from Arlington. Met Mike, Joe and Tara (Floridian) and a few others I never met again. Arrived late afternoon, left early next morning.",
+        "date": "2016-06-27",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.66970825195312,
+          48.719961222646276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stehekin",
+        "state": "WA",
+        "country": "usa",
+        "description": "Reached the town with Simon and Mike at noon and left next day same time. Briefly met Drifter and hiked out with Joe and someone whose name I can't remember, no one saw him after Cascade Locks. Sent back ice axe and long underwear.",
+        "date": "2016-07-03",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.67623138427734,
+          48.320190639258065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steven's Pass",
+        "state": "WA",
+        "country": "usa",
+        "description": "Had some issues finding a ride into Skykomish.",
+        "date": "2016-07-09",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.08946323394775,
+          47.74523948345519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skykomish",
+        "state": "WA",
+        "country": "usa",
+        "description": "Arrived evening and took a full zero with Simon, Mike and Joe. Stayed at the hotel, laundry in skirt, double dinner.",
+        "date": "2016-07-09",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.36322021484374,
+          47.71068560344829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Snoqualmie Pass",
+        "state": "WA",
+        "country": "usa",
+        "description": "Arrived around noon, took the day and left following day around noon. Simon's last town before getting a ride back to Seattle by Dan (Aadvark). Met Bucket on the way in. Awesome food and wine. Mediocre pancakes at the Pancake House. New shoes didn't arrive. Left noon next day",
+        "date": "2016-07-14",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.4154052734375,
+          47.42437092240519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "White Pass",
+        "state": "WA",
+        "country": "usa",
+        "description": "Arrived evening, got some leftovers and chips for dinner. Waited an entire day for new shoes to arrive. Mike showed up and we went to packwood after DHL dropped them off. Met my first North Bounder, Legend of all people.",
+        "date": "2016-07-18",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.38862609863281,
+          46.63894749971385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Packwood",
+        "state": "WA",
+        "country": "usa",
+        "description": "Arrived afternoon with Mike, left early next morning with Cinch and French Fry. Cheapest hotel ever. Nice town.",
+        "date": "2016-07-19",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.67289733886717,
+          46.60605412713272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cascade Locks",
+        "state": "OR",
+        "country": "usa",
+        "description": "Met Glue and Brooke whom I missed up by Harts Pass. The day after Goat Rock's Wilderness I met Keith for the first time, met him again as I was eating ice cream in Cascade Locks. Took a zero and a full day.",
+        "date": "2016-07-24",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89056396484375,
+          45.66804518504624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Timberline Lodge",
+        "state": "OR",
+        "country": "usa",
+        "description": "Arrived at 11ish, missed breakfast buffet. Great resupply from hiker box.",
+        "date": "2016-07-27",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.70997619628908,
+          45.32644424201267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olallie Lake Resort",
+        "state": "OR",
+        "country": "usa",
+        "description": "Arrived for some early breakfast coffee and left after one hour or so.",
+        "date": "2016-07-29",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.78975582122803,
+          44.813992959602935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Lake Youth Camp",
+        "state": "OR",
+        "country": "usa",
+        "description": "Arrived after having a lunch beer with a Trail Angle whose name I can't recall. Scratch knows. Got my resupply package, showered, and left.",
+        "date": "2016-08-01",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8655014038086,
+          44.37319566831578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elk Lake Resort",
+        "state": "OR",
+        "country": "usa",
+        "description": "Arrived too early, no breakfast until 9am or something silly. Waited, charged, ate and left.",
+        "date": "2016-08-03",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.80602073669434,
+          43.98148249432801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shelter Cove Resort",
+        "state": "OR",
+        "country": "usa",
+        "description": "Got a care package from Marla.",
+        "date": "2016-08-04",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.97999954223633,
+          43.46139217556833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mazama Village",
+        "state": "OR",
+        "country": "usa",
+        "description": "Crater Lake rim trail was closed when I arrived, hitchhiked around and heard it would open the next day. Hitchhiked back and hiked it. Met Connecticut.",
+        "date": "2016-08-07",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16702461242674,
+          42.86753503852711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Callahan's",
+        "state": "OR",
+        "country": "usa",
+        "description": "Arrived evening, had dinner and slept in their backyard. Met Connecticut again.",
+        "date": "2016-08-10",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.60398864746094,
+          42.06356771883277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ashland",
+        "state": "OR",
+        "country": "usa",
+        "description": "After Callahan's I went into Ashland, and took a full day off. Met Keith and we decided to hike out together the net day.",
+        "date": "2016-08-11",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.71316528320312,
+          42.19444265006986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seiad Valley",
+        "state": "CA",
+        "country": "usa",
+        "description": "First poison oak. Arrived late afternoon. Weird place. Left next day after breakfast.",
+        "date": "2016-08-14",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19244384765625,
+          41.839385726930914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Etna",
+        "state": "CA",
+        "country": "usa",
+        "description": "Perfect hitch, arrived late afteroon, ate, slept in motel and left early next morning.",
+        "date": "2016-08-16",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.89649963378906,
+          41.456622373569985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Castella",
+        "state": "CA",
+        "country": "usa",
+        "description": "Nasty gas station area, arrived early evening, got a care package from Ann-Marie, left same night.",
+        "date": "2016-08-19",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.31800079345703,
+          41.13858889084487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burney Falls State Park",
+        "state": "CA",
+        "country": "usa",
+        "description": "Bad resupply, arrived and left pretty quickly to the ranch.",
+        "date": "2016-08-22",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6600227355957,
+          41.01837625377283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burney Mountain Guest Ranch",
+        "state": "CA",
+        "country": "usa",
+        "description": "Nice place, dinner, breakfast and spent the next day before night hiking Hat Creek's Rim.",
+        "date": "2016-08-22",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.55505180358887,
+          40.953196305285175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old Station",
+        "state": "CA",
+        "country": "usa",
+        "description": "Waited for Keith's package.",
+        "date": "2016-08-24",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.43145561218262,
+          40.67510513691509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drakesbad Guest Ranch",
+        "state": "CA",
+        "country": "usa",
+        "description": "Waited for Keith's backpack. Met Sherpa who disappeared on the trail somewhere in Washington.",
+        "date": "2016-08-25",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.40658617019653,
+          40.442913567249406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belden",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early, had lunch, left same day. Festival town.",
+        "date": "2016-08-27",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.24940872192381,
+          40.00602084337152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sierra City",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early, all restaurants closed, had really expensive ice cream, left same day.",
+        "date": "2016-08-30",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.63400268554689,
+          39.56593369562849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Truckee",
+        "state": "CA",
+        "country": "usa",
+        "description": "Perfect hitch, had dinner, yuppy marker resupply and went back to the trail to sleep. California girl had her car broken into by a bear.",
+        "date": "2016-08-31",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.18218994140626,
+          39.330048552942415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Echo Lake",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived noon, had ice cream and went into Tahoe.",
+        "date": "2016-09-02",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.04022598266602,
+          38.83248703408408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Lake Tahoe",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early afternoon, weird hitchhike guy, took a zero. Changed backpack, new shoes and picked up my tarp again.",
+        "date": "2016-09-02",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.98443603515625,
+          38.932707274379595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kennedy Meadow Resort",
+        "state": "CA",
+        "country": "usa",
+        "description": "Met Yakattack on the way, hitchhiked in together and had dinner, 4 ice creams and spent the night stealth camping in their campground. Had birthday breakfast.",
+        "date": "2016-09-06",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.74801540374754,
+          38.31650810722107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tuolumne Meadows",
+        "state": "CA",
+        "country": "usa",
+        "description": "Met Machine when he arrived on the bus coming from the Valley. Terrible place to eat. Left early afternoon.",
+        "date": "2016-09-08",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.35787200927733,
+          37.87458238997454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reds Meadow Campground",
+        "state": "CA",
+        "country": "usa",
+        "description": "Had lunch, resupplied for a long stretch and left.",
+        "date": "2016-09-09",
+        "trips": ["pct"],
+        "type": "Campground",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.07505989074706,
+          37.61968739315023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Independence",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early, realized there's nothing in town so took the bus to Lone Pine. Saw Drifter on the way into Independence.",
+        "date": "2016-09-13",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20070266723633,
+          36.80254994464151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lone Pine",
+        "state": "CA",
+        "country": "usa",
+        "description": "Looked for dinner, stayed in a motel and took the bus back the next morning after breakfast.",
+        "date": "2016-09-13",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.06294441223143,
+          36.605124161306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kennedy Meadows",
+        "state": "CA",
+        "country": "usa",
+        "description": "Caught up with drifter and arrived when the store was closed. Last day with breakfast following morning and met Scratch and Machine who hiked with.",
+        "date": "2016-09-16",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.13360452651976,
+          36.02378298070164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Isabella",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early noon and went back the same afternoon after having resupplied. Hiked with Machine.",
+        "date": "2016-09-18",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48145484924316,
+          35.61816308800596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tehachapi",
+        "state": "CA",
+        "country": "usa",
+        "description": "Had amazing food, slept at Best Western, met Scratch, Machine and Drifter again.",
+        "date": "2016-09-21",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45115661621095,
+          35.132825303652396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hikertown",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived after dark, slept and left next morning. Arrived with Scratch and Machine and met Drifter the next morning. Didn't get my resupply package from Ann-Marie but the guy who runs the place drove ahead and left it for me on the trail. Met Cakes.",
+        "date": "2016-09-23",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60565185546874,
+          34.7758828131859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Hughes",
+        "state": "CA",
+        "country": "usa",
+        "description": "Trail was closed so walked through Lake Hughes towards Green Valley. Scratch stayed in Green Valley.",
+        "date": "2016-09-25",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4497833251953,
+          34.67698205588843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agua Dulce",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived with Drifter and Machine came soon after. Met up with Keith's sister joined in. Had dinner and slept on the rail.",
+        "date": "2016-09-26",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32498550415039,
+          34.4965123913818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wrightwood",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived early, had terrible Mexican food, went back on trail the same day. Hiked with Cakes as well.",
+        "date": "2016-09-29",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.63473510742186,
+          34.360017516598965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cajon Pass",
+        "state": "CA",
+        "country": "usa",
+        "description": "McDonald's was closed. Had coffee, snacks and continued on.",
+        "date": "2016-09-30",
+        "trips": ["pct"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.46925354003908,
+          34.307711042805494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Bear Lake",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived noon, spent the day and big part of the following day. Rented a cabin/house with Keith and his sister. Keith made breakfast. Had indian food. Alexis went back home.",
+        "date": "2016-10-02",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90963745117188,
+          34.24458805417513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Idyllwild",
+        "state": "CA",
+        "country": "usa",
+        "description": "Met up with Cakes again. Arrived early, had lunch in the grocery store and left.",
+        "date": "2016-10-05",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.71943664550783,
+          33.73975785956617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Warner Springs",
+        "state": "CA",
+        "country": "usa",
+        "description": "Picked up my last care package from Ann Marie, continued after having eaten half of it.",
+        "date": "2016-10-07",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.63412094116211,
+          33.282036910216206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Julian",
+        "state": "CA",
+        "country": "usa",
+        "description": "Met Cakes as she was hitchhiking into town. Had breakfast as well as apple pie and ice cream. Went back on trail after breakfast.",
+        "date": "2016-10-08",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.6033935546875,
+          33.076007855857256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Laguna",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived for breakfast which ended up being ice cream. Keith had an entire refrigerator pie. Met Machine again.",
+        "date": "2016-10-09",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.41834259033203,
+          32.871369471965444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Morena",
+        "state": "CA",
+        "country": "usa",
+        "description": "Arrived in time for dinner which was amazing. Ate too much. Slept on the trail.",
+        "date": "2016-10-09",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.50674819946289,
+          32.679840539897484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Campo",
+        "state": "CA",
+        "country": "usa",
+        "description": "Reached the border at 1:50pm together with Daddy Long Legs who I hiked with since Ashland. 2663 miles (4286 km) in 103 days. Only thru-hiker before us was Drifer who arrived the day before. Two other hikers arrived the day before him but they skipped sections up in Washington.",
+        "date": "2016-10-10",
+        "trips": ["pct"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.47018432617189,
+          32.6106042129588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pacific Crest Trail",
+        "state": ["WA", "OR", "CA"],
+        "country": "usa",
+        "description": "Hiked the entire PCT end-to-end from North to South in 103 days. 2663 miles or 4286 km.",
+        "trips": ["pct"],
+        "type": "Trek",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.5751953125,
+          38.16911413556086
+        ]
+      }
     }
   ]
 }

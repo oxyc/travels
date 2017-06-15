@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Canada"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vancouver",
+        "type": "City",
+        "description": "Couchsurfed with Lizz and Vaughn. Did the Grouse Grind. Ate a lot of Vietnamese food.",
+        "country": "canada",
+        "trips": ["pct"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.101806640625,
+          49.25346477497736
+        ]
+      }
+    }
+  ]
+}
