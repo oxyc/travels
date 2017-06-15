@@ -1,1 +1,1 @@
-# travels [![Build Status](https://travis-ci.org/oxyc/travels.svg)](https://travis-ci.org/oxyc/travels)
+# travels [![Build Status](https://api.travis-ci.org/oxyc/travels.svg?branch=gh-pages)](https://travis-ci.org/oxyc/travels)
