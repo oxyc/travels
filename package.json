@@ -4,6 +4,10 @@
   "description": "A record of my travels",
   "main": "index.js",
   "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "test": "xo && node scripts/lint-country.js _data/countries/*.json && geojsonhint _data/*/*.json && jsonlint -q *.json _data/*/*.json && jshint _data/*/*.json",
     "build": "for i in _data/trips/*.json; do n=\"$(basename $i)\"; topojson -p -o geojson/trips/${n%.*}.topojson $i; done"
   },
@@ -22,19 +26,12 @@
   },
   "homepage": "https://github.com/oxyc/travels#readme",
   "devDependencies": {
-    "express": "^4.13.3",
     "geojsonhint": "^1.1.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-inline-image": "0.0.4",
-    "gulp-livereload": "^3.8.0",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.4.1",
     "jshint": "^2.8.0",
     "jsonlint": "^1.6.2",
+    "sass": "^1.24.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.11",
     "xo": "^0.8.0"
   },
   "xo": {
@@ -53,10 +50,23 @@
     ]
   },
   "dependencies": {
+    "@mapbox/leaflet-omnivore": "github:mapbox/leaflet-omnivore",
     "file-exists": "^0.1.1",
+    "fraction.js": "^4.0.12",
     "geojson-merge": "^0.1.0",
+    "highcharts": "^8.0.0",
+    "jquery": "^3.4.1",
+    "js-yaml": "^3.13.1",
+    "laravel-mix": "^5.0.1",
+    "leaflet": "^1.6.0",
+    "leaflet-makimarkers": "^3.1.0",
+    "leaflet-search": "^2.9.8",
+    "leaflet.markercluster": "^1.4.1",
+    "lodash": "^4.17.15",
     "marked": "^0.3.5",
     "mkdirp": "^0.5.1",
+    "select2": "^4.0.12",
+    "tippy.js": "^5.1.2",
     "topojson": "^1.6.19"
   }
 }

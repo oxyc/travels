@@ -43,7 +43,7 @@
       display: block;
       &.loading:before {
         content: '';
-        background: transparent url('/images/ajax-loader.gif') center center no-repeat;
+        background: transparent url('../images/ajax-loader.gif') center center no-repeat;
         background-size: 10px;
         width: 10px;
         height: 10px;
@@ -150,11 +150,11 @@
 }
 
 .slick-loading .slick-list {
-  background: #000 url('/images/ajax-loader.gif') center center no-repeat;
+  background: #000 url('../images/ajax-loader.gif') center center no-repeat;
 }
 img.slick-loading {
   content: '';
-  background: #000 url('/images/ajax-loader.gif') center center no-repeat;
+  background: #000 url('../images/ajax-loader.gif') center center no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -244,14 +244,20 @@ img.slick-loading {
   }
 }
 
-.tinytooltip {
-  .arrow { display: none; }
-  .message {
+.tippy-tooltip {
+  &[data-placement^=bottom] > .tippy-arrow {
+    border-bottom-color: #c3c3c3;
+  }
+
+  .tippy-content {
     overflow-y: scroll;
     z-index: 0;
     max-height: 200px;
     border: solid 1px #c3c3c3;
     background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    pointer-events: all;
   }
   table {
     text-align: left;
@@ -261,7 +267,7 @@ img.slick-loading {
   }
 }
 .leaflet-control-search .search-button {
-  background: url(/images/search-icon.png) 2px -22px no-repeat;
+  background: url(../images/search-icon.png) 2px -22px no-repeat;
 }
 
 .lp {
