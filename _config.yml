@@ -24,4 +24,9 @@ disqus: "//travelsoxyfi.disqus.com"
 gems:
   - jekyll-feed
 
+exclude:
+ - vendor
+ - bower_components
+ - node_modules
+
 # https://picasaweb.google.com/data/feed/base/user/114201888556629445485/albumid/

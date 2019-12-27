@@ -118,11 +118,14 @@
       scrollWheelZoom: false
     });
 
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png?access_token={accessToken}', {
+    L.mapbox = L.mapbox || {};
+    L.mapbox.accessToken = 'pk.eyJ1Ijoib3h5IiwiYSI6InBMaXRxSDAifQ.w9NqRLivEBn6BoMRkKmg3A';
+    L.MakiMarkers.accessToken = L.mapbox.accessToken;
+    L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
       maxZoom: 18,
       id: 'oxy.ndp8318l',
-      accessToken: 'pk.eyJ1Ijoib3h5IiwiYSI6InBMaXRxSDAifQ.w9NqRLivEBn6BoMRkKmg3A'
+      accessToken: L.mapbox.accessToken,
     }).addTo(map);
 
     return map;

@@ -27,9 +27,9 @@
   "dependencies": {
     "slick-carousel": "https://github.com/kenwheeler/slick.git#master",
     "fraction.js": "~3.0.0",
-    "Leaflet.MakiMarkers": "~1.0.1",
+    "Leaflet.MakiMarkers": "https://github.com/jseppi/Leaflet.MakiMarkers.git#3.1.0",
     "leaflet.markercluster": "~0.4.0",
-    "leaflet-omnivore": "~0.3.2",
+    "leaflet-omnivore": "0.3.3",
     "leaflet-search": "~1.8.4",
     "tinytooltip": "git@github.com:knadh/tinytooltip.git",
     "jquery": "~2.1.4",
