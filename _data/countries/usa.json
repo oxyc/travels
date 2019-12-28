@@ -1057,6 +1057,63 @@
           38.16911413556086
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New York City",
+        "state": "NY",
+        "country": "usa",
+        "description": "Visited the city for a bit before going to Ithaca",
+        "trips": ["gdt"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0203857421875,
+          40.772221877329024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ithaca",
+        "state": "NY",
+        "country": "usa",
+        "description": "Visited the with Keith",
+        "trips": ["gdt"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.49711608886719,
+          42.440180912414554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trumansburg",
+        "state": "NY",
+        "country": "usa",
+        "description": "Visited the with Keith",
+        "trips": ["gdt"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.651611328125,
+          42.524748042348165
+        ]
+      }
     }
   ]
 }

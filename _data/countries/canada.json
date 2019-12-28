@@ -21,6 +21,168 @@
           49.25346477497736
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calgary",
+        "type": "City",
+        "description": "Visited the city on my way back to Uruguay from the GDT",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.04907226562499,
+          51.069016659603896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GDT Starting point Twin Butte",
+        "type": "Other",
+        "description": "Began hiking the GDT, took an Uber here from Calgary",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9718246459961,
+          49.20301842421856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coleman",
+        "type": "City",
+        "description": "Resupply",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.49607849121094,
+          49.63828784645708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Castle Mountain Ski Resort",
+        "type": "City",
+        "description": "Resupply",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.4119644165039,
+          49.3176812069591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peter Lougheed Provincial Park Visitor Centre",
+        "type": "City",
+        "description": "Resupply",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.10839462280273,
+          50.63566245953179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Banff",
+        "type": "City",
+        "description": "Resupply",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.57205200195312,
+          51.18020386644292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jasper",
+        "type": "City",
+        "description": "Resupply",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.10852050781251,
+          52.8691297276852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moraine Lake",
+        "type": "Other",
+        "description": "Visited by bus on the way to Crossing",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.18209362030028,
+          51.32787646632571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Crossing Resort",
+        "type": "City",
+        "description": "Took a bus here from Banff and skipped a section of the GDT",
+        "country": "canada",
+        "trips": ["gdt"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.7469024658203,
+          51.97404242751935
+        ]
+      }
     }
   ]
 }
