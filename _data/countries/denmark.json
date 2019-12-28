@@ -10,8 +10,8 @@
         "name": "Copenhagen",
         "type": "City",
         "country": "denmark",
-        "description": "Visited with my mother when I was too young to remember",
-        "trips": ["other"],
+        "description": "Visited with my mother when I was too young to remember. Then again with Andrea in 2019.",
+        "trips": ["other", "scandinavia"],
         "visited": true
       },
       "geometry": {

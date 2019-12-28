@@ -72,6 +72,74 @@
           57.483356279166294
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visby",
+        "type": "City",
+        "trips": ["scandinavia"],
+        "country": "sweden",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.314208984375,
+          57.63952077434961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tofta",
+        "type": "City",
+        "trips": ["scandinavia"],
+        "country": "sweden",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.144264221191406,
+          57.504020175224646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sudersand",
+        "type": "Other",
+        "trips": ["scandinavia"],
+        "country": "sweden",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.23508644104004,
+          57.94938947502046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Digerhuvud",
+        "type": "Other",
+        "trips": ["scandinavia"],
+        "country": "sweden",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.11367893218994,
+          57.98280584741435
+        ]
+      }
     }
   ]
 }

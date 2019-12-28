@@ -22,6 +22,60 @@
           59.91648345450877
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tromsø",
+        "type": "City",
+        "country": "norway",
+        "description": "Visited to see the Aurora Borealis with my wife",
+        "trips": ["scandinavia"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.952102661132812,
+          69.64908818093255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aurora Borealis tour",
+        "type": "Other",
+        "country": "norway",
+        "description": "Aurora Borealis tour took us here",
+        "trips": ["scandinavia"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.598236083984375,
+          70.02398893764035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hansnes",
+        "type": "City",
+        "country": "norway",
+        "description": "Aurora Borealis tour took us here",
+        "trips": ["scandinavia"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.62535858154297,
+          69.96655596705759
+        ]
+      }
     }
   ]
 }
