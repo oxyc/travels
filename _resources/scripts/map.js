@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import _ from 'lodash';
 import L from 'leaflet';
 import { topojson } from '@mapbox/leaflet-omnivore';
@@ -36,14 +35,16 @@ export const routeStyles = {
   mouseover: {color: '#ff0000', opacity: 0.7, weight: 3}
 };
 
-const $map = $('#world-map');
+const map = document.getElementById('world-map');
 
-const preSelectedTrips = _.reject($map.data('trips').split(' ') || [], _.isEmpty);
-const preSelectedCountries = _.reject($map.data('country').split(' ') || [], _.isEmpty);
+const preSelectedTrips = _.reject(map.dataset.trips.split(' ') || [], _.isEmpty);
+const preSelectedCountries = _.reject(map.dataset.country.split(' ') || [], _.isEmpty);
 const leafletMeta = {};
 
 // Initialize
-$.getJSON('/world.json').done(init);
+fetch('/world.json')
+  .then(data => data.json())
+  .then(init);
 
 const templateMarkerPopup = _.template(
   '<strong><%- name %>, <%- _.startCase(country) %></strong> <small><%- type %></small><br>' +
@@ -324,16 +325,12 @@ function init(data) {
   // Issue XHR requests for the routes of all trips, but do it async while
   // rendering regular markers.
   let tripCollection = _.forEach(data.trips, (trip) => {
-    trip.promise = $.ajax({
-      dataType: 'json',
-      url: '/' + trip.path,
-      timeout: AJAX_TIMEOUT
-    });
+    trip.promise = fetch(`/${trip.path}`);
   });
 
   // Remove the placeholder image as it gets displayed while tiles are
   // fetched.
-  lMap.once('zoomstart', () => $map.css('background-image', 'none'));
+  lMap.once('zoomstart', () => map.style.backgroundImage = 'none');
 
   lMap.on('overlayadd overlayremove', _.debounce((event) => {
     if (event.layer.type && event.layer.type === 'country') {
@@ -354,22 +351,23 @@ function init(data) {
   lMap.addControl(createSearchControl());
 
   // Wait for all requests to finish
-  Promise.allSettled(_.map(tripCollection, 'promise'))
-    .then(() => {
-      tripCollection = _.chain(tripCollection)
-        // Filter out failed requests.
-        .pick((trip) => trip.promise.statusCode().status === 200)
-        // Attach the features collected from the XHR request.
-        .forEach((trip) => trip.features = trip.promise.responseJSON)
-        .keyBy((trip) => trip.properties.name)
-        .value();
+  Promise.allSettled(_.map(tripCollection, (trip) => {
+    return trip.promise.then(data => data.json());
+  })).then((responses) => {
+    tripCollection = _.chain(tripCollection)
+      // Filter out failed requests.
+      .filter((trip, idx) => responses[idx].status === 'fulfilled')
+      // Attach the features collected from the XHR request.
+      .forEach((trip, idx) => trip.features = responses[idx].value)
+      .keyBy((trip) => trip.properties.name)
+      .value();
 
-      // Create the trip layers.
-      createTripLayers(tripCollection);
+    // Create the trip layers.
+    createTripLayers(tripCollection);
 
-      if (!controls.other) {
-        controls.other = L.control.layers(null, null, {collapsed: false}).addTo(lMap);
-        controls.other.addOverlay(cluster, 'Markers');
-      }
-    });
+    if (!controls.other) {
+      controls.other = L.control.layers(null, null, {collapsed: false}).addTo(lMap);
+      controls.other.addOverlay(cluster, 'Markers');
+    }
+  });
 }

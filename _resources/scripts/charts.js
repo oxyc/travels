@@ -1,12 +1,13 @@
-import $ from 'jquery';
 import _ from 'lodash';
 import tippy from 'tippy.js';
 import { hideAll as tippyHideAll } from 'tippy.js';
 import Highcharts from 'highcharts';
 
-const $charts = $('.expenditure-chart');
-if ($charts.length) {
-  $.getJSON('/expenditures.json', init);
+const charts = document.querySelectorAll('.expenditure-chart');
+if (charts) {
+  fetch('/expenditures.json')
+    .then(data => data.json())
+    .then(init);
 }
 
 let tooltipVisible = false;
@@ -221,13 +222,13 @@ function getDateSpan(data) {
 }
 
 function init(data) {
-  $charts.each((idx, el) => {
-    const $this = $(el);
-    const chartType = $this.data('chart');
+  for (let i = 0; i < charts.length; i++) {
+    const el = charts[i];
+    const chartType = el.dataset.chart;
     const options = {
-      trip: $this.data('trip'),
-      country: $this.data('country'),
-      title: $this.data('title'),
+      trip: el.dataset.trip,
+      country: el.dataset.country,
+      title: el.dataset.title,
       countryData: []
     };
     const tripData = _.chain(data.expenditures)
@@ -250,14 +251,14 @@ function init(data) {
     }
 
     if (!options.countryData.length) {
-      $this.html('<p><em>No data available yet</em></p>');
+      el.innerHTML = '<p><em>No data available yet</em></p>';
       return;
     }
 
     chartTypes[chartType](el, tripData, options);
-  });
+  }
 
-  $(document).on('click', (event) => {
+  document.addEventListener('click', (event) => {
     if (!tooltipVisible || (event.target && event.target.tooltipInitalizer)) {
       return;
     }

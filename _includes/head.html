@@ -52,9 +52,6 @@
     <style type="text/css">
       {% include abovefold.css %}
     </style>
-    <noscript>
-      <script src=""></script>
-    </noscript>
     <link rel="preload" href="/dist{{ site.assets['/styles/app.css'] }}" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/dist{{ site.assets['/styles/app.css'] }}"></noscript>
     <script>
@@ -63,9 +60,13 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
+
+      // Polyfill
+      if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+        document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>');
+      }
     </script>
   </head>
   <body>

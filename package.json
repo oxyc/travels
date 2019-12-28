@@ -55,7 +55,6 @@
     "fraction.js": "^4.0.12",
     "geojson-merge": "^0.1.0",
     "highcharts": "^8.0.0",
-    "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
     "laravel-mix": "^5.0.1",
     "leaflet": "^1.6.0",
