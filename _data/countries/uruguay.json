@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Uruguay"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montevideo",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["patagonia-antarctica"],
+        "description": "My new home",
+        "homebase": true,
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.2060546875,
+          -34.89494244739731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salto",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["patagonia-antarctica"],
+        "description": "Hitchhiked across the border",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.96077728271484,
+          -31.388226766963587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colonia del Sacramento",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["patagonia-antarctica", "south-america-vacations"],
+        "description": "Arrived from Buenos Aires and spent the night",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.82379150390625,
+          -34.43862840686651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Piriapolis",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["south-america-vacations"],
+        "description": "Visited a few times",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.294189453125,
+          -34.876918445772084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punta del Este",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["south-america-vacations"],
+        "description": "Visited with my mom",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.9371337890625,
+          -34.95686979182948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "José Ignacio",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["south-america-vacations"],
+        "description": "Visited aunt and her husband",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.64324951171875,
+          -34.83747716241598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punta del Diablo",
+        "type": "City",
+        "country": "uruguay",
+        "trips": ["south-america-vacations"],
+        "description": "Long weekend vacation",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.54324340820312,
+          -34.04810808490983
+        ]
+      }
+    }
+  ]
+}

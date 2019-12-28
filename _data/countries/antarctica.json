@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Antarctica"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Point Wild",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.922027587890625,
+          -61.10609775238519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gourdin Island",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.30073928833007,
+          -63.197540572419854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brown Bluff",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Beach, volcano",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.89132690429687,
+          -63.52238929925254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fridtjof Sound",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Sound",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.73202514648437,
+          -63.59256189972813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antarctic Sound",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Sound",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.4093017578125,
+          -63.50998795294047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deception Island",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.61431884765625,
+          -62.964119636155516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Half Moon Island",
+        "type": "Other",
+        "country": "antarctica",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.92115020751953,
+          -62.590654156440024
+        ]
+      }
+    }
+  ]
+}

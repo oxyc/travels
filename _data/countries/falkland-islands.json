@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Falkland Islands"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steeple Jason",
+        "type": "Other",
+        "country": "falkland-islands",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.217193603515625,
+          -51.03534922244626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saunders Island",
+        "type": "Other",
+        "country": "falkland-islands",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.242156982421875,
+          -51.30657945585936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Point Island",
+        "type": "Other",
+        "country": "falkland-islands",
+        "description": "Island",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.68497896194459,
+          -51.349351216442805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stanley",
+        "type": "City",
+        "country": "falkland-islands",
+        "description": "Spent a day walking around",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.85675048828125,
+          -51.69341584390196
+        ]
+      }
+    }
+  ]
+}

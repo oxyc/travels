@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Paraguay"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Encarnación",
+        "type": "City",
+        "description": "On the way from Uruguay to Iguazú. Crossed the border into Paraguay",
+        "country": "paraguay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.863590240478516,
+          -27.339902228898996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jesus de Tavarangüe",
+        "type": "City",
+        "description": "Went to see Jesuit missions",
+        "country": "paraguay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.74179649353027,
+          -27.05660338610286
+        ]
+      }
+    }
+  ]
+}

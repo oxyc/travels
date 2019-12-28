@@ -1,0 +1,188 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "South Georgia and the Sandwich Islands"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elsehul",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Bay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.97750473022461,
+          -54.0152333007752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Right Whale Bay",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Bay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.686195373535156,
+          -54.00877756165191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salisbury Plain",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Beach",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.31403350830078,
+          -54.06049618809732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fortuna Bay",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Bay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.81089401245117,
+          -54.15177897080841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stromness",
+        "type": "City",
+        "country": "south-georgia",
+        "description": "",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.71090126037598,
+          -54.15773505031002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grytviken",
+        "type": "City",
+        "country": "south-georgia",
+        "description": "",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.50808334350585,
+          -54.28126193082709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Godthul",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Bay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.28664016723633,
+          -54.29899653440948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Andrews Bay",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Bay",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.18098258972168,
+          -54.44623856935214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Larsen Harbour",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Fjord",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.10665321350098,
+          -54.77767256304353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drygalski Fjord",
+        "type": "Other",
+        "country": "south-georgia",
+        "description": "Fjord",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.00528717041015,
+          -54.83372048600448
+        ]
+      }
+    }
+  ]
+}

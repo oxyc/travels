@@ -1,0 +1,188 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Brazil"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foz do Iguaçu",
+        "description": "Visited Iguazu",
+        "country": "brazil",
+        "trips": ["patagonia-antarctica"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.57509994506836,
+          -25.51827709339523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salvador",
+        "description": "Visited my wifes cousins",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.52355957031249,
+          -12.988500396985364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morro de São Paulo",
+        "description": "Primary vacation destination with my wife in 2018",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.915977478027344,
+          -13.37742862976853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gamboa",
+        "description": "Took a boat and spent the day",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.93906593322754,
+          -13.396132318426453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maceió",
+        "description": "Didnt see the city, just passed by in transit to Maragogi",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.7550048828125,
+          -9.66573839518868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Recife",
+        "description": "Didnt see the city, just passed by in transit to Maragogi",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.88227844238281,
+          -8.06670806173765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olinda",
+        "description": "Didn't see the city, arrived and saw a few churches and left",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.847259521484375,
+          -8.000247139921921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maragogi",
+        "description": "Primary vacation destination with my wife in 2019",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.22036552429199,
+          -9.012420128957665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ponta do Curral",
+        "description": "Pier to take to boat to Morro",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "Other",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.96953582763672,
+          -13.368577270807354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Porto de Galinhas",
+        "description": "Stopped by from lunch and walk around the town",
+        "country": "brazil",
+        "trips": ["south-america-vacations"],
+        "type": "City",
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.00862121582031,
+          -8.504291108347275
+        ]
+      }
+    }
+  ]
+}

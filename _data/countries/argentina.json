@@ -10,7 +10,7 @@
         "name": "Buenos Aires",
         "type": "City",
         "country": "argentina",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "patagonia-antarctica"],
         "description": "Spent a full transit day here on the way from Finland to Ushuaia",
         "visited": true
       },
@@ -29,7 +29,7 @@
         "type": "City",
         "description": "Arrived hoping to catch a cruise to Antarctica, sadly the prices had gone up 2-3 times. I slept underneath a tree outside town and then started hitchhiking north.",
         "country": "argentina",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "patagonia-antarctica"],
         "visited": true
       },
       "geometry": {
@@ -345,6 +345,222 @@
           -23.748896919398167
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Fe",
+        "type": "City",
+        "description": "Brother in law lives here",
+        "country": "argentina",
+        "trips": ["south-america-vacations"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.68847656249999,
+          -31.62532121329918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Carlos de Bariloche",
+        "type": "City",
+        "description": "Hiked around the area",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.30538940429688,
+          -41.13109012375047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Bolsón",
+        "type": "City",
+        "description": "Hiked around the area",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.54022216796875,
+          -41.963574782225166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Calafate",
+        "type": "City",
+        "description": "Arrived by bus, stayed the night and continued hitchhiking to Punta Arenas",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.26531982421875,
+          -50.34020186462779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Chaltén",
+        "type": "City",
+        "description": "Hiked around for a few days",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.88450241088867,
+          -49.33261758389299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Río Grande",
+        "type": "City",
+        "description": "Hitchhiked here on the way to Ushuaia",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.69775390625,
+          -53.777934972046026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Concordia",
+        "type": "City",
+        "description": "On the way from Uruguay to Iguazú",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.01055908203125,
+          -31.38177878211098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Posadas",
+        "type": "City",
+        "description": "On the way from Uruguay to Iguazú. Crossed the border into Paraguay",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.919036865234375,
+          -27.37664535363957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puerto Iguazú",
+        "type": "City",
+        "description": "Saw the waterfalls",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.574241638183594,
+          -25.613667040884014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tolhuin",
+        "type": "City",
+        "description": "Went to see the lake",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.225341796875,
+          -54.51629883901119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gobernador Gregores",
+        "type": "City",
+        "description": "Spent the night while hitchhiking",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.257568359375,
+          -48.75618876280551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Río Mayo",
+        "type": "City",
+        "description": "Spent the night while hitchhiking",
+        "country": "argentina",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2630615234375,
+          -45.688914234195416
+        ]
+      }
+    },
   ]
 }

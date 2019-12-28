@@ -11,7 +11,7 @@
         "type": "City",
         "country": "chile",
         "description": "Met Simiel and her friend who were also hitchhiking here. Stayed at Simiel's.",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "patagonia-antarctica"],
         "visited": true
       },
       "geometry": {
@@ -27,7 +27,7 @@
       "properties": {
         "name": "Puerto Natales",
         "description": "Met Pablo as I came back from my hike",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "patagonia-antarctica"],
         "type": "City",
         "country": "chile",
         "visited": true
@@ -154,7 +154,7 @@
         "name": "Puerto Montt",
         "type": "City",
         "country": "chile",
-        "trips": ["south-america-1"],
+        "trips": ["south-america-1", "patagonia-antarctica"],
         "visited": true
       },
       "geometry": {
@@ -395,6 +395,60 @@
         "coordinates": [
           -69.79408264160156,
           -20.211944964974403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Entre Lagos",
+        "type": "City",
+        "country": "chile",
+        "description": "Hitchhiked here on the way from Puerto Montt to Bariloche",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.60726928710938,
+          -40.683241578458706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Porvenir",
+        "type": "City",
+        "country": "chile",
+        "description": "Hitchhiked here on the way from Punta Arenas to Ushuaia",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.37567138671875,
+          -53.29641404214566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puerto Williams",
+        "type": "City",
+        "country": "chile",
+        "description": "Flew here from Punta Arenas to hike around Isla Navarino",
+        "trips": ["patagonia-antarctica"],
+        "visited": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.62737274169922,
+          -54.934046047591366
         ]
       }
     }
