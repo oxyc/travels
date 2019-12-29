@@ -31,9 +31,10 @@ const chartTypes = {
     duration = duration[options.country];
 
     const series = _.chain(data)
+      .filter(entry => entry.country === options.country)
       .groupBy('tags')
       .map((tagData, tag) => {
-        let amount = _.sumBy(row, (transaction) => parseInt(transaction.amount));
+        let amount = _.sumBy(tagData, transaction => parseInt(transaction.amount, 10));
         amount = Math.round(amount / duration * 100) / 100;
         return {name: tag, y: amount};
       })
