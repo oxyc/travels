@@ -115,7 +115,7 @@ function createMap(selector) {
     zoom: 2,
     minZoom: 2,
     maxZoom: 10,
-    scrollWheelZoom: false
+    scrollWheelZoom: true
   });
 
   L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png?access_token={accessToken}', {

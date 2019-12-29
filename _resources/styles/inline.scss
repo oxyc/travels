@@ -1,3 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+a.map-bottom-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  z-index: 1000;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: 860px) {
+    line-height: 6vh;
+  }
+}
+
 .profile-photo { text-align: center; }
 .profile-photo img {
   border-radius: 50px;

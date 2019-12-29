@@ -1,6 +1,7 @@
 {% include head.html %}
 
 <section class="page-header">
+  <a class="map-bottom-overlay" href="#main">&#8964;</a>
   {% if page.layout == 'trip' %}
     <div id="world-map" class="map-trip" data-country="{{ site.data.trips[page.id].properties.countries | map: 'name' | join: ' ' }}" data-trips="{{ page.id }}"></div>
   {% elsif page.layout == 'post' %}
@@ -11,7 +12,7 @@
   <h2><a href="/">{{ site.title }}</a></h2>
 </section>
 
-<section role="main" class="main-content">
+<section role="main" class="main-content" id="main">
   <div class="{{ page.type }} group">
     {{ content }}
   </div>
