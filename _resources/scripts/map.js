@@ -10,6 +10,43 @@ L.mapbox = L.mapbox || {};
 L.mapbox.accessToken = 'pk.eyJ1Ijoib3h5IiwiYSI6InBMaXRxSDAifQ.w9NqRLivEBn6BoMRkKmg3A';
 L.MakiMarkers.accessToken = L.mapbox.accessToken;
 
+L.Control.LayersCloseAll = L.Control.Layers.extend({
+  onAdd(map) {
+    this._initLayout();
+    this._addButton();
+    this._update();
+
+    this._map = map;
+    map.on('zoomend', this._checkDisabledLayers, this);
+
+    for (var i = 0; i < this._layers.length; i++) {
+      this._layers[i].layer.on('add remove', this._onLayerChange, this);
+    }
+
+    return this._container;
+  },
+
+  _addButton() {
+    const elements = this._container.querySelectorAll('.leaflet-control-layers-list');
+    const button = L.DomUtil.create('button', 'button--toggle-layers', elements[0]);
+
+    button.innerText = 'Hide all';
+    L.DomEvent.on(button, 'click', function (e) {
+      L.DomEvent.stop(e);
+      if (button.toggled) {
+        toggleControlCheckboxes(this, null, true);
+        button.innerText = 'Hide all';
+        button.toggled = false;
+      } else {
+        toggleControlCheckboxes(this, null, false);
+        button.innerText = 'Show all';
+        button.toggled = true;
+      }
+
+    }, this);
+  }
+});
+
 export const lMap = createMap('world-map');
 export const cluster = L.markerClusterGroup({maxClusterRadius: 20}).addTo(lMap);
 export const controls = {};
@@ -152,36 +189,39 @@ function prepareLayers(type, data, groupOptions) {
 }
 
 function createControl(type, layers) {
-  const control = L.control.layers(null, layers, {collapsed: true}).addTo(lMap);
+  //const control = L.control.layers(null, layers, {collapsed: true}).addTo(lMap);
+  const control = new L.Control.LayersCloseAll(null, layers, {collapsed: true}).addTo(lMap);
+
   // Add custom classes to the leaflet control
   const container = control.getContainer();
   L.DomUtil.addClass(container, 'control-custom');
   L.DomUtil.addClass(container, 'control-' + type);
 
-  if (L.Browser.touch) {
-    L.DomEvent.disableClickPropagation(container);
-  } else {
-    L.DomEvent
-      .disableClickPropagation(container)
-      .disableScrollPropagation(container);
-  }
+  L.DomEvent.disableClickPropagation(container);
 
   return control;
 }
 
 function toggleControlCheckboxes(control, labels, onState) {
   // List of the layer ids corresponding the the listed labels (strings).
-  const layerIds = _.chain(control._layers)
-    .pick(layer => labels.includes(layer.layer.id))
-    .keys()
-    .value();
+  let layerIds;
+  if (labels && labels.length > 0) {
+    layerIds = _.chain(control._layers)
+      .pick(layer => labels.includes(layer.layer.id))
+      .map(layer => layer.layer._leaflet_id)
+      .value();
+  } else {
+    layerIds = _.chain(control._layers)
+      .map(layer => layer.layer._leaflet_id)
+      .value();
+  }
 
   // Iterate over all the checkboxes in the controls form,
   const inputs = control._layerControlInputs;
   for (let i = 0, l = inputs.length; i < l; i++) {
     const input = inputs[i];
     // Skip checkboxes for countries not part of this trip.
-    if (!layerIds.includes(String(input.layerId))) {
+    if (!layerIds.includes(input.layerId)) {
       continue;
     }
 
