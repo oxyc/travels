@@ -50,6 +50,7 @@ a.map-bottom-overlay {
 .page-header {
   position: relative;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   background-color: #6EB7DD;
 }
