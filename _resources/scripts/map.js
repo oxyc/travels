@@ -19,7 +19,7 @@ L.Control.LayersCloseAll = L.Control.Layers.extend({
     this._map = map;
     map.on('zoomend', this._checkDisabledLayers, this);
 
-    for (var i = 0; i < this._layers.length; i++) {
+    for (let i = 0; i < this._layers.length; i++) {
       this._layers[i].layer.on('add remove', this._onLayerChange, this);
     }
 
@@ -30,19 +30,18 @@ L.Control.LayersCloseAll = L.Control.Layers.extend({
     const elements = this._container.querySelectorAll('.leaflet-control-layers-list');
     const button = L.DomUtil.create('button', 'button--toggle-layers', elements[0]);
 
-    button.innerText = 'Hide all';
+    button.textContent = 'Hide all';
     L.DomEvent.on(button, 'click', function (e) {
       L.DomEvent.stop(e);
       if (button.toggled) {
         toggleControlCheckboxes(this, null, true);
-        button.innerText = 'Hide all';
+        button.textContent = 'Hide all';
         button.toggled = false;
       } else {
         toggleControlCheckboxes(this, null, false);
-        button.innerText = 'Show all';
+        button.textContent = 'Show all';
         button.toggled = true;
       }
-
     }, this);
   }
 });
@@ -189,7 +188,6 @@ function prepareLayers(type, data, groupOptions) {
 }
 
 function createControl(type, layers) {
-  //const control = L.control.layers(null, layers, {collapsed: true}).addTo(lMap);
   const control = new L.Control.LayersCloseAll(null, layers, {collapsed: true}).addTo(lMap);
 
   // Add custom classes to the leaflet control
