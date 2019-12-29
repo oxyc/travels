@@ -1,9 +1,9 @@
 {% include head.html %}
 
 <section class="page-header">
-  {% if page.type == 'trip' %}
-    <div id="world-map" class="map-trip" data-country data-trips="{{ page.id }}"></div>
-  {% elsif page.type == 'post' %}
+  {% if page.layout == 'trip' %}
+    <div id="world-map" class="map-trip" data-country="{{ site.data.trips[page.id].properties.countries | map: 'name' | join: ' ' }}" data-trips="{{ page.id }}"></div>
+  {% elsif page.layout == 'post' %}
     <div id="world-map" class="map-post"  data-trips data-country="{{ page.title | slugify }}"></div>
   {% else %}
     <div id="world-map" class="map-post" data-country data-trips="{{ site.data.trips | map: 'id' | join: ' ' }}"></div>
