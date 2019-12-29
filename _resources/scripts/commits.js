@@ -1,4 +1,6 @@
-const el = document.getElementById('commit-history');
+import _ from 'lodash';
+
+const el = document.querySelector('#commit-history');
 if (el) {
   const path = 'https://api.github.com/repos/oxyc/travels/commits';
   const template = _.template(
@@ -7,8 +9,8 @@ if (el) {
 
   fetch(path)
     .then(data => data.json())
-    .then((data) => {
-      const content = _.reduce(data, function (content, commit) {
+    .then(data => {
+      const content = _.reduce(data, (content, commit) => {
         return content + template(commit);
       }, '');
       el.innerHTML = content;

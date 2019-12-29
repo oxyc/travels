@@ -1,3 +1,3 @@
-import './map.js';
-import './charts.js';
-import './commits.js';
+import './map';
+import './charts';
+import './commits';

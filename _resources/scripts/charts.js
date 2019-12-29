@@ -1,6 +1,5 @@
 import _ from 'lodash';
-import tippy from 'tippy.js';
-import { hideAll as tippyHideAll } from 'tippy.js';
+import tippy, {hideAll as tippyHideAll} from 'tippy.js';
 import Highcharts from 'highcharts';
 
 const charts = document.querySelectorAll('.expenditure-chart');
@@ -48,9 +47,9 @@ const chartTypes = {
           dataLabels: {enabled: false},
           showInLegend: true,
           events: {
-            click: (event) => {
+            click: event => {
               const tag = event.point.name;
-              const expenses = _.filter(data, (expense) => expense.tags === tag);
+              const expenses = _.filter(data, expense => expense.tags === tag);
               showExpenseTable(event.target, expenses);
             }
           }
@@ -80,7 +79,7 @@ const chartTypes = {
       .groupBy('tags')
       .map((tagData, tag) => {
         // Create an array with an index for each country.
-        const countryData = _.fill(Array(countryList.length), 0);
+        const countryData = _.fill(new Array(countryList.length), 0);
         let tagTotalAmount = 0;
         _.chain(tagData)
           .groupBy('country')
@@ -89,7 +88,7 @@ const chartTypes = {
             const duration = countryDuration[country];
             // Only add the data if we can calculate the cost per day.
             if (duration) {
-              const total = _.sumBy(row, (transaction) => parseInt(transaction.amount));
+              const total = _.sumBy(row, transaction => parseInt(transaction.amount, 10));
               tagTotalAmount += total;
               countryData[countryIndex] = total / duration;
               countryData[countryIndex] = Math.round(countryData[countryIndex] * 100) / 100;
@@ -112,7 +111,7 @@ const chartTypes = {
         type: 'bar',
         events: {
           redraw: () => {
-            var axis = this.axes[1];
+            const axis = this.axes[1];
             axis.removePlotLine('plot-average');
             axis.addPlotLine(getAveragePlotLine(axis.series));
           }
@@ -120,7 +119,9 @@ const chartTypes = {
       },
       xAxis: {categories: countryList},
       yAxis: {
-        min: 0, title: {text: 'Cost per day'}, labels: {format: '${value}'},
+        min: 0,
+        title: {text: 'Cost per day'},
+        labels: {format: '${value}'}, /* eslint no-template-curly-in-string:off */
         stackLabels: {
           enabled: true,
           style: {color: '#999', fontWeight: 'normal', textShadow: 'none'}
@@ -135,7 +136,7 @@ const chartTypes = {
             click(event) {
               const country = event.point.category;
               const tag = this.name;
-              const expenses = _.filter(data, (expense) => {
+              const expenses = _.filter(data, expense => {
                 return (expense.country === country && expense.tags === tag);
               });
               showExpenseTable(event.target, expenses);
@@ -145,7 +146,7 @@ const chartTypes = {
       },
       tooltip: {valuePrefix: '$'},
       title: {text: options.title || ''},
-      series: series
+      series
     });
   }
 };
@@ -157,18 +158,18 @@ function showExpenseTable(element, expenses) {
   // @todo
   const tooltip = element._tippy || tippy(element, {
     content: templateExpenseTable({data: expenses}),
-    trigger: 'click',
+    trigger: 'click'
   });
   tooltip.show();
   tooltipVisible = true;
 }
 
 function isVisibleByDefault(tag) {
-  return tagsHidden.indexOf(tag) === -1;
+  return !tagsHidden.includes(tag);
 }
 
 function getAveragePlotLine(series) {
-  const tripDuration = (tripDate.end - tripDate.start) / 1000 / 3600 / 24 + 1;
+  const tripDuration = ((tripDate.end - tripDate.start) / 1000 / 3600 / 24) + 1;
   const totalAmount = _.chain(series)
     .filter('visible')
     .reduce((total, series) => total + tagTotalData[series.name], 0)
@@ -186,11 +187,11 @@ function getAveragePlotLine(series) {
 function calculateTotalDuration(data) {
   return _.chain(data)
     .keyBy('name')
-    .mapValues(function (country) {
+    .mapValues(country => {
       return _.reduce(country.dates, (total, date) => {
         const start = new Date(date.start);
         const end = new Date(date.end);
-        return total + (end - start) / 1000 / 3600 / 24 + 1;
+        return total + ((end - start) / 1000 / 3600 / 24) + 1;
       }, 0);
     })
     .value();
@@ -203,12 +204,13 @@ function getDateSpan(data) {
   _.chain(data)
     .map('dates')
     .flatten()
-    .each((date) => {
+    .each(date => {
       const start = new Date(date.start);
       const end = new Date(date.end);
       if (start < earliestDate) {
         earliestDate = start;
       }
+
       if (end > latestDate) {
         latestDate = end;
       }
@@ -222,8 +224,7 @@ function getDateSpan(data) {
 }
 
 function init(data) {
-  for (let i = 0; i < charts.length; i++) {
-    const el = charts[i];
+  for (const el of charts) {
     const chartType = el.dataset.chart;
     const options = {
       trip: el.dataset.trip,
@@ -231,18 +232,19 @@ function init(data) {
       title: el.dataset.title,
       countryData: []
     };
-    const tripData = _.chain(data.expenditures)
+
+    let tripData = _.chain(data.expenditures)
       .filter('trip', options.trip)
-      .each((expenditures) => options.countryData.push(expenditures.countries))
+      .each(expenditures => options.countryData.push(expenditures.countries))
       .map('data')
       .flatten()
       .value();
 
-    // country dates should be merged really, but cant do it realiably as
+    // Country dates should be merged really, but cant do it reliably as
     // some might have dates but not expenditure entries.
     options.countryData = _.chain(options.countryData)
       .flatten(options.countryData)
-      .filter((country) => country.dates.length > 0)
+      .filter(country => country.dates.length > 0)
       .value();
 
     if (options.country) {
@@ -250,18 +252,20 @@ function init(data) {
       options.countryData = _.filter(options.countryData, 'name', options.country);
     }
 
-    if (!options.countryData.length) {
+    if (options.countryData.length === 0) {
       el.innerHTML = '<p><em>No data available yet</em></p>';
+
       return;
     }
 
     chartTypes[chartType](el, tripData, options);
   }
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener('click', event => {
     if (!tooltipVisible || (event.target && event.target.tooltipInitalizer)) {
       return;
     }
+
     tippyHideAll();
     tooltipVisible = false;
   });

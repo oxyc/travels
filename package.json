@@ -32,27 +32,39 @@
     "sass": "^1.24.0",
     "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.11",
-    "xo": "^0.8.0"
+    "xo": "^0.25.3"
   },
   "xo": {
     "space": true,
-    "globals": [
-      "jQuery",
-      "L",
-      "_",
-      "Fraction"
-    ],
     "ignores": [
-      "_site/**"
+      "_site/**",
+      "vendor/**",
+      "dist/**"
     ],
     "envs": [
-      "browser"
-    ]
+      "browser",
+      "node",
+      "es6"
+    ],
+		"rules": {
+			"import/no-unassigned-import": "off"
+		},
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    }
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    }
   },
   "dependencies": {
     "@mapbox/leaflet-omnivore": "github:mapbox/leaflet-omnivore",
     "file-exists": "^0.1.1",
     "fraction.js": "^4.0.12",
+    "fs-extra": "^8.1.0",
     "geojson-merge": "^0.1.0",
     "highcharts": "^8.0.0",
     "js-yaml": "^3.13.1",

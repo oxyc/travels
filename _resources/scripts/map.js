@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import L from 'leaflet';
-import { topojson } from '@mapbox/leaflet-omnivore';
+import {topojson} from '@mapbox/leaflet-omnivore';
 import 'leaflet.markercluster';
 import 'leaflet-makimarkers';
 import 'leaflet-search';
@@ -9,9 +9,6 @@ L.Icon.Default.imagePath = '/dist/images';
 L.mapbox = L.mapbox || {};
 L.mapbox.accessToken = 'pk.eyJ1Ijoib3h5IiwiYSI6InBMaXRxSDAifQ.w9NqRLivEBn6BoMRkKmg3A';
 L.MakiMarkers.accessToken = L.mapbox.accessToken;
-
-// Short timeout as some geojson files might not exist yet.
-const AJAX_TIMEOUT = 5000;
 
 export const lMap = createMap('world-map');
 export const cluster = L.markerClusterGroup({maxClusterRadius: 20}).addTo(lMap);
@@ -35,7 +32,7 @@ export const routeStyles = {
   mouseover: {color: '#ff0000', opacity: 0.7, weight: 3}
 };
 
-const map = document.getElementById('world-map');
+const map = document.querySelector('#world-map');
 
 const preSelectedTrips = _.reject(map.dataset.trips.split(' ') || [], _.isEmpty);
 const preSelectedCountries = _.reject(map.dataset.country.split(' ') || [], _.isEmpty);
@@ -62,12 +59,13 @@ export function openPopup(layer) {
   if (!cluster.hasLayer(layer) || (!layer._icon && !layer.__parent._icon)) {
     return false;
   }
+
   cluster.zoomToShowLayer(layer, () => {
     if (layer._popup) {
       layer.openPopup();
     }
   });
-};
+}
 
 function pairs(array) {
   return array.slice(1).map((b, i) => [array[i], b]);
@@ -83,6 +81,7 @@ function bindRoutePopup(feature, layer) {
     return total + L.latLng(pair[0][1], pair[0][0])
       .distanceTo(L.latLng(pair[1][1], pair[1][0]));
   }, 0);
+
   const content = templateRoutePopup(feature.properties);
   layer.bindPopup(content);
 }
@@ -91,9 +90,9 @@ function getMarkerIcon(feature, latlng) {
   let key = feature.properties.type.toLowerCase();
   if (feature.properties.homebase) {
     key = 'homebase';
-  } else if (['national park', 'nature reserve'].indexOf(key) !== -1) {
+  } else if (['national park', 'nature reserve'].includes(key)) {
     key = 'park';
-  } else if (!markers.hasOwnProperty(key)) {
+  } else if (!markers[key]) {
     key = 'visited';
   }
 
@@ -123,7 +122,7 @@ function createMap(selector) {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
     id: 'oxy.ndp8318l',
-    accessToken: L.mapbox.accessToken,
+    accessToken: L.mapbox.accessToken
   }).addTo(map);
 
   return map;
@@ -132,20 +131,21 @@ function createMap(selector) {
 function prepareLayers(type, data, groupOptions) {
   const collection = _.chain(data)
     // If it's TopoJson require that there be arcs.
-    .filter((featureGroup) => {
+    .filter(featureGroup => {
       return featureGroup.features.type !== 'Topology' || featureGroup.features.arcs.length;
     })
-    .forEach((featureGroup) => {
+    .forEach(featureGroup => {
       if (featureGroup.features.type === 'Topology') {
-        var layer = L.geoJson(null, groupOptions);
+        const layer = L.geoJson(null, groupOptions);
         featureGroup.layer = topojson.parse(featureGroup.features, null, layer);
       } else {
         featureGroup.layer = L.geoJson(featureGroup.features, groupOptions);
       }
+
       featureGroup.layer.type = type;
       featureGroup.layer.id = featureGroup.properties.id;
     })
-    .keyBy((featureGroup) => featureGroup.properties.name)
+    .keyBy(featureGroup => featureGroup.properties.name)
     .value();
 
   return _.mapValues(collection, 'layer');
@@ -158,42 +158,46 @@ function createControl(type, layers) {
   L.DomUtil.addClass(container, 'control-custom');
   L.DomUtil.addClass(container, 'control-' + type);
 
-  if (!L.Browser.touch) {
+  if (L.Browser.touch) {
+    L.DomEvent.disableClickPropagation(container);
+  } else {
     L.DomEvent
       .disableClickPropagation(container)
       .disableScrollPropagation(container);
-  } else {
-    L.DomEvent.disableClickPropagation(container);
   }
+
   return control;
 }
 
 function toggleControlCheckboxes(control, labels, onState) {
   // List of the layer ids corresponding the the listed labels (strings).
   const layerIds = _.chain(control._layers)
-    .pick((layer) => labels.indexOf(layer.layer.id) !== -1)
+    .pick(layer => labels.includes(layer.layer.id))
     .keys()
     .value();
 
   // Iterate over all the checkboxes in the controls form,
-  const inputs = control._form.getElementsByTagName('input');
+  const inputs = control._layerControlInputs;
   for (let i = 0, l = inputs.length; i < l; i++) {
-    let input = inputs[i];
+    const input = inputs[i];
     // Skip checkboxes for countries not part of this trip.
-    if (layerIds.indexOf(String(input.layerId)) === -1) {
+    if (!layerIds.includes(String(input.layerId))) {
       continue;
     }
+
     // The checkbox is already checked.
     if (onState && input.checked) {
       continue;
     }
+
     // The checkbox is already unchecked.
     if (!onState && !input.checked) {
       continue;
     }
+
     // Trigger a click so that Leaflet acts on it and triggers this
     // same event but for each country.
-    $(input).trigger('click');
+    input.click();
   }
 }
 
@@ -218,7 +222,7 @@ function createSearchControl() {
     zoom: 10
   });
 
-  control.on('search_locationfound', (e) => openPopup(e.layer));
+  control.on('search_locationfound', e => openPopup(e.layer));
   return control;
 }
 
@@ -227,9 +231,11 @@ function createCountryLayers(countryCollection) {
     if (a.properties.id < b.properties.id) {
       return -1;
     }
+
     if (a.properties.id > b.properties.id) {
       return 1;
     }
+
     return 0;
   });
   // The real layers
@@ -245,9 +251,10 @@ function createCountryLayers(countryCollection) {
     dummyLayers[name].id = layer.id;
     // If a pre-selected country is defiend, exit here so that it's not
     // preselected.
-    if (preSelectedCountries.length && preSelectedCountries.indexOf(layer.id) === -1) {
+    if (preSelectedCountries.length > 0 && !preSelectedCountries.includes(layer.id)) {
       return;
     }
+
     // Dummy layer is attached to Map
     dummyLayers[name].addTo(lMap);
     // Real layer is attached to MarkerClusterGroup
@@ -255,15 +262,17 @@ function createCountryLayers(countryCollection) {
   });
 
   // Controls point the the dummy layers.
-  const countryControl = controls.country = createControl('country', dummyLayers);
+  const countryControl = createControl('country', dummyLayers);
+  controls.country = countryControl;
+
   // Add a mapping so that we can find the real layer alter.
-  for (let row in countryControl._layers) {
-    if (countryControl._layers.hasOwnProperty(row)) {
+  for (const row in countryControl._layers) {
+    if (countryControl._layers[row]) {
       leafletMeta[L.Util.stamp(countryControl._layers[row].layer)] = countryControl._layers[row].name;
     }
   }
 
-  lMap.on('overlayadd overlayremove', (overlay) => {
+  lMap.on('overlayadd overlayremove', overlay => {
     const index = leafletMeta[L.Util.stamp(overlay.layer)];
     if (overlay.layer.type !== 'country') {
       return;
@@ -281,22 +290,25 @@ function createCountryLayers(countryCollection) {
 
 function createTripLayers(tripCollection) {
   const tripLayers = prepareLayers('trip', tripCollection, {onEachFeature: setTripLayerStyles});
-  if (!preSelectedCountries.length) {
-    _.forEach(tripLayers, (layer) => layer.addTo(lMap));
+  if (preSelectedCountries.length === 0) {
+    _.forEach(tripLayers, layer => layer.addTo(lMap));
   }
-  const tripControl = controls.trip = createControl('trip', tripLayers);
 
-  for (let row in tripControl._layers) {
-    if (tripControl._layers.hasOwnProperty(row)) {
+  const tripControl = createControl('trip', tripLayers);
+  controls.trip = tripControl;
+
+  for (const row in tripControl._layers) {
+    if (tripControl._layers[row]) {
       leafletMeta[L.Util.stamp(tripControl._layers[row].layer)] = tripControl._layers[row].name;
     }
   }
 
-  lMap.on('overlayadd overlayremove', (overlay) => {
+  lMap.on('overlayadd overlayremove', overlay => {
     const index = leafletMeta[L.Util.stamp(overlay.layer)];
     if (overlay.layer.type !== 'trip') {
       return;
     }
+
     const trip = tripCollection[index];
     const countries = _.map(trip.properties.countries, 'name');
     const control = controls.country;
@@ -305,15 +317,23 @@ function createTripLayers(tripCollection) {
     toggleControlCheckboxes(control, countries, on);
   });
 
-  if (preSelectedTrips.length) {
+  if (preSelectedTrips.length > 0) {
+    console.log(tripLayers);
     _.chain(tripLayers)
-      .pick((layer) => preSelectedTrips.indexOf(layer.id) === -1)
-      .forEach((layer) => lMap.removeLayer(layer))
+      .forEach(layer => {
+        console.log(layer);
+      })
+      .filter(layer => !preSelectedTrips.includes(layer.id))
+      .forEach(layer => {
+        console.log(layer);
+        lMap.removeLayer(layer);
+      })
       .value();
 
     _.chain(tripLayers)
-      .pick((layer) => preSelectedTrips.indexOf(layer.id) !== -1)
-      .forEach((layer) => {
+      .filter(layer => preSelectedTrips.includes(layer.id))
+      .forEach(layer => {
+        console.log(layer);
         lMap.removeLayer(layer);
         lMap.addLayer(layer);
       })
@@ -324,24 +344,28 @@ function createTripLayers(tripCollection) {
 function init(data) {
   // Issue XHR requests for the routes of all trips, but do it async while
   // rendering regular markers.
-  let tripCollection = _.forEach(data.trips, (trip) => {
+  let tripCollection = _.forEach(data.trips, trip => {
     trip.promise = fetch(`/${trip.path}`);
   });
 
   // Remove the placeholder image as it gets displayed while tiles are
   // fetched.
-  lMap.once('zoomstart', () => map.style.backgroundImage = 'none');
+  lMap.once('zoomstart', () => {
+    map.style.backgroundImage = 'none';
+  });
 
-  lMap.on('overlayadd overlayremove', _.debounce((event) => {
+  lMap.on('overlayadd overlayremove', _.debounce(event => {
     if (event.layer.type && event.layer.type === 'country') {
       const layers = cluster.getLayers();
-      if (!layers.length) {
+      if (layers.length === 0) {
         return;
       }
+
       const bounds = new L.LatLngBounds();
       for (let i = 0, l = layers.length; i < l; i++) {
         bounds.extend(layers[i].getLatLng());
       }
+
       lMap.fitBounds(bounds);
     }
   }, 100));
@@ -351,15 +375,17 @@ function init(data) {
   lMap.addControl(createSearchControl());
 
   // Wait for all requests to finish
-  Promise.allSettled(_.map(tripCollection, (trip) => {
-    return trip.promise.then(data => data.json());
-  })).then((responses) => {
+  Promise.all(_.map(tripCollection, trip => {
+    return trip.promise
+      .then(data => data.json())
+      .catch(error => error);
+  })).then(responses => {
     tripCollection = _.chain(tripCollection)
-      // Filter out failed requests.
-      .filter((trip, idx) => responses[idx].status === 'fulfilled')
       // Attach the features collected from the XHR request.
-      .forEach((trip, idx) => trip.features = responses[idx].value)
-      .keyBy((trip) => trip.properties.name)
+      .forEach((trip, idx) => {
+        trip.features = responses[idx];
+      })
+      .keyBy(trip => trip.properties.name)
       .value();
 
     // Create the trip layers.
