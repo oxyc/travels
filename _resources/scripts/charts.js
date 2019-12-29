@@ -111,7 +111,7 @@ const chartTypes = {
       chart: {
         type: 'bar',
         events: {
-          redraw: () => {
+          redraw() {
             const axis = this.axes[1];
             axis.removePlotLine('plot-average');
             axis.addPlotLine(getAveragePlotLine(axis.series));

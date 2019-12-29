@@ -14,17 +14,30 @@ a.map-bottom-overlay {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 8vh;
+  height: 4rem;
   z-index: 1000;
-  display: block;
+  display: flex;
   color: #fff;
-  font-size: 2rem;
-  line-height: 1;
   text-align: center;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
 
-  @media (min-width: 860px) {
-    line-height: 6vh;
+  h2 {
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 1rem;
+  }
+
+  .arrow {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: -0.1em;
+  }
+
+  @media (min-width: 800px) {
+    padding-bottom: 0;
   }
 }
 
@@ -39,18 +52,6 @@ a.map-bottom-overlay {
   height: 100vh;
   overflow: hidden;
   background-color: #6EB7DD;
-
-  h2 {
-    margin: 0;
-    position: absolute;
-    right: .5em;
-    bottom: 1em;
-    a { color: #fff; }
-    @media (max-width: 50rem) {
-      font-size: 1rem;
-      bottom: 2em;
-    }
-  }
 }
 
 .main-content > div { position: relative; }
