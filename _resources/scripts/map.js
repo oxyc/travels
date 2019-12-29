@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import L from 'leaflet';
-import {topojson} from '@mapbox/leaflet-omnivore';
+import {feature as topojsonFeature} from 'topojson-client';
 import 'leaflet.markercluster';
 import 'leaflet-makimarkers';
 import 'leaflet-search';
@@ -136,8 +136,8 @@ function prepareLayers(type, data, groupOptions) {
     })
     .forEach(featureGroup => {
       if (featureGroup.features.type === 'Topology') {
-        const layer = L.geoJson(null, groupOptions);
-        featureGroup.layer = topojson.parse(featureGroup.features, null, layer);
+        const features = topojsonFeature(featureGroup.features, featureGroup.properties.id);
+        featureGroup.layer = L.geoJson(features, groupOptions);
       } else {
         featureGroup.layer = L.geoJson(featureGroup.features, groupOptions);
       }
@@ -318,14 +318,9 @@ function createTripLayers(tripCollection) {
   });
 
   if (preSelectedTrips.length > 0) {
-    console.log(tripLayers);
     _.chain(tripLayers)
-      .forEach(layer => {
-        console.log(layer);
-      })
       .filter(layer => !preSelectedTrips.includes(layer.id))
       .forEach(layer => {
-        console.log(layer);
         lMap.removeLayer(layer);
       })
       .value();
@@ -333,7 +328,6 @@ function createTripLayers(tripCollection) {
     _.chain(tripLayers)
       .filter(layer => preSelectedTrips.includes(layer.id))
       .forEach(layer => {
-        console.log(layer);
         lMap.removeLayer(layer);
         lMap.addLayer(layer);
       })
