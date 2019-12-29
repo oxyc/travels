@@ -11,6 +11,12 @@ bower install
 Build
 
 ```
-./node_modules/.bin/gulp build
+npm run dev
+npm run watch
+npm run production
+
 bundle exec jekyll serve
+
+# Rebuild topojson files
+npm run build
 ```
