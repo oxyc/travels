@@ -3,20 +3,16 @@
   {% if post.type == 'blog' %}
     {% if include.type == 'full' %}
 
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<h2><a href="{{ post.url }}#main">{{ post.title }}</a></h2>
 
 {{ post.excerpt }}
 
-<a href="{{ post.url }}">Read the full post</a>
+<a href="{{ post.url }}#main">Read the full post</a>
 
     {% elsif include.type == 'short' %}
-
       {% include post.html post=post no_excerpt='yes' %}
-
     {% else %}
-
       {% include post.html post=post %}
-
     {% endif %}
   {% endif %}
 {% endfor %}

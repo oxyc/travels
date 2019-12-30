@@ -15,11 +15,13 @@
     {% endcapture %}
   {% endunless %}
   <li>
-    <a href="/trips/{{ trip_id }}/">{{ trip_data.properties.name }}{{ date_str }}</a>
-    {% assign photos = site.html_pages | where:"layout","trip" | where:"id",trip_id | map: "photos" | first %}
-    {% if photos %}
-      <div class="photo-albums--preview">{% include photos.html photos=photos %}</div>
-    {% endif %}
+    <a href="/trips/{{ trip_id }}/#main">{{ trip_data.properties.name }}{{ date_str }}</a>
+    {% unless include.simple %}
+      {% assign photos = site.html_pages | where:"layout","trip" | where:"id",trip_id | map: "photos" | first %}
+      {% if photos %}
+        <div class="photo-albums--preview">{% include photos.html photos=photos %}</div>
+      {% endif %}
+    {% endunless %}
     {% if trip_data.properties.description and include.simple == nil %}
       <p class="excerpt">{{ trip_data.properties.description }}</p>
     {% endif %}

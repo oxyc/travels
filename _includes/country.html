@@ -16,7 +16,7 @@
   </span>
   {% endcapture %}
   <li>
-    <a href="{{ include.country.url }}">{{ include.country.title }} {{ date_str | remove_first: '|' | split: '|' | array_to_sentence_string }}</a>
+    <a href="{{ include.country.url }}#main">{{ include.country.title }} {{ date_str | remove_first: '|' | split: '|' | array_to_sentence_string }}</a>
     {% if include.country.photos %}
       <div class="photo-albums--preview">{% include photos.html photos=include.country.photos %}</div>
     {% endif %}

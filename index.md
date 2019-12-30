@@ -11,10 +11,10 @@ forget exist.
 
 If you want to find out more you can read about:
 
-- [Who I am and how this site is built](/about/)
-- [Recent changes done to the website](/changes/)
-- [What I have in my backpack](/backpack/)
-- [A list of all places grouped by type](/places/)
+- [Who I am and how this site is built](/about/#main)
+- [Recent changes done to the website](/changes/#main)
+- [What I have in my backpack](/backpack/#main)
+- [A list of all places grouped by type](/places/#main)
 
 <div class="blog-posts">
   <h3>Blog posts</h3>
