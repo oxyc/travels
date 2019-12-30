@@ -8,7 +8,7 @@ html {
   }
 }
 
-a.map-bottom-overlay {
+.map-bottom-overlay {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
@@ -182,15 +182,46 @@ h1 {
   display: none;
 }
 
-.picasa-album {
-  .open {
-    color: #159957;
-    text-decoration: underline;
-    @media (max-width: 50rem) {
-      position: absolute;
-      top: -1em;
-      right: -1em;
+.photo-albums {
+  &--preview {
+    font-size: 12px;
+    color: #aaa;
+    font-style: italic;
+
+    .photos-list {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+      }
+
+      li {
+        a, &:after { float: left; }
+        &:after {
+          content: ', ';
+          margin-right: 0.2em;
+        }
+        &:last-child:after {
+          content: '';
+        }
+      }
     }
+  }
+
+  @media (max-width: 50rem) {
+    h4 {
+      display: none;
+    }
+
+    .photos-list {
+      text-align: right;
+      list-style-type: none;
+    }
+
+    position: absolute;
+    top: -1em;
+    right: -1em;
   }
 }
 

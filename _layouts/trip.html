@@ -76,7 +76,12 @@ type: trip
 </div>
 
 <aside class="sidebar">
-  {% include picasa-slideshow.html userid=site.author.picasa albumid=page.albumid albumtag=page.albumtag %}
+  {% if page.photos %}
+    <div class="photo-albums">
+      <h4>Photo albums</h4>
+      {% include photos.html photos=page.photos %}
+    </div>
+  {% endif %}
 
   {% assign data = site.data.trips[trip_id] %}
 

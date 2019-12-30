@@ -1,0 +1,15 @@
+{% if include.photos %}
+<ul class="photos-list">
+  {% if include.photos.first %}
+    {% for item in include.photos %}
+      <li>
+        <a href="{{ item[1] }}" target="_blank"><em>{{ item[0] }}</em> album</a>
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>
+      <a href="{{ include.photos }}" target="_blank">Photo album</a>
+    </li>
+  {% endif %}
+</ul>
+{% endif %}

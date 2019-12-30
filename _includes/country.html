@@ -17,6 +17,9 @@
   {% endcapture %}
   <li>
     <a href="{{ include.country.url }}">{{ include.country.title }} {{ date_str | remove_first: '|' | split: '|' | array_to_sentence_string }}</a>
+    {% if include.country.photos %}
+      <div class="photo-albums--preview">{% include photos.html photos=include.country.photos %}</div>
+    {% endif %}
     {% assign excerpt = include.country.excerpt | strip_newlines %}
     {% unless excerpt == '' %}
       <p class="excerpt">{{ excerpt | remove: '<p>' | remove: '</p>' }}</p>

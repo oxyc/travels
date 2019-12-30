@@ -2,4 +2,6 @@
 title: Singapore
 layout: post
 categories: ['south-east-asia']
+photos:
+  "Malaysia, Brunei & Singapore": https://photos.app.goo.gl/2axyzqzRXBhprJvG8
 ---
