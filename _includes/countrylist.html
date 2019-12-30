@@ -1,7 +1,9 @@
 {% if include.countries %}
 <ul class="countries">
 {% for country in include.countries reversed %}
-  {% include country.html country=country %}
+  {% if country.type != 'blog' %}
+    {% include country.html country=country %}
+  {% endif %}
 {% endfor %}
 </ul>
 {% endif %}
