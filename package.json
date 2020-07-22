@@ -71,7 +71,7 @@
     "leaflet-makimarkers": "^3.1.0",
     "leaflet-search": "^2.9.8",
     "leaflet.markercluster": "^1.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "select2": "^4.0.12",
     "tippy.js": "^5.1.2",
     "topojson-client": "^3.1.0",
