@@ -154,10 +154,10 @@ function createMap(selector) {
     scrollWheelZoom: true
   });
 
-  L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png?access_token={accessToken}', {
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
-    id: 'oxy.ndp8318l',
+    id: 'mapbox/outdoors-v11',
     accessToken: L.mapbox.accessToken
   }).addTo(map);
 
