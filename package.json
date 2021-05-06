@@ -64,7 +64,7 @@
     "file-exists": "^0.1.1",
     "fraction.js": "^4.0.12",
     "fs-extra": "^8.1.0",
-    "highcharts": "^8.1.1",
+    "highcharts": "^9.0.0",
     "js-yaml": "^3.13.1",
     "laravel-mix": "^5.0.1",
     "leaflet": "^1.6.0",
