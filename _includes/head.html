@@ -43,12 +43,8 @@
     <meta property="og:type" content="{{ type }}">
     <meta property="og:url" content="http://{{ site.base_path }}{{ page.url | remove: 'index.html' }}">
     <meta property="og:locale" content="en_US" />
-  {% if page.type == 'post' %}
-    <meta property="article:author" content="https://www.facebook.com/oskar.scholdstrom">
-  {% endif %}
     {% feed_meta %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="author" href="{{ site.author.googleplus }}">
     <style type="text/css">
       {% include abovefold.css %}
     </style>
